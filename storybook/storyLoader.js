@@ -6,7 +6,7 @@
 function loadStories() {
   require('../src/components/Example/Example.stories');
   require('./stories/Button/Button.stories');
-  require('../src/components/MyComponent/MyComponent.story');
+  require('../src/components/Phrase/MyComponent.story');
   require('./stories/Welcome/Welcome.stories');
 }
 
