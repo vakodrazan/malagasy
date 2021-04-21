@@ -1,7 +1,6 @@
 
 import * as React from 'react';
 import { View } from 'react-native';
-
 import { storiesOf } from '@storybook/react-native';
 import NextButton from './NextButton';
 import { action } from '@storybook/addon-actions';

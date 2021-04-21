@@ -55,8 +55,8 @@ export default function NextButton({
                 style={[
                     styles.buttonContainer, 
                     disabled 
-                    ? styles.disabledButtonContainer 
-                    : styles.activeButtonContainer
+                        ? styles.disabledButtonContainer 
+                        : styles.activeButtonContainer
                 ]}
                 accessibilityLabel={accessibilityLabel}
                 onPress={onPress}
@@ -66,8 +66,8 @@ export default function NextButton({
                     style={[
                         styles.buttonText, 
                         disabled 
-                        ? styles.disabledbuttonText 
-                        : styles.activebuttonText
+                            ? styles.disabledbuttonText 
+                            : styles.activebuttonText
                     ]}
                 >{text}</Text>
             </TouchableOpacity>
