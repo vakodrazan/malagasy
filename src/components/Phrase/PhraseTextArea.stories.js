@@ -1,42 +1,28 @@
-
 import * as React from 'react';
-import { View } from 'react-native';
-
-import { storiesOf } from '@storybook/react-native';
-import PhraseTextArea from "./PhraseTextArea"
-
-
-
-storiesOf('PhraseTextArea', module)
-  .addDecorator(story => <View style={{margin: 23}}>{story()}</View>)
-  .add('Uneditable short text', () => (
-      <PhraseTextArea 
-        value={'You have answered all the questions in this category'} 
-        isEditable= {false} 
-      />
+import {View} from 'react-native';
+import {storiesOf} from '@storybook/react-native';
+import PhraseTextArea from './PhraseTextArea';
+function Edit() {
+  const [text, setText] = React.useState('');
+  return (
+    <PhraseTextArea
+      phrase={text}
+      editable={true}
+      onChange={input => setText(input)}
+    />
+  );
+}
+storiesOf('PhraseTextarea', module)
+  .addDecorator(story => <View style={{ padding: 23}}>{story()}</View>)
+  .add('editable input', () => <Edit />)
+  .add('not editable phrase', () => (
+    <PhraseTextArea phrase={"roa ambin'ny folo"} editable={false} />
   ))
-  .add('Uneditable long text', () => (
-      <PhraseTextArea 
-        value={'roa ambin’ny folo'} 
-        isEditable= {false} 
-      />
-  ))
-  .add('Editable', () => {
-    function Parent({ children }) {
-      const [ inputValue, setInputValue ] = React.useState('')
-      return <View>{children(inputValue, setInputValue)}</View>
-    }
-
-    return (
-      <Parent>
-        {(inputValue, setInputValue) => (
-          <PhraseTextArea 
-            value={inputValue}
-            placeholderText={'Enter here'}
-            onchange={(text) => setInputValue(text)}
-            placeholderTextColor={'rgba(17, 24, 39, 0.5)'}
-          />
-        )}
-      </Parent>
-    )
-  })
+  .add('not editable and longer', () => (
+    <PhraseTextArea
+      phrase={
+        'You have answered all the questions in this category'
+      }
+      editable={false}
+    />
+  ));

@@ -1,48 +1,43 @@
+
 import * as React from 'react';
-import { SafeAreaView, TextInput, StyleSheet } from 'react-native';
-
-
+import {TextInput, SafeAreaView, StyleSheet} from 'react-native';
 const styles = StyleSheet.create({
-  input: {
-    borderColor: '#E5E5E5',
-    backgroundColor: '#fff',
-    borderStyle: 'solid',
-    borderWidth: 1,
-    borderRadius: 3,
-    width: '100%',
-    textAlign: 'center',
+  container: {
     height: 100,
-    color: '#111827',
-    paddingLeft: 56,
-    paddingRight: 56,
-    paddingTop: 20,
-    paddingBottom: 21,
-    fontSize: 20,
-    lineHeight: 24,
-    fontWeight: 'normal',
+    marginVertical: 0,
+    marginHorizontal: 'auto',
+    backgroundColor: '#fff',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderStyle: 'solid',
+    borderColor: '#E5E5E5',
+    borderWidth: 1,
   },
-})
-
-export default function PhraseTextArea({ 
-  placeholderText, 
-  placeholderTextColor, 
-  isEditable, 
-  value, 
-  onchange 
+  input: {
+    color: '#111827',
+  },
+  textarea: {
+    color: '#111827',
+    maxWidth: 360,
+    marginHorizontal: 'auto',
+    fontSize: 20,
+    lineHeight: 24.3,
+  },
+});
+export default function PhraseTextArea({
+  phrase,
+  editable,
+  onChange = () => null,
 }) {
-
   return (
-    <SafeAreaView>
-      <TextInput 
-        style={styles.input} 
+    <SafeAreaView style={styles.container}>
+      <TextInput
+        style={editable ? styles.input : styles.textarea}
+        value={phrase}
+        editable={editable}
+        onChangeText={onChange}
         multiline={true}
-        numberOfLines={3}
-
-        placeholder={placeholderText}
-        placeholderTextColor={placeholderTextColor}
-        editable={isEditable}
-        value={value}
-        onChangeText={onchange}
+        placeholder={'Enter text'}
       />
     </SafeAreaView>
   );
