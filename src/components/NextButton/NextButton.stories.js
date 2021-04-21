@@ -6,34 +6,25 @@ import { storiesOf } from '@storybook/react-native';
 import NextButton from './NextButton';
 import { action } from '@storybook/addon-actions';
 
+const ActiveButton = ({ text }) => (
+    <NextButton 
+        text= {text} 
+        accessibilityLabel={'Tap next'}
+        onPress={action("Clicked-next")}
+    />
+);
+
+const DisabledButton = ({ text }) => (
+    <NextButton 
+        text= {text} 
+        accessibilityLabel={'Tap next'}
+        disabled={true}
+    />
+)
 
 storiesOf('NextButton', module)
   .addDecorator(story => <View style={{ paddingTop: 60}}>{story()}</View>)
-  .add('Active', () => (
-      <NextButton 
-            text= {'Next'} 
-            accessibilityLabel={'Tap next'}
-            onPress={action("Clicked-next")}
-        />
-  ))
-  .add('Active and long', () => (
-      <NextButton 
-            text= {'Any text here'} 
-            accessibilityLabel={'Tap next'}
-            onPress={action("Clicked-next")}
-        />
-  ))
-  .add('Disabled', () => (
-      <NextButton 
-            text= {'Add'} 
-            accessibilityLabel={'Tap next'}
-            disabled={true}
-        />
-  ))
-  .add('Disabled and long', () => (
-      <NextButton 
-            text= {'Enter any word'} 
-            accessibilityLabel={'Tap next'}
-            disabled={true}
-        />
-  ))
+  .add('Active', () => <ActiveButton text= {'Next'} />)
+  .add('Active and long', () => <ActiveButton text= {'Any text here'}/>)
+  .add('Disabled', () => <DisabledButton text= {'Add'} />)
+  .add('Disabled and long', () => <DisabledButton text= {'Enter any word'} />)
