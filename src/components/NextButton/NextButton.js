@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
         paddingBottom: 10,
         justifyContent: 'center',
         alignItems: 'center',
+        maxWidth: 300
     },
     activeButtonContainer: {
         backgroundColor: '#06B6D4',

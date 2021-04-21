@@ -24,6 +24,6 @@ const DisabledButton = ({ text }) => (
 storiesOf('NextButton', module)
   .addDecorator(story => <View style={{ paddingTop: 60}}>{story()}</View>)
   .add('Active', () => <ActiveButton text= {'Next'} />)
-  .add('Active and long', () => <ActiveButton text= {'Any text here'}/>)
+  .add('Active and long', () => <ActiveButton text= {'Any text here Any text here Any text here'}/>)
   .add('Disabled', () => <DisabledButton text= {'Add'} />)
-  .add('Disabled and long', () => <DisabledButton text= {'Enter any word'} />)
+  .add('Disabled and long', () => <DisabledButton text= {'Enter any word Enter any word Enter any word '} />)
