@@ -11,8 +11,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center'
     },
-    activeButtonContainer: {
-        backgroundColor: '#06B6D4',
+    buttonContainer: {
         borderRadius: 30,
         paddingLeft: 27,
         paddingRight: 27,
@@ -20,31 +19,26 @@ const styles = StyleSheet.create({
         paddingBottom: 10,
         justifyContent: 'center',
         alignItems: 'center',
-        fontWeight: '600',
+    },
+    activeButtonContainer: {
+        backgroundColor: '#06B6D4',
     },
     disabledButtonContainer: {
         backgroundColor: '#fff',
         borderColor: '#06B6D4',
-        borderRadius: 30,
-        paddingLeft: 27,
-        paddingRight: 27,
-        paddingTop: 11,
-        paddingBottom: 10,
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontWeight: '600',
         borderWidth: 1,
         borderStyle: 'solid',
         borderColor: '#06B6D4',
     },
-    activebuttonText: {
+    buttonText: {
         fontSize: 16,
         lineHeight: 19,
+        fontWeight: '600',
+    },
+    activebuttonText: {
         color: '#fff'
     },
     disabledbuttonText: {
-        fontSize: 16,
-        lineHeight: 19,
         color: '#06B6D4'
     },
 })
@@ -58,16 +52,23 @@ export default function NextButton({
     return (
         <SafeAreaView style={styles.container}>
             <TouchableOpacity 
-                style={ disabled 
+                style={[
+                    styles.buttonContainer, 
+                    disabled 
                     ? styles.disabledButtonContainer 
                     : styles.activeButtonContainer
-                }
+                ]}
                 accessibilityLabel={accessibilityLabel}
                 onPress={onPress}
                 disabled={disabled}
             >
                 <Text 
-                    style={disabled ? styles.disabledbuttonText : styles.activebuttonText}
+                    style={[
+                        styles.buttonText, 
+                        disabled 
+                        ? styles.disabledbuttonText 
+                        : styles.activebuttonText
+                    ]}
                 >{text}</Text>
             </TouchableOpacity>
         </SafeAreaView>
