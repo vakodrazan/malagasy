@@ -15,6 +15,8 @@ const styles = StyleSheet.create({
   },
   input: {
     color: '#111827',
+    fontSize: 20,
+    lineHeight: 23
   },
   textarea: {
     color: '#111827',
