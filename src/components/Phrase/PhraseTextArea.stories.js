@@ -9,5 +9,5 @@ import PhraseTextArea from "./PhraseTextArea"
 
 storiesOf('PhraseTextArea', module)
   .addDecorator(story => <View>{story()}</View>)
-  .add('UncontrolledInput', () => <PhraseTextArea placeholderText= {'Enter Text'} />)
-  .add('ControlledInput', () => <PhraseTextArea placeholderText= {'Enter Text'} />)
+  .add('Uneditable', () => <PhraseTextArea placeholderText= {'Enter Text'} text={'rua ambin’ny folo'} isEditable= {false} />)
+  .add('Editable', () => <PhraseTextArea placeholderText= {'Enter Text'} />)
