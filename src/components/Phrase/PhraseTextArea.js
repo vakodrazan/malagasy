@@ -33,6 +33,7 @@ export default function PhraseTextArea({ label, text, placeholderText, isEditabl
     <SafeAreaView style={styles.container}>
       <TextInput 
         style={styles.input} 
+        multiline={true}
         placeholder={placeholderText}
         placeholderTextColor={'rgba(17, 24, 39, 0.5)'}
         value={inputValue}
