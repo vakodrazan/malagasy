@@ -9,17 +9,17 @@ import PhraseTextArea from "./PhraseTextArea"
 
 storiesOf('PhraseTextArea', module)
   .addDecorator(story => <View style={{margin: 23}}>{story()}</View>)
-  .add('Uneditable', () => (
-    <View>
+  .add('Uneditable short text', () => (
       <PhraseTextArea 
         value={'You have answered all the questions in this category'} 
         isEditable= {false} 
       />
+  ))
+  .add('Uneditable long text', () => (
       <PhraseTextArea 
         value={'roa ambin’ny folo'} 
         isEditable= {false} 
       />
-    </View>
   ))
   .add('Editable', () => {
     function Parent({ children }) {
