@@ -60,4 +60,16 @@ storiesOf('ListIten', module)
       onPress={action('wrong-button')}
       size={14}
     />
+  ))
+  .add('List item and disabled', () => (
+    <ListItemFunction
+      title={'two-thousand '}
+      text={'Correct'}
+      buttonName={'check'}
+      type={'material-community'}
+      color={'#06D440'}
+      onPress={action('checked-button')}
+      size={17.6}
+      disabled={true}
+    />
   ));

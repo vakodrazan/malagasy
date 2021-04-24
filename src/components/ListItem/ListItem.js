@@ -14,6 +14,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
+    paddingRight: 10,
+    paddingLeft: 10,
   },
   itemTitle: {
     color: '#111827',
@@ -33,9 +35,13 @@ export default function ListItemFunction({
   color,
   onPress,
   size,
+  disabled,
 }) {
   return (
-    <TouchableOpacity style={styles.container} onPress={onPress}>
+    <TouchableOpacity
+      style={styles.container}
+      onPress={onPress}
+      disabled={disabled}>
       <ListItem>
         <ListItem.Content style={styles.listContent}>
           <ListItem.Title
