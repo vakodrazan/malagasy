@@ -16,5 +16,5 @@ const styles = StyleSheet.create({
 
 storiesOf('SectionHeading', module)
   .addDecorator(story => <View style={styles.wrapper}>{story()}</View>)
-  .add('Heading short', () => <SectionHeading title= {'Category:'} />)
-  .add('Heading long', () => <SectionHeading title= {'The phrase in Malagasy:'}/>)
+  .add('Section heading short', () => <SectionHeading title= {'Category:'} />)
+  .add('Section heading long', () => <SectionHeading title= {'The phrase in Malagasy:'}/>)
