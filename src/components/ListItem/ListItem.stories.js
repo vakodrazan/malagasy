@@ -68,7 +68,6 @@ storiesOf('ListIten', module)
       buttonName={'check'}
       type={'material-community'}
       color={'#06D440'}
-      onPress={action('checked-button')}
       size={17.6}
       disabled={true}
     />
