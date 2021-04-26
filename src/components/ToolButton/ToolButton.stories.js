@@ -5,7 +5,7 @@ import {storiesOf} from '@storybook/react-native';
 import ToolButton from './ToolButton';
 
 storiesOf('ToolButton', module)
-  .addDecorator(story => <View>{story()}</View>)
+  .addDecorator(story => <View style={{padding: 20}}>{story()}</View>)
   .add('Add', () => (
     <ToolButton name={'plus'} type={'material-community'} size={14} />
   ))
