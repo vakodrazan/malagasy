@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
     },
     buttonText: {
-        paddingRight: 12,
+        paddingRight: 10,
         fontSize: 16,
         lineHeight: 19,
         fontWeight: '600',
