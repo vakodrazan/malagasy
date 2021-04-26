@@ -14,7 +14,7 @@ storiesOf('ActionButton', module)
       type={'material-community'} 
       color={'#06B6D4'}
       onPress={action('learn-button')}
-      width={16}
+      size={16}
     />
   ))
   .add('Button with pick', () => (
@@ -24,6 +24,7 @@ storiesOf('ActionButton', module)
       type={'material-community'} 
       color={'#06B6D4'}
       onPress={action('pick-button')}
+      size={16}
     />
   ))
   .add('Button with correct', () => (
@@ -33,6 +34,7 @@ storiesOf('ActionButton', module)
       type={'material-community'} 
       color={'#06D440'}
       onPress={action('correct-button')}
+      size={17.6}
     />
   ))
   .add('Button with wrong', () => (
@@ -42,5 +44,6 @@ storiesOf('ActionButton', module)
       type={'material-community'} 
       color={'#D4068E'}
       onPress={action('wrong-button')}
+      size={14}
     />
   ))
