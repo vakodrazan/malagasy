@@ -18,10 +18,10 @@ const styles = StyleSheet.create({
   },
 });
 
-export default function ToolButton({name, type, size}) {
+export default function ToolButton({name, type, size, onPress}) {
   return (
     <SafeAreaView style={styles.container}>
-      <TouchableOpacity style={styles.buttonContainer}>
+      <TouchableOpacity style={styles.buttonContainer} onPress={onPress}>
         <Icon name={name} type={type} color="#fff" size={size} />
       </TouchableOpacity>
     </SafeAreaView>
