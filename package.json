@@ -15,7 +15,10 @@
   "dependencies": {
     "react": "17.0.1",
     "react-native": "0.64.0",
-    "react-native-dev-menu": "^4.0.2"
+    "react-native-dev-menu": "^4.0.2",
+    "react-native-elements": "^3.4.1",
+    "react-native-safe-area-context": "^3.2.0",
+    "react-native-vector-icons": "^8.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
@@ -42,7 +45,11 @@
   },
   "config": {
     "react-native-storybook-loader": {
-      "searchDir": ["./src", "./storybook/stories","./packages"],
+      "searchDir": [
+        "./src",
+        "./storybook/stories",
+        "./packages"
+      ],
       "pattern": "**/*.stories.js",
       "outputFile": "./storybook/storyLoader.js"
     }
