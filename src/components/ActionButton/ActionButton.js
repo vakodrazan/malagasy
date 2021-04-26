@@ -18,12 +18,13 @@ const styles = StyleSheet.create({
         fontSize: 16,
         lineHeight: 19,
         fontWeight: '600',
-        textAlign: 'right'
+        textAlign: 'right',
+        fontStyle: 'normal',
     }
 })
 
 
-export default function ActionButton({ text, name, type, color, onPress, width }) {
+export default function ActionButton({ text, name, type, color, onPress }) {
     return (
         <SafeAreaView>
             <TouchableOpacity 
