@@ -1,0 +1,2788 @@
+{
+  "phrases": [
+    {
+      "id": "greet#1",
+      "name": {
+        "en": "Hi!",
+        "mg": "manao ahoana e!!"
+      }
+    },
+    {
+      "id": "greet#2",
+      "name": {
+        "en": "Good morning!",
+        "mg": "Manao ahoana ianao!"
+      }
+    },
+    {
+      "id": "greet#3",
+      "name": {
+        "en": "Good afternoon!",
+        "mg": "manao ahoana e!!"
+      }
+    },
+    {
+      "id": "greet#4",
+      "name": {
+        "en": "Good evening!",
+        "mg": "manao ahoana e!!"
+      }
+    },
+    {
+      "id": "greet#5",
+      "name": {
+        "en": "Welcome! (to greet someone)",
+        "mg": "Tonga soa e!"
+      }
+    },
+    {
+      "id": "greet#6",
+      "name": {
+        "en": "Hello my friend!",
+        "mg": "faly miarahaba anao ra-namana"
+      }
+    },
+    {
+      "id": "greet#7",
+      "name": {
+        "en": "How are you? (friendly)",
+        "mg": "fahasalamana?"
+      }
+    },
+    {
+      "id": "greet#8",
+      "name": {
+        "en": "How are you? (polite)",
+        "mg": "manao ahoana ny fahasalamanao?"
+      }
+    },
+    {
+      "id": "greet#9",
+      "name": {
+        "en": "I'm fine, thank you!",
+        "mg": "tsara fa misaotra!"
+      }
+    },
+    {
+      "id": "greet#10",
+      "name": {
+        "en": "And you? (friendly)",
+        "mg": "ary ianao?"
+      }
+    },
+    {
+      "id": "greet#11",
+      "name": {
+        "en": "And you? (polite)",
+        "mg": "ary ianao,manao ahoana ny fahasalamanao?"
+      }
+    },
+    {
+      "id": "greet#12",
+      "name": {
+        "en": "Good",
+        "mg": "tsara ka!"
+      }
+    },
+    {
+      "id": "greet#13",
+      "name": {
+        "en": "Not so good",
+        "mg": "tsy dia tsara/tsy dia tena tsara loatra!"
+      }
+    },
+    {
+      "id": "greet#14",
+      "name": {
+        "en": "Long time no see",
+        "mg": "ela tsy nihaonana"
+      }
+    },
+    {
+      "id": "greet#15",
+      "name": {
+        "en": "I missed you",
+        "mg": "nalahelo anao aho"
+      }
+    },
+    {
+      "id": "greet#16",
+      "name": {
+        "en": "What's new?",
+        "mg": "inona ny vaovao?"
+      }
+    },
+    {
+      "id": "greet#17",
+      "name": {
+        "en": "Nothing new",
+        "mg": "tsy misy"
+      }
+    },
+    {
+      "id": "greet#18",
+      "name": {
+        "en": "Thank you (very much)!",
+        "mg": "misaotra betsaka!"
+      }
+    },
+    {
+      "id": "greet#19",
+      "name": {
+        "en": "You're welcome! (for \"thank you\")",
+        "mg": "tsy misy fisaorana!"
+      }
+    },
+    {
+      "id": "greet#20",
+      "name": {
+        "en": "My pleasure",
+        "mg": "tsy misy fisaorana!"
+      }
+    },
+    {
+      "id": "greet#21",
+      "name": {
+        "en": "Come in! (or: enter!)",
+        "mg": "mandrosoa ô/mandroso tompoko ô/mandrosoa tompoko ô!"
+      }
+    },
+    {
+      "id": "greet#22",
+      "name": {
+        "en": "Make yourself at home!",
+        "mg": "mirary anao ho tonga soa aman-tsara any an-trano!"
+      }
+    },
+    {
+      "id": "farewelll#0",
+      "name": {
+        "en": "Have a nice day!",
+        "mg": "mirary anao tontolo andro mahafinaritra!"
+      }
+    },
+    {
+      "id": "farewelll#1",
+      "name": {"en": "Good night!", "mg": "tsara mandry o!"}
+    },
+    {
+      "id": "farewelll#2",
+      "name": {
+        "en": "Good night and sweet dreams!",
+        "mg": "Tsara mandry dia manaova nofy tsara"
+      }
+    },
+    {
+      "id": "farewelll#3",
+      "name": {"en": "See you later!", "mg": "mandra-pihaona indray ary e!"}
+    },
+    {
+      "id": "farewelll#4",
+      "name": {"en": "See you soon!", "mg": "mandra-pihaona!"}
+    },
+    {
+      "id": "farewelll#5",
+      "name": {"en": "See you tomorrow!", "mg": "rahampitso indray ary e!"}
+    },
+    {"id": "farewelll#6", "name": {"en": "Good bye!", "mg": "veloma!"}},
+    {
+      "id": "farewelll#7",
+      "name": {"en": "Have a good trip!", "mg": "Soava dia!"}
+    },
+    {
+      "id": "farewelll#8",
+      "name": {"en": "I have to go", "mg": "tsy maintsy mandeha aho izao!"}
+    },
+    {
+      "id": "farewelll#9",
+      "name": {
+        "en": "I will be right back!",
+        "mg": "vetivety fotsiny/rehefa avy eo aho miverina eo!"
+      }
+    },
+
+    {
+      "id": "holiday-wishes#0",
+      "name": {"en": "Good luck!", "mg": "mirary soa e!"}
+    },
+    {
+      "id": "holiday-wishes#1",
+      "name": {
+        "en": "Happy birthday!",
+        "mg": "miarahaba anao nahatratra ny tsingerin-taona nahaterahanao!/tratry ny tsingerin-taona nahaterahanao!"
+      }
+    },
+    {
+      "id": "holiday-wishes#2",
+      "name": {
+        "en": "Happy new year!",
+        "mg": "tratry ny taona!/miarahaba anao nahatratra ny taona vaovao!"
+      }
+    },
+    {
+      "id": "holiday-wishes#3",
+      "name": {
+        "en": "Merry Christmas!",
+        "mg": "tratry ny Krismasy!/tratry ny Noely!"
+      }
+    },
+    {
+      "id": "holiday-wishes#4",
+      "name": {"en": "Happy Easter!", "mg": "tratry ny Paska"}
+    },
+    {
+      "id": "holiday-wishes#5",
+      "name": {"en": "Happy Pentecost!", "mg": "tratry ny Pantekosta!"}
+    },
+    {
+      "id": "holiday-wishes#6",
+      "name": {"en": "Congratulations!", "mg": "miarahaba anao!"}
+    },
+    {
+      "id": "holiday-wishes#7",
+      "name": {"en": "Enjoy! (or: bon appetit)", "mg": "mazotoa homana!"}
+    },
+    {
+      "id": "holiday-wishes#8",
+      "name": {
+        "en": "Bless you (when sneezing)",
+        "mg": "ho tonga amin'ny tanjona iriana!"
+      }
+    },
+    {
+      "id": "holiday-wishes#9",
+      "name": {"en": "Best wishes!", "mg": "mirary soa e!"}
+    },
+    {
+      "id": "holiday-wishes#10",
+      "name": {
+        "en": "Cheers! (or: to your health)",
+        "mg": "mirary fahasalamana e!"
+      }
+    },
+    {
+      "id": "holiday-wishes#11",
+      "name": {"en": "Accept my best wishes", "mg": "mirary soa indrindra e!"}
+    },
+
+    {
+      "id": "introductions#1",
+      "name": {"en": "What's your name?", "mg": "iza moa kay no anaranao?"}
+    },
+    {
+      "id": "introductions#2",
+      "name": {
+        "en": "My name is (John Doe)",
+        "mg": "ny anarako dia John Doe/John Doe"
+      }
+    },
+    {
+      "id": "introductions#3",
+      "name": {"en": "Nice to meet you!", "mg": "faly mahafantatra anao!"}
+    },
+    {
+      "id": "introductions#4",
+      "name": {"en": "Where are you from?", "mg": "avy aiza kay ianao?"}
+    },
+    {
+      "id": "introductions#5",
+      "name": {
+        "en": "I'm from (the U.S/ Madagascar)",
+        "mg": "avy any Etazonia/Madagasikara"
+      }
+    },
+    {
+      "id": "introductions#6",
+      "name": {
+        "en": "I'm (American/ Malagasy)",
+        "mg": "Amerikanina/Malagasy aho!"
+      }
+    },
+    {
+      "id": "introductions#7",
+      "name": {"en": "Where do you live?", "mg": "aiza kay ianao no mipetraka?"}
+    },
+    {
+      "id": "introductions#8",
+      "name": {
+        "en": "I live in (the U.S/ Madagascar)",
+        "mg": "Any Etazonia/Madagasikara"
+      }
+    },
+    {
+      "id": "introductions#9",
+      "name": {"en": "Do you like it here?", "mg": "tianao ve eto?"}
+    },
+    {
+      "id": "introductions#10",
+      "name": {
+        "en": "Madagascar is a beautiful country",
+        "mg": "Madagasikara dia tany mahafinaritra/maha-te-ho tia/tsara tarehy!"
+      }
+    },
+    {
+      "id": "introductions#11",
+      "name": {
+        "en": "What do you do for a living?",
+        "mg": "inona kay ny asa fivelomanao?"
+      }
+    },
+    {
+      "id": "introductions#12",
+      "name": {
+        "en": "I'm a (teacher/ student/ engineer)",
+        "mg": "Mpampianatra/mpianatra/injeniora aho!"
+      }
+    },
+    {
+      "id": "introductions#13",
+      "name": {
+        "en": "Do you speak (English/ Malagasy)?",
+        "mg": "Mahay miteny anglisy/malagasy ve ianao?"
+      }
+    },
+    {
+      "id": "introductions#14",
+      "name": {"en": "Just a little", "mg": "kely fotsiny(ihany)!"}
+    },
+    {
+      "id": "introductions#15",
+      "name": {"en": "I like Malagasy", "mg": "tiako ny teny malagasy!"}
+    },
+    {
+      "id": "introductions#16",
+      "name": {
+        "en": "I'm trying to learn Malagasy",
+        "mg": "miezaka mianatra ny teny malagasy aho!"
+      }
+    },
+    {
+      "id": "introductions#17",
+      "name": {"en": "It's a hard language", "mg": "sarotra io Teny io!"}
+    },
+    {
+      "id": "introductions#18",
+      "name": {"en": "It's an easy language", "mg": "mora io teny io!"}
+    },
+    {
+      "id": "introductions#19",
+      "name": {"en": "Oh! That's good!", "mg": "tsara izany!"}
+    },
+    {
+      "id": "introductions#20",
+      "name": {
+        "en": "Can I practice with you?",
+        "mg": "afaka manao fampiharana miaraka aminao ve aho?"
+      }
+    },
+    {
+      "id": "introductions#21",
+      "name": {
+        "en": "I will try my best to learn",
+        "mg": "hiezaka mafy farak'izay vitako aho hianatra!"
+      }
+    },
+    {
+      "id": "introductions#22",
+      "name": {"en": "How old are you?", "mg": "firy taona ianao?"}
+    },
+    {
+      "id": "introductions#23",
+      "name": {
+        "en": "I'm (twenty one, thirty two) years old",
+        "mg": "iray ka amby roapolo /roa amby telopolo taona aho!"
+      }
+    },
+    {
+      "id": "introductions#24",
+      "name": {
+        "en": "It was nice talking to you!",
+        "mg": "nahafinaritra ny niresaka taminao ka!"
+      }
+    },
+    {
+      "id": "introductions#25",
+      "name": {
+        "en": "It was nice meeting you!",
+        "mg": "faly mahafantatra anao!"
+      }
+    },
+    {
+      "id": "introductions#26",
+      "name": {
+        "en": "Mr.../ Mrs. .../ Miss...",
+        "mg": "ramose,,,/Madama,,,/ramatoa kely,,,"
+      }
+    },
+    {
+      "id": "introductions#27",
+      "name": {"en": "This is my wife", "mg": "izy no vadiko"}
+    },
+    {
+      "id": "introductions#28",
+      "name": {"en": "This is my husband", "mg": "izy no vadiko"}
+    },
+    {
+      "id": "introductions#29",
+      "name": {
+        "en": "Say hi to Thomas for me",
+        "mg": "ampitao an'i Thomas ny fiarahabako!"
+      }
+    },
+
+    {
+      "id": "romance#0",
+      "name": {
+        "en": "Are you free tomorrow evening?",
+        "mg": "malalaka ve ianao rahampitso hariva?"
+      }
+    },
+    {
+      "id": "romance#1",
+      "name": {
+        "en": "I would like to invite you to dinner",
+        "mg": "te -hanasa anao hiara-misakafo amiko aho!"
+      }
+    },
+    {
+      "id": "romance#2",
+      "name": {
+        "en": "You look beautiful! (to a woman)",
+        "mg": "tsara/kanto/meva ery izato ianao!"
+      }
+    },
+    {
+      "id": "romance#3",
+      "name": {
+        "en": "You have a beautiful name",
+        "mg": "tsara anarana ianao ka!"
+      }
+    },
+    {
+      "id": "romance#4",
+      "name": {
+        "en": "Can you tell me more about you?",
+        "mg": "afaka milaza misimisy kokoa momba anao amiko ve ianao?"
+      }
+    },
+    {
+      "id": "romance#5",
+      "name": {"en": "Are you married?", "mg": "manam-bady ve ianao?"}
+    },
+    {
+      "id": "romance#6",
+      "name": {"en": "I'm single", "mg": "tsy manam-bady aho"}
+    },
+    {"id": "romance#7", "name": {"en": "I'm married", "mg": "manam-bady aho"}},
+    {
+      "id": "romance#8",
+      "name": {
+        "en": "Can I have your phone number?",
+        "mg": "azoko raisina ve ny laharana findainao?"
+      }
+    },
+    {
+      "id": "romance#9",
+      "name": {
+        "en": "Can I have your email?",
+        "mg": "afaka omenao ahy ve ny emailanao?"
+      }
+    },
+    {
+      "id": "romance#10",
+      "name": {
+        "en": "Do you have any pictures of you?",
+        "mg": "misy sarinao ve any?"
+      }
+    },
+    {
+      "id": "romance#11",
+      "name": {"en": "Do you have children?", "mg": "manan-janaka?"}
+    },
+    {
+      "id": "romance#12",
+      "name": {
+        "en": "Would you like to go for a walk?",
+        "mg": "sao dia te-handehandeha ianao?"
+      }
+    },
+    {
+      "id": "romance#13",
+      "name": {"en": "I like you", "mg": "mahafinaritra ahy ianao"}
+    },
+    {"id": "romance#14", "name": {"en": "I love you", "mg": "tiako ianao"}},
+    {
+      "id": "romance#15",
+      "name": {"en": "You're very special!", "mg": "tena miavaka ianao!"}
+    },
+    {
+      "id": "romance#16",
+      "name": {"en": "You're very kind!", "mg": "tsara fanahy ianao!"}
+    },
+    {
+      "id": "romance#17",
+      "name": {"en": "I'm very happy", "mg": "faly be aho!"}
+    },
+    {
+      "id": "romance#18",
+      "name": {"en": "Would you marry me?", "mg": "hanam-bady ahy ve ianao?"}
+    },
+    {
+      "id": "romance#19",
+      "name": {"en": "I'm just kidding", "mg": "mananihany aho"}
+    },
+    {
+      "id": "romance#20",
+      "name": {"en": "I'm serious", "mg": "tena matotra aho"}
+    },
+    {
+      "id": "romance#21",
+      "name": {
+        "en": "My heart speaks the language of love",
+        "mg": "ny foko no miteny"
+      }
+    },
+
+    {
+      "id": "solving-misunderstanding#0",
+      "name": {"en": "Sorry! (or: I beg your pardon!)", "mg": "mifona!"}
+    },
+    {
+      "id": "solving-misunderstanding#1",
+      "name": {"en": "Sorry (for a mistake)", "mg": "azafady!"}
+    },
+    {
+      "id": "solving-misunderstanding#2",
+      "name": {"en": "No problem!", "mg": "tsy maninona!"}
+    },
+    {
+      "id": "solving-misunderstanding#3",
+      "name": {
+        "en": "Can you repeat please?",
+        "mg": "afaka averinao ve azafady?"
+      }
+    },
+    {
+      "id": "solving-misunderstanding#4",
+      "name": {
+        "en": "Can you speak slowly?",
+        "mg": "afaka miteny miadana kokoa ve ianao?"
+      }
+    },
+    {
+      "id": "solving-misunderstanding#5",
+      "name": {
+        "en": "Can you write it down?",
+        "mg": "afaka soratanao ve izany?"
+      }
+    },
+    {
+      "id": "solving-misunderstanding#6",
+      "name": {
+        "en": "Did you understand what I said?",
+        "mg": "azonao ve ilay tiako ho tenenina?"
+      }
+    },
+    {
+      "id": "solving-misunderstanding#7",
+      "name": {"en": "I don't understand!", "mg": "tsy azoko!"}
+    },
+    {
+      "id": "solving-misunderstanding#8",
+      "name": {"en": "I don't know!", "mg": "tsy haiko/tsy fantatro!"}
+    },
+    {
+      "id": "solving-misunderstanding#9",
+      "name": {
+        "en": "What's that called in Malagasy?",
+        "mg": "ahoana no fiantso an'io amin'ny teny malagasy?"
+      }
+    },
+    {
+      "id": "solving-misunderstanding#10",
+      "name": {
+        "en": "What does that word mean in English?",
+        "mg": "inona no dikan'izany amin'ny teny anglisy?"
+      }
+    },
+    {
+      "id": "solving-misunderstanding#11",
+      "name": {
+        "en": "How do you say \"thanks\" in Malagasy?",
+        "mg": "ahoana no fiteny hoe \"thank you\" amin'ny teny gasy?"
+      }
+    },
+    {
+      "id": "solving-misunderstanding#12",
+      "name": {"en": "What is this?", "mg": "inona ity?"}
+    },
+    {
+      "id": "solving-misunderstanding#13",
+      "name": {"en": "My Malagasy is bad", "mg": "ratsy be ny teny gasiko"}
+    },
+    {
+      "id": "solving-misunderstanding#14",
+      "name": {"en": "Don't worry!", "mg": "aza manahy!"}
+    },
+    {
+      "id": "solving-misunderstanding#15",
+      "name": {"en": "I agree with you", "mg": "miombon-kevitra aminao aho"}
+    },
+    {
+      "id": "solving-misunderstanding#16",
+      "name": {"en": "Is that right?", "mg": "marina ve izany?"}
+    },
+    {
+      "id": "solving-misunderstanding#17",
+      "name": {"en": "Is that wrong?", "mg": "diso ve izany?"}
+    },
+    {
+      "id": "solving-misunderstanding#18",
+      "name": {"en": "What should I say?", "mg": "inona no tokony hambarako?"}
+    },
+    {
+      "id": "solving-misunderstanding#19",
+      "name": {
+        "en": "I just need to practice",
+        "mg": "mila manao fampiharana fotsiny aho"
+      }
+    },
+    {
+      "id": "solving-misunderstanding#20",
+      "name": {
+        "en": "Your Malagasy is good",
+        "mg": "tsara ny fiteninao teny gasy/tsara ny teny gasinao"
+      }
+    },
+    {
+      "id": "solving-misunderstanding#21",
+      "name": {"en": "I have an accent", "mg": "mahay miteny ianao ka"}
+    },
+    {
+      "id": "solving-misunderstanding#22",
+      "name": {"en": "You don't have an accent", "mg": "tsy mahay miteny ianao"}
+    },
+
+    {
+      "id": "directions#0",
+      "name": {"en": "Excuse me! (before asking someone)", "mg": "azafady kay"}
+    },
+    {"id": "directions#1", "name": {"en": "I'm lost", "mg": "very aho"}},
+    {
+      "id": "directions#2",
+      "name": {"en": "Can you help me?", "mg": "afaka manampy ahy ve ianao?"}
+    },
+    {
+      "id": "directions#3",
+      "name": {"en": "Can I help you?", "mg": "afaka manampy anao ve aho?"}
+    },
+    {
+      "id": "directions#4",
+      "name": {"en": "I'm not from here", "mg": "tsy avy eto aho"}
+    },
+    {
+      "id": "directions#5",
+      "name": {
+        "en": "How can I get to (this place, this city)?",
+        "mg": "aiza kay ny làlana mankany amin'ny (anaran-toerana)?"
+      }
+    },
+    {
+      "id": "directions#6",
+      "name": {"en": "Go straight", "mg": "mizora amin'ity làlana ity"}
+    },
+    {"id": "directions#7", "name": {"en": "Then", "mg": "avy eo"}},
+    {
+      "id": "directions#8",
+      "name": {"en": "Turn left", "mg": "miviliàna mankany amin'ny ankavia"}
+    },
+    {
+      "id": "directions#9",
+      "name": {"en": "Turn right", "mg": "miviliàna mankany amin'ny ankavanana"}
+    },
+    {
+      "id": "directions#10",
+      "name": {"en": "Can you show me?", "mg": "afaka atoronao ahy ve?"}
+    },
+    {
+      "id": "directions#11",
+      "name": {"en": "I can show you!", "mg": "afaka atoroko anao ka!"}
+    },
+    {
+      "id": "directions#12",
+      "name": {"en": "Come with me!", "mg": "miarà amiko"}
+    },
+    {
+      "id": "directions#13",
+      "name": {
+        "en": "How long does it take to get there?",
+        "mg": "afaka adin'ny firy kay vao tonga eny?"
+      }
+    },
+    {
+      "id": "directions#14",
+      "name": {"en": "Downtown (city center)", "mg": "renivohitra"}
+    },
+    {
+      "id": "directions#15",
+      "name": {
+        "en": "Historic center (old city)",
+        "mg": "toerana manan-tantara"
+      }
+    },
+    {
+      "id": "directions#16",
+      "name": {"en": "It's near here", "mg": "eto akaiky eto"}
+    },
+    {
+      "id": "directions#17",
+      "name": {"en": "It's far from here", "mg": "lavitra eto"}
+    },
+    {
+      "id": "directions#18",
+      "name": {
+        "en": "Is it within walking distance?",
+        "mg": "tongako tongotra ve any?"
+      }
+    },
+    {
+      "id": "directions#19",
+      "name": {
+        "en": "I'm looking for Mr. Smith",
+        "mg": "mitady an'i Ramose Smith aho"
+      }
+    },
+    {
+      "id": "directions#20",
+      "name": {"en": "One moment please!", "mg": "miandrasa kely azafady"}
+    },
+    {
+      "id": "directions#21",
+      "name": {
+        "en": "Hold on please! (when on the phone)",
+        "mg": "miandrasa kely azafady"
+      }
+    },
+    {
+      "id": "directions#22",
+      "name": {"en": "He is not here", "mg": "tsy ato izy"}
+    },
+    {
+      "id": "directions#23",
+      "name": {"en": "Airport", "mg": "fiantsonan'ny fiara manidina"}
+    },
+    {
+      "id": "directions#24",
+      "name": {
+        "en": "Bus station",
+        "mg": "fiantsonan'ny fiara fitateram-bahoaka"
+      }
+    },
+    {
+      "id": "directions#25",
+      "name": {"en": "Train station", "mg": "fiantsonan'ny fiara an-dalam-by"}
+    },
+    {"id": "directions#26", "name": {"en": "Taxi", "mg": "fiara karetsaka"}},
+    {"id": "directions#27", "name": {"en": "Near", "mg": "akaiky"}},
+    {"id": "directions#28", "name": {"en": "Far", "mg": "alavitra"}},
+
+    {"id": "emergency#0", "name": {"en": "Help!", "mg": "mila fanampiana!"}},
+    {"id": "emergency#1", "name": {"en": "Stop!", "mg": "mijanona!"}},
+    {"id": "emergency#2", "name": {"en": "Fire!", "mg": "misy may ô!"}},
+    {"id": "emergency#3", "name": {"en": "Thief!", "mg": "mpangalatra ô!"}},
+    {"id": "emergency#4", "name": {"en": "Run!", "mg": "miazakazaha!"}},
+    {
+      "id": "emergency#5",
+      "name": {"en": "Watch out! (or: be alert!)", "mg": "mitandrema!"}
+    },
+    {
+      "id": "emergency#6",
+      "name": {"en": "Call the police!", "mg": "miantsoa paolisy!"}
+    },
+    {
+      "id": "emergency#7",
+      "name": {"en": "Call a doctor!", "mg": "miantsoa dokotera!"}
+    },
+    {
+      "id": "emergency#8",
+      "name": {
+        "en": "Call the ambulance!",
+        "mg": "miantsoa fiara mpamonjy voina"
+      }
+    },
+    {
+      "id": "emergency#9",
+      "name": {"en": "Are you okay?", "mg": "salama ve ianao?"}
+    },
+    {"id": "emergency#10", "name": {"en": "I feel sick", "mg": "marary aho"}},
+    {
+      "id": "emergency#11",
+      "name": {"en": "I need a doctor", "mg": "mila dokotera aho!"}
+    },
+    {"id": "emergency#12", "name": {"en": "Accident", "mg": "loza"}},
+    {
+      "id": "emergency#13",
+      "name": {"en": "Food poisoning", "mg": "sakafo lany andro"}
+    },
+    {
+      "id": "emergency#14",
+      "name": {
+        "en": "Where is the closest pharmacy?",
+        "mg": "aiza kay ny trano fivarotam-panafody akaiky indrindra?"
+      }
+    },
+    {
+      "id": "emergency#15",
+      "name": {"en": "It hurts here", "mg": "maratra/marary eto"}
+    },
+    {
+      "id": "emergency#16",
+      "name": {"en": "It's urgent!", "mg": "tena maika be!"}
+    },
+    {
+      "id": "emergency#17",
+      "name": {"en": "Calm down!", "mg": "aza matahotra!"}
+    },
+    {
+      "id": "emergency#18",
+      "name": {"en": "You will be okay!", "mg": "ho sitrana ianao!"}
+    },
+    {
+      "id": "emergency#19",
+      "name": {"en": "Can you help me?", "mg": "afaka manampy ahy ve ianao?"}
+    },
+    {
+      "id": "emergency#20",
+      "name": {"en": "Can I help you?", "mg": "afaka manampy anao ve aho?"}
+    },
+
+    {
+      "id": "hotel-travel#0",
+      "name": {
+        "en": "I have a reservation (for a room)",
+        "mg": "efa namandrika toerana aho"
+      }
+    },
+    {
+      "id": "hotel-travel#1",
+      "name": {
+        "en": "Do you have rooms available?",
+        "mg": "misy efitrano tsy misy mampiasa ve ato?"
+      }
+    },
+    {
+      "id": "hotel-travel#2",
+      "name": {
+        "en": "With shower / With bathroom",
+        "mg": "miaraka amin'ny trano fidiovana?"
+      }
+    },
+    {
+      "id": "hotel-travel#3",
+      "name": {
+        "en": "I would like a non-smoking room",
+        "mg": "ny ilaiko dia efitrano tsy azo ifohana sigara"
+      }
+    },
+    {
+      "id": "hotel-travel#4",
+      "name": {
+        "en": "What is the charge per night?",
+        "mg": "Hoatrinona isaky ny alina kay ny hofan-trano?"
+      }
+    },
+    {
+      "id": "hotel-travel#5",
+      "name": {
+        "en": "I'm here on business /on vacation",
+        "mg": "miasa no ataoko eto/miala sasatra no ataoko eto"
+      }
+    },
+    {"id": "hotel-travel#6", "name": {"en": "Dirty", "mg": "maloto"}},
+    {"id": "hotel-travel#7", "name": {"en": "Clean", "mg": "madio"}},
+    {
+      "id": "hotel-travel#8",
+      "name": {
+        "en": "Do you accept credit cards?",
+        "mg": "mandray \"cartes de crédit\" ve ianareo?"
+      }
+    },
+    {
+      "id": "hotel-travel#9",
+      "name": {"en": "I'd like to rent a car", "mg": "mba te-hanofa fiara aho"}
+    },
+    {
+      "id": "hotel-travel#10",
+      "name": {
+        "en": "How much will it cost?",
+        "mg": "hoatrinona kay izao izany?"
+      }
+    },
+    {
+      "id": "hotel-travel#11",
+      "name": {
+        "en": "A table for (one / two) please!",
+        "mg": "latabatra hoan'olona iray/ho an'olon-droa azafady!"
+      }
+    },
+    {
+      "id": "hotel-travel#12",
+      "name": {"en": "Is this seat taken?", "mg": "misy mipetraka ve eto?"}
+    },
+    {
+      "id": "hotel-travel#13",
+      "name": {
+        "en": "I'm vegetarian",
+        "mg": "tsy mihinana hena aho fa legioma fotsiny!"
+      }
+    },
+    {
+      "id": "hotel-travel#14",
+      "name": {"en": "I don't eat pork", "mg": "tsy mihinana kisoa aho"}
+    },
+    {
+      "id": "hotel-travel#15",
+      "name": {
+        "en": "I don't drink alcohol",
+        "mg": "tsy misotro (zava-pisotro misy alkôla) aho"
+      }
+    },
+    {
+      "id": "hotel-travel#16",
+      "name": {
+        "en": "What's the name of this dish?",
+        "mg": "inona no anaran'io sakafo io?"
+      }
+    },
+    {
+      "id": "hotel-travel#17",
+      "name": {"en": "Waiter / waitress!", "mg": "ô ry se a!"}
+    },
+    {
+      "id": "hotel-travel#18",
+      "name": {
+        "en": "Can we have the check please?",
+        "mg": "afaka alaina ve ny \"addition\" azafady?"
+      }
+    },
+    {
+      "id": "hotel-travel#19",
+      "name": {"en": "It is very delicious!", "mg": "tena matsiro ka!"}
+    },
+    {
+      "id": "hotel-travel#20",
+      "name": {"en": "I don't like it", "mg": "tsy tiako!"}
+    },
+    {
+      "id": "hotel-travel#21",
+      "name": {
+        "en": "Shopping Expressions",
+        "mg": "Fomba fiteny rehefa hiantsena"
+      }
+    },
+    {
+      "id": "hotel-travel#22",
+      "name": {"en": "How much is this?", "mg": "hoatrinona kay ito?"}
+    },
+    {
+      "id": "hotel-travel#23",
+      "name": {"en": "I'm just looking", "mg": "mbola vao mijerijery!"}
+    },
+    {
+      "id": "hotel-travel#24",
+      "name": {"en": "I don't have change", "mg": "tsy mana-majinika aho"}
+    },
+    {
+      "id": "hotel-travel#25",
+      "name": {"en": "This is too expensive", "mg": "lafo loatra izany"}
+    },
+    {"id": "hotel-travel#26", "name": {"en": "Expensive", "mg": "lafo"}},
+    {"id": "hotel-travel#27", "name": {"en": "Cheap", "mg": "mora"}},
+
+    {
+      "id": "daily-exp#0",
+      "name": {"en": "What time is it?", "mg": "amin'ny firy izao?"}
+    },
+    {
+      "id": "daily-exp#1",
+      "name": {"en": "It's 3 o'clock", "mg": "amin'ny telo ora tolakandro"}
+    },
+    {
+      "id": "daily-exp#2",
+      "name": {"en": "Give me this!", "mg": "ento aty iny ho anà!"}
+    },
+    {
+      "id": "daily-exp#3",
+      "name": {"en": "Are you sure?", "mg": "mino an'izany ve ianao?"}
+    },
+    {
+      "id": "daily-exp#4",
+      "name": {"en": "Take this! (when giving something)", "mg": "alaivo ito!"}
+    },
+    {
+      "id": "daily-exp#5",
+      "name": {
+        "en": "It's freezing (weather)",
+        "mg": "tena mangatsiaka be mihitsy!"
+      }
+    },
+    {
+      "id": "daily-exp#6",
+      "name": {"en": "It's cold (weather)", "mg": "mangatsiaka aho!"}
+    },
+    {
+      "id": "daily-exp#7",
+      "name": {"en": "It's hot (weather)", "mg": "mafana aho!"}
+    },
+    {
+      "id": "daily-exp#8",
+      "name": {"en": "Do you like it?", "mg": "tianao ve io?"}
+    },
+    {
+      "id": "daily-exp#9",
+      "name": {"en": "I really like it!", "mg": "tena tiako!"}
+    },
+    {"id": "daily-exp#10", "name": {"en": "I'm hungry", "mg": "noana aho!"}},
+    {
+      "id": "daily-exp#11",
+      "name": {"en": "I'm thirsty", "mg": "mangetaheta aho!"}
+    },
+    {
+      "id": "daily-exp#12",
+      "name": {"en": "He is funny", "mg": "mampiomehy izy"}
+    },
+    {
+      "id": "daily-exp#13",
+      "name": {"en": "In The Morning", "mg": "amin'ny maraina"}
+    },
+    {
+      "id": "daily-exp#14",
+      "name": {"en": "In the evening", "mg": "amin'ny hariva"}
+    },
+    {"id": "daily-exp#15", "name": {"en": "At Night", "mg": "amin'ny alina"}},
+    {"id": "daily-exp#16", "name": {"en": "Hurry up!", "mg": "haingana!!"}},
+
+    {
+      "id": "cuss-words-polite#0",
+      "name": {
+        "en": "This is nonsense! (or: this is craziness)",
+        "mg": "miteniteny foana tss!!tsy misy dikany tss,!"
+      }
+    },
+    {
+      "id": "cuss-words-polite#1",
+      "name": {"en": "My God! (to show amazement)", "mg": "Andriamanitra ô!"}
+    },
+    {
+      "id": "cuss-words-polite#2",
+      "name": {"en": "Oh gosh! (when making a mistake)", "mg": "andrekaky ô!"}
+    },
+    {
+      "id": "cuss-words-polite#3",
+      "name": {"en": "It sucks! (or: this is not good)", "mg": "tsy tsara"}
+    },
+    {
+      "id": "cuss-words-polite#4",
+      "name": {
+        "en": "What's wrong with you?",
+        "mg": "fa inona kay no tsy mety any aminao?"
+      }
+    },
+    {
+      "id": "cuss-words-polite#5",
+      "name": {
+        "en": "Are you crazy?",
+        "mg": "fa angaha adala ianao?/adala angaha ianao?"
+      }
+    },
+    {
+      "id": "cuss-words-polite#6",
+      "name": {"en": "Get lost! (or: go away!)", "mg": "ndana mandeha any!"}
+    },
+    {
+      "id": "cuss-words-polite#7",
+      "name": {"en": "Leave me alone!", "mg": "ndana mandeha any!"}
+    },
+    {
+      "id": "cuss-words-polite#8",
+      "name": {"en": "I'm not interested!", "mg": "tsy mahaliana ahy!"}
+    },
+
+    {
+      "id": "writing-letter#0",
+      "name": {"en": "Dear John", "mg": "Ho an' i John"}
+    },
+    {
+      "id": "writing-letter#1",
+      "name": {
+        "en": "My trip was very nice",
+        "mg": "nahafinaritra ny fizahan toerana nataoko tany"
+      }
+    },
+    {
+      "id": "writing-letter#2",
+      "name": {
+        "en": "The culture and people were very interesting",
+        "mg": "nahaliana be ny kolon-tsaina sy ny olona tany!"
+      }
+    },
+    {
+      "id": "writing-letter#3",
+      "name": {
+        "en": "I had a good time with you",
+        "mg": "nahafinaritra tokoa ny fotoana niarahantsika!"
+      }
+    },
+    {
+      "id": "writing-letter#4",
+      "name": {
+        "en": "I would love to visit your country again",
+        "mg": "mbola maniry ny hitsidika ny firenenao indray aho"
+      }
+    },
+    {
+      "id": "writing-letter#5",
+      "name": {
+        "en": "Don't forget to write me back from time to time",
+        "mg": "aza adino ny manoratra ahy matetitetika an!"
+      }
+    },
+
+    {"id": "short-random#0", "name": {"en": "Good", "mg": "tsara"}},
+    {"id": "short-random#1", "name": {"en": "Bad", "mg": "ratsy"}},
+    {
+      "id": "short-random#2",
+      "name": {"en": "So-so (or: not bad not good)", "mg": "eo ho eo ihany!"}
+    },
+    {"id": "short-random#3", "name": {"en": "Big", "mg": "ngeza/lehibe"}},
+    {"id": "short-random#4", "name": {"en": "Small", "mg": "kely"}},
+    {"id": "short-random#5", "name": {"en": "Today", "mg": "anio/androany"}},
+    {"id": "short-random#6", "name": {"en": "Now", "mg": "izao"}},
+    {"id": "short-random#7", "name": {"en": "Tomorrow", "mg": "rahampitso"}},
+    {"id": "short-random#8", "name": {"en": "Yesterday", "mg": "omaly"}},
+    {"id": "short-random#9", "name": {"en": "Yes", "mg": "eny"}},
+    {"id": "short-random#10", "name": {"en": "No", "mg": "tsia"}},
+    {"id": "short-random#11", "name": {"en": "Fast", "mg": "haingana"}},
+    {"id": "short-random#12", "name": {"en": "Slow", "mg": "miadana"}},
+    {"id": "short-random#13", "name": {"en": "Hot", "mg": "mafana"}},
+    {"id": "short-random#14", "name": {"en": "Cold", "mg": "mangatsiaka"}},
+    {"id": "short-random#15", "name": {"en": "This", "mg": "ity"}},
+    {"id": "short-random#16", "name": {"en": "That", "mg": "ito"}},
+    {"id": "short-random#17", "name": {"en": "Here", "mg": "eto/ity"}},
+    {"id": "short-random#18", "name": {"en": "There", "mg": "ery"}},
+    {
+      "id": "short-random#19",
+      "name": {"en": "Me (ie. Who did this? - Me)", "mg": "izaho/'zaho"}
+    },
+    {"id": "short-random#20", "name": {"en": "You", "mg": "ianao"}},
+    {"id": "short-random#21", "name": {"en": "Him", "mg": "izy"}},
+    {"id": "short-random#22", "name": {"en": "Her", "mg": "izy"}},
+    {"id": "short-random#23", "name": {"en": "Us", "mg": "isika/tsika"}},
+    {"id": "short-random#24", "name": {"en": "Them", "mg": "zareo"}},
+    {"id": "short-random#25", "name": {"en": "Really?", "mg": "zany ve?"}},
+    {"id": "short-random#26", "name": {"en": "Look!", "mg": "jereo anie e!"}},
+    {"id": "short-random#27", "name": {"en": "What?", "mg": "inona?"}},
+    {"id": "short-random#28", "name": {"en": "Where?", "mg": "aiza?"}},
+    {"id": "short-random#29", "name": {"en": "Who?", "mg": "iza?"}},
+    {
+      "id": "short-random#30",
+      "name": {"en": "How?", "mg": "amin'ny fomba ahoana?/ahoana?"}
+    },
+    {
+      "id": "short-random#31",
+      "name": {"en": "When?", "mg": "oviana?rahoviana?"}
+    },
+    {
+      "id": "short-random#32",
+      "name": {"en": "Why?", "mg": "(fa) maninona?nahoana?"}
+    },
+    {"id": "short-random#33", "name": {"en": "Zero", "mg": "aotra"}},
+    {"id": "short-random#34", "name": {"en": "One", "mg": "iray"}},
+    {"id": "short-random#35", "name": {"en": "Two", "mg": "roa"}},
+    {"id": "short-random#36", "name": {"en": "Three", "mg": "telo"}},
+    {"id": "short-random#37", "name": {"en": "Four", "mg": "efatra"}},
+    {"id": "short-random#38", "name": {"en": "Five", "mg": "dimy"}},
+    {"id": "short-random#39", "name": {"en": "Six", "mg": "enina"}},
+    {"id": "short-random#40", "name": {"en": "Seven", "mg": "fito"}},
+    {"id": "short-random#41", "name": {"en": "Eight", "mg": "valo"}},
+    {"id": "short-random#42", "name": {"en": "Nine", "mg": "sivy"}},
+    {"id": "short-random#43", "name": {"en": "Ten", "mg": "folo"}},
+
+    {"id": "pronouns-only#1", "name": {"en": "I", "mg": "izaho"}},
+    {"id": "pronouns-only#2", "name": {"en": "you", "mg": "ianao"}},
+    {"id": "pronouns-only#3", "name": {"en": "he", "mg": "izy"}},
+    {"id": "pronouns-only#4", "name": {"en": "she", "mg": "izy"}},
+    {"id": "pronouns-only#5", "name": {"en": "we", "mg": "isika"}},
+    {"id": "pronouns-only#6", "name": {"en": "they", "mg": "izy ireo/zareo"}},
+    {"id": "pronouns-only#7", "name": {"en": "me", "mg": "izaho"}},
+    {"id": "pronouns-only#8", "name": {"en": "you", "mg": "ianao"}},
+    {"id": "pronouns-only#9", "name": {"en": "him", "mg": "izy"}},
+    {"id": "pronouns-only#10", "name": {"en": "her", "mg": "izy"}},
+    {"id": "pronouns-only#11", "name": {"en": "us", "mg": "isika/tsika"}},
+    {"id": "pronouns-only#12", "name": {"en": "them", "mg": "izy ireo/zareo"}},
+    {"id": "pronouns-only#13", "name": {"en": "my", "mg": "ny -ko"}},
+    {"id": "pronouns-only#14", "name": {"en": "your", "mg": "ny -nao"}},
+    {"id": "pronouns-only#15", "name": {"en": "his", "mg": "ny -niny"}},
+    {"id": "pronouns-only#16", "name": {"en": "her", "mg": "ny -niny"}},
+    {"id": "pronouns-only#17", "name": {"en": "our", "mg": "ny -tsika"}},
+    {"id": "pronouns-only#18", "name": {"en": "their", "mg": "ny -nareo"}},
+    {"id": "pronouns-only#19", "name": {"en": "mine", "mg": "ahy"}},
+    {"id": "pronouns-only#20", "name": {"en": "yours", "mg": "anao"}},
+    {"id": "pronouns-only#21", "name": {"en": "his", "mg": "azy"}},
+    {"id": "pronouns-only#22", "name": {"en": "hers", "mg": "azy"}},
+    {"id": "pronouns-only#23", "name": {"en": "ours", "mg": "antsika"}},
+    {"id": "pronouns-only#24", "name": {"en": "theirs", "mg": "azy ireo"}},
+
+    {"id": "pronouns-in-use#1", "name": {"en": "I speak", "mg": "miteny aho"}},
+    {
+      "id": "pronouns-in-use#2",
+      "name": {"en": "you speak", "mg": "miteny ianao"}
+    },
+    {
+      "id": "pronouns-in-use#3",
+      "name": {"en": "he speaks", "mg": "miteny izy"}
+    },
+    {
+      "id": "pronouns-in-use#4",
+      "name": {"en": "she speaks", "mg": "miteny izy"}
+    },
+    {
+      "id": "pronouns-in-use#5",
+      "name": {"en": "we speak", "mg": "miteny isika"}
+    },
+    {
+      "id": "pronouns-in-use#6",
+      "name": {"en": "they speak", "mg": "miteny izy ireo"}
+    },
+    {"id": "pronouns-in-use#7", "name": {"en": "give me", "mg": "omeo aho"}},
+    {"id": "pronouns-in-use#8", "name": {"en": "omeo izy", "mg": ""}},
+    {"id": "pronouns-in-use#9", "name": {"en": "give him", "mg": "omeo izy"}},
+    {"id": "pronouns-in-use#10", "name": {"en": "give her", "mg": "omeo izy"}},
+    {
+      "id": "pronouns-in-use#11",
+      "name": {"en": "give us", "mg": "omeo izahay"}
+    },
+    {
+      "id": "pronouns-in-use#12",
+      "name": {"en": "give them", "mg": "omeo izy ireo"}
+    },
+    {"id": "pronouns-in-use#13", "name": {"en": "my book", "mg": "ny bokiko"}},
+    {
+      "id": "pronouns-in-use#14",
+      "name": {"en": "your book", "mg": "ny bokinao"}
+    },
+    {"id": "pronouns-in-use#15", "name": {"en": "his book", "mg": "ny bokiny"}},
+    {"id": "pronouns-in-use#16", "name": {"en": "her book", "mg": "ny bokiny"}},
+    {
+      "id": "pronouns-in-use#17",
+      "name": {"en": "our book", "mg": "ny bokintsika"}
+    },
+    {
+      "id": "pronouns-in-use#18",
+      "name": {"en": "their book", "mg": "ny bokiny"}
+    },
+
+    {"id": "questions#0", "name": {"en": "how?", "mg": "ahoana?"}},
+    {"id": "questions#1", "name": {"en": "what?", "mg": "inona?"}},
+    {"id": "questions#2", "name": {"en": "who?", "mg": "iza?"}},
+    {"id": "questions#3", "name": {"en": "why?", "mg": "maninona/nahoana"}},
+    {"id": "questions#4", "name": {"en": "where?", "mg": "aiza?"}},
+    {"id": "questions#5", "name": {"en": "where is he?", "mg": "aiza izy?"}},
+    {"id": "questions#6", "name": {"en": "what is this?", "mg": "inona ito?"}},
+    {
+      "id": "questions#7",
+      "name": {"en": "why are you sad?", "mg": "fa maninona ianao no malahelo?"}
+    },
+    {
+      "id": "questions#8",
+      "name": {
+        "en": "how do you want to pay?",
+        "mg": "ahoana no tianao handoavana azy?"
+      }
+    },
+    {
+      "id": "questions#9",
+      "name": {"en": "can I come?", "mg": "afaka tonga ve aho?"}
+    },
+    {
+      "id": "questions#10",
+      "name": {"en": "is he sleeping?", "mg": "matory va izy?"}
+    },
+    {
+      "id": "questions#11",
+      "name": {"en": "do you know me?", "mg": "fantatrao va izaho?"}
+    },
+    {
+      "id": "questions#12",
+      "name": {"en": "do you have my book?", "mg": "anananao va ny bokiko?"}
+    },
+    {
+      "id": "questions#13",
+      "name": {"en": "how big is it?", "mg": "tahaka ny ahoana ny halehibeny?"}
+    },
+    {
+      "id": "questions#14",
+      "name": {"en": "can I help you?", "mg": "afaka manampy anao ve aho?"}
+    },
+    {
+      "id": "questions#15",
+      "name": {"en": "can you help me?", "mg": "afaka manampy ahy ve ianao?"}
+    },
+    {
+      "id": "questions#16",
+      "name": {"en": "do you speak English?", "mg": "miteny anglisy ve ianao?"}
+    },
+    {
+      "id": "questions#17",
+      "name": {"en": "how far is this?", "mg": "aiza izany?"}
+    },
+    {
+      "id": "questions#18",
+      "name": {"en": "what time is it?", "mg": "amin'ny firy izao?"}
+    },
+    {
+      "id": "questions#19",
+      "name": {"en": "how much is this?", "mg": "hoatrinona ito?"}
+    },
+    {
+      "id": "questions#20",
+      "name": {"en": "what is your name?", "mg": "iza ny anaranao?"}
+    },
+    {
+      "id": "questions#21",
+      "name": {"en": "where do you live?", "mg": "aiza ianao no mipetraka?"}
+    },
+
+    {"id": "negation#0", "name": {"en": "he is not here", "mg": "tsy ato izy"}},
+    {
+      "id": "negation#1",
+      "name": {"en": "that is not my book", "mg": "tsy bokiko ito"}
+    },
+    {"id": "negation#2", "name": {"en": "do not enter", "mg": "aza miditra"}},
+    {
+      "id": "negation#3",
+      "name": {"en": "I don't speak", "mg": "tsy miteny aho"}
+    },
+    {
+      "id": "negation#4",
+      "name": {"en": "I don't write", "mg": "tsy manoratra aho"}
+    },
+    {
+      "id": "negation#5",
+      "name": {
+        "en": "I don't drive",
+        "mg": "tsy mamily aho/tsy miltondra fiara aho"
+      }
+    },
+    {"id": "negation#6", "name": {"en": "I don't love", "mg": "tsy tiako"}},
+    {"id": "negation#7", "name": {"en": "I don't give", "mg": "tsy homeko"}},
+    {
+      "id": "negation#8",
+      "name": {"en": "I don't smile", "mg": "tsy mitsiky aho"}
+    },
+    {"id": "negation#9", "name": {"en": "I don't take", "mg": "tsy alaiko"}},
+    {
+      "id": "negation#10",
+      "name": {"en": "he doesn't speak", "mg": "tsy miteny izy"}
+    },
+    {
+      "id": "negation#11",
+      "name": {"en": "he doesn't write", "mg": "tsy manoratra izy"}
+    },
+    {
+      "id": "negation#12",
+      "name": {"en": "he doesn't drive", "mg": "tsy mitondra izy"}
+    },
+    {"id": "negation#13", "name": {"en": "he doesn't love", "mg": "tsy tiany"}},
+    {"id": "negation#14", "name": {"en": "he doesn't give", "mg": "tsy omeny"}},
+    {
+      "id": "negation#15",
+      "name": {"en": "he doesn't smile", "mg": "tsy mitsiky izy"}
+    },
+    {
+      "id": "negation#16",
+      "name": {"en": "he doesn't take", "mg": "tsy alainy"}
+    },
+    {
+      "id": "negation#17",
+      "name": {"en": "we don't speak", "mg": "tsy miteny izahay"}
+    },
+    {
+      "id": "negation#18",
+      "name": {"en": "we don't write", "mg": "tsy manoratra izahay"}
+    },
+    {
+      "id": "negation#19",
+      "name": {"en": "we don't drive", "mg": "tsy mamily izahay"}
+    },
+    {"id": "negation#20", "name": {"en": "we don't love", "mg": "tsy tianay"}},
+    {"id": "negation#21", "name": {"en": "we don't give", "mg": "tsy omenay"}},
+    {
+      "id": "negation#22",
+      "name": {"en": "we don't smile", "mg": "tsy mitsiky izahay"}
+    },
+    {"id": "negation#23", "name": {"en": "we don't take", "mg": "tsy alainay"}},
+
+    {
+      "id": "prepositions-single#0",
+      "name": {"en": "inside the house", "mg": "ao anaty trano"}
+    },
+    {
+      "id": "prepositions-single#1",
+      "name": {"en": "outside the car", "mg": "ivelan'ny fiara"}
+    },
+    {
+      "id": "prepositions-single#2",
+      "name": {"en": "with me", "mg": "miaraka amiko"}
+    },
+    {
+      "id": "prepositions-single#3",
+      "name": {"en": "without him", "mg": "tsy miaraka aminy"}
+    },
+    {
+      "id": "prepositions-single#4",
+      "name": {"en": "under the table", "mg": "ao ambany latabatra"}
+    },
+    {
+      "id": "prepositions-single#5",
+      "name": {"en": "after tomorrow", "mg": "rafaka ampitso"}
+    },
+    {
+      "id": "prepositions-single#6",
+      "name": {"en": "before sunset", "mg": "alohan'ny filentehan'ny masoandro"}
+    },
+    {
+      "id": "prepositions-single#7",
+      "name": {"en": "but I'm busy", "mg": "ka sahirana aho"}
+    },
+    {"id": "prepositions-single#8", "name": {"en": "about", "mg": "mikasika"}},
+    {"id": "prepositions-single#9", "name": {"en": "above", "mg": "ambony"}},
+    {
+      "id": "prepositions-single#10",
+      "name": {"en": "across", "mg": "manerana"}
+    },
+    {"id": "prepositions-single#11", "name": {"en": "after", "mg": "aoriana"}},
+    {
+      "id": "prepositions-single#12",
+      "name": {"en": "against", "mg": "mifanohitra"}
+    },
+    {"id": "prepositions-single#13", "name": {"en": "among", "mg": "amin'"}},
+    {
+      "id": "prepositions-single#14",
+      "name": {"en": "around", "mg": "manodidina"}
+    },
+    {"id": "prepositions-single#15", "name": {"en": "as", "mg": "tahaka"}},
+    {"id": "prepositions-single#16", "name": {"en": "at", "mg": "any"}},
+    {"id": "prepositions-single#17", "name": {"en": "before", "mg": "aloha"}},
+    {"id": "prepositions-single#18", "name": {"en": "behind", "mg": "aoriana"}},
+    {"id": "prepositions-single#19", "name": {"en": "below", "mg": "ambany"}},
+    {"id": "prepositions-single#20", "name": {"en": "beneath", "mg": "ambany"}},
+    {"id": "prepositions-single#21", "name": {"en": "beside", "mg": "akaiky"}},
+    {
+      "id": "prepositions-single#22",
+      "name": {"en": "between", "mg": "ampovoany"}
+    },
+    {
+      "id": "prepositions-single#23",
+      "name": {"en": "beyond", "mg": "alavitra"}
+    },
+    {"id": "prepositions-single#24", "name": {"en": "but", "mg": "ka"}},
+    {
+      "id": "prepositions-single#25",
+      "name": {"en": "by", "mg": "amin'ny alalan'ny"}
+    },
+    {"id": "prepositions-single#26", "name": {"en": "despite", "mg": "na dia"}},
+    {"id": "prepositions-single#27", "name": {"en": "down", "mg": "ambany"}},
+    {
+      "id": "prepositions-single#28",
+      "name": {"en": "during", "mg": "nandritra"}
+    },
+    {
+      "id": "prepositions-single#29",
+      "name": {"en": "except", "mg": "ankoatry ny"}
+    },
+    {"id": "prepositions-single#30", "name": {"en": "for", "mg": "noho"}},
+    {"id": "prepositions-single#31", "name": {"en": "from", "mg": "avy amin'"}},
+    {"id": "prepositions-single#32", "name": {"en": "in", "mg": "anaty"}},
+    {"id": "prepositions-single#33", "name": {"en": "inside", "mg": "anaty"}},
+    {"id": "prepositions-single#34", "name": {"en": "into", "mg": "anaty"}},
+    {"id": "prepositions-single#35", "name": {"en": "near", "mg": "akaiky"}},
+    {"id": "prepositions-single#36", "name": {"en": "next", "mg": "akaiky"}},
+    {"id": "prepositions-single#37", "name": {"en": "of", "mg": "ny"}},
+    {"id": "prepositions-single#38", "name": {"en": "on", "mg": "ambony"}},
+    {
+      "id": "prepositions-single#39",
+      "name": {"en": "opposite", "mg": "mifanohitra"}
+    },
+    {"id": "prepositions-single#40", "name": {"en": "out", "mg": "ivelan'ny"}},
+    {
+      "id": "prepositions-single#41",
+      "name": {"en": "outside", "mg": "ivelan'ny"}
+    },
+    {"id": "prepositions-single#42", "name": {"en": "over", "mg": "manerana"}},
+    {"id": "prepositions-single#43", "name": {"en": "per", "mg": "isaky ny"}},
+    {"id": "prepositions-single#44", "name": {"en": "plus", "mg": "manampy"}},
+    {"id": "prepositions-single#45", "name": {"en": "round", "mg": ""}},
+    {
+      "id": "prepositions-single#46",
+      "name": {"en": "since", "mg": "nanomboka"}
+    },
+    {"id": "prepositions-single#47", "name": {"en": "than", "mg": "noho"}},
+    {
+      "id": "prepositions-single#48",
+      "name": {"en": "through", "mg": "amin'ny alalan'ny"}
+    },
+    {"id": "prepositions-single#49", "name": {"en": "till", "mg": "hatramin'"}},
+    {"id": "prepositions-single#50", "name": {"en": "to", "mg": "hatrany"}},
+    {
+      "id": "prepositions-single#51",
+      "name": {"en": "toward", "mg": "mikasika"}
+    },
+    {"id": "prepositions-single#52", "name": {"en": "under", "mg": "ambany"}},
+    {
+      "id": "prepositions-single#53",
+      "name": {"en": "unlike", "mg": "tsy tahaka"}
+    },
+    {
+      "id": "prepositions-single#54",
+      "name": {"en": "until", "mg": "hatramin'ny"}
+    },
+    {"id": "prepositions-single#55", "name": {"en": "up", "mg": "hatramin'ny"}},
+    {
+      "id": "prepositions-single#56",
+      "name": {"en": "via", "mg": "amin'ny alalan'ny"}
+    },
+    {"id": "prepositions-single#57", "name": {"en": "with", "mg": "miaraka"}},
+    {"id": "prepositions-single#58", "name": {"en": "within", "mg": "anaty"}},
+    {
+      "id": "prepositions-single#59",
+      "name": {"en": "without", "mg": "tsy miaraka"}
+    },
+    {
+      "id": "prepositions-two-words#0",
+      "name": {"en": "according to", "mg": "amiko"}
+    },
+    {
+      "id": "prepositions-two-words#1",
+      "name": {"en": "because of", "mg": "noho ny"}
+    },
+    {
+      "id": "prepositions-two-words#2",
+      "name": {"en": "close to", "mg": "akaikin'"}
+    },
+    {
+      "id": "prepositions-two-words#3",
+      "name": {"en": "due to", "mg": "noho ny"}
+    },
+    {
+      "id": "prepositions-two-words#4",
+      "name": {"en": "except for", "mg": "ankoatry ny"}
+    },
+    {
+      "id": "prepositions-two-words#5",
+      "name": {"en": "far from", "mg": "lavitra"}
+    },
+    {
+      "id": "prepositions-two-words#6",
+      "name": {"en": "inside of", "mg": "anaty"}
+    },
+    {
+      "id": "prepositions-two-words#7",
+      "name": {"en": "instead of", "mg": "toy izay"}
+    },
+    {
+      "id": "prepositions-two-words#8",
+      "name": {"en": "near to", "mg": "akaikin'"}
+    },
+    {
+      "id": "prepositions-two-words#9",
+      "name": {"en": "next to", "mg": "akaikin'"}
+    },
+    {
+      "id": "prepositions-two-words#10",
+      "name": {"en": "outside of", "mg": "ivelan'ny"}
+    },
+    {
+      "id": "prepositions-two-words#11",
+      "name": {"en": "prior to", "mg": "teo aloha/taloha"}
+    },
+    {
+      "id": "prepositions-three-words#0",
+      "name": {"en": "as far as", "mg": "raha miresaka mikasika ny"}
+    },
+    {
+      "id": "prepositions-three-words#1",
+      "name": {"en": "as well as", "mg": "tahaka izany ihany koa"}
+    },
+    {
+      "id": "prepositions-three-words#2",
+      "name": {"en": "in addition to", "mg": "ankoatr'izany"}
+    },
+    {
+      "id": "prepositions-three-words#3",
+      "name": {"en": "in front of", "mg": "eo anoloan'ny/manoloana ny"}
+    },
+    {
+      "id": "prepositions-three-words#4",
+      "name": {"en": "in spite of", "mg": "na dia"}
+    },
+    {
+      "id": "prepositions-three-words#5",
+      "name": {"en": "on behalf of", "mg": "ho an'"}
+    },
+    {
+      "id": "prepositions-three-words#6",
+      "name": {"en": "on top of", "mg": "ambony indrindra"}
+    },
+
+    {"id": "demonstrative-pronouns#1", "name": {"en": "this", "mg": "ity"}},
+    {"id": "demonstrative-pronouns#2", "name": {"en": "that", "mg": "ito"}},
+    {"id": "demonstrative-pronouns#3", "name": {"en": "these", "mg": "iretsy"}},
+    {"id": "demonstrative-pronouns#4", "name": {"en": "those", "mg": "iretsy"}},
+    {"id": "verbs-past#1", "name": {"en": "I spoke", "mg": "niteny aho"}},
+    {"id": "verbs-past#2", "name": {"en": "I wrote", "mg": "nanoratra aho"}},
+    {"id": "verbs-past#3", "name": {"en": "I drove", "mg": "nitondra aho"}},
+    {"id": "verbs-past#4", "name": {"en": "I loved", "mg": "tiako"}},
+    {"id": "verbs-past#5", "name": {"en": "I gave", "mg": "nomeko"}},
+    {"id": "verbs-past#6", "name": {"en": "I smiled", "mg": "nitsiky aho"}},
+    {"id": "verbs-past#7", "name": {"en": "I took", "mg": "noraisiko/nalaiko"}},
+    {"id": "verbs-past#8", "name": {"en": "he spoke", "mg": "niteny izy"}},
+    {"id": "verbs-past#9", "name": {"en": "he wrote", "mg": "nanoratra izy"}},
+    {"id": "verbs-past#10", "name": {"en": "he drove", "mg": "nitondra izy"}},
+    {"id": "verbs-past#11", "name": {"en": "he loved", "mg": "tiany"}},
+    {"id": "verbs-past#12", "name": {"en": "he gave", "mg": "nanome izy"}},
+    {"id": "verbs-past#13", "name": {"en": "he smiled", "mg": "nitsiky izy"}},
+    {
+      "id": "verbs-past#14",
+      "name": {"en": "he took", "mg": "noraisiny/nalaiko"}
+    },
+    {"id": "verbs-past#15", "name": {"en": "we spoke", "mg": "niteny izahay"}},
+    {
+      "id": "verbs-past#16",
+      "name": {"en": "we wrote", "mg": "nanoratra izahay"}
+    },
+    {
+      "id": "verbs-past#17",
+      "name": {"en": "we drove", "mg": "nitondra izahay"}
+    },
+    {"id": "verbs-past#18", "name": {"en": "we loved", "mg": "tianay"}},
+    {"id": "verbs-past#19", "name": {"en": "we gave", "mg": "nanome izahay"}},
+    {
+      "id": "verbs-past#20",
+      "name": {"en": "we smiled", "mg": "nitsiky izahay"}
+    },
+    {
+      "id": "verbs-past#21",
+      "name": {"en": "we took", "mg": "noraisinay/nalainay"}
+    },
+    {
+      "id": "verbs-future#1",
+      "name": {"en": "I will speak", "mg": "hiteny aho"}
+    },
+    {
+      "id": "verbs-future#2",
+      "name": {"en": "I will write", "mg": "hanoratra aho"}
+    },
+    {
+      "id": "verbs-future#3",
+      "name": {"en": "I will drive", "mg": "hitondra izahay"}
+    },
+    {
+      "id": "verbs-future#4",
+      "name": {"en": "I will love", "mg": "ho tianay/hotiavinay"}
+    },
+    {"id": "verbs-future#5", "name": {"en": "I will give", "mg": "homenay"}},
+    {
+      "id": "verbs-future#6",
+      "name": {"en": "I will smile", "mg": "hitsiky izahay"}
+    },
+    {
+      "id": "verbs-future#7",
+      "name": {"en": "I will take", "mg": "horaisinay/halainay"}
+    },
+    {
+      "id": "verbs-future#8",
+      "name": {"en": "he will speak", "mg": "hiteny izy"}
+    },
+    {
+      "id": "verbs-future#9",
+      "name": {"en": "he will write", "mg": "hanoratra izy"}
+    },
+    {
+      "id": "verbs-future#10",
+      "name": {"en": "he will drive", "mg": "hitondra izy"}
+    },
+    {
+      "id": "verbs-future#11",
+      "name": {"en": "he will love", "mg": "ho tiany/hotiaviny"}
+    },
+    {
+      "id": "verbs-future#12",
+      "name": {"en": "he will give", "mg": "hanome izy/homeny"}
+    },
+    {
+      "id": "verbs-future#13",
+      "name": {"en": "he will smile", "mg": "hitsiky izy"}
+    },
+    {
+      "id": "verbs-future#14",
+      "name": {"en": "he will take", "mg": "horaisiny/halainy"}
+    },
+    {
+      "id": "verbs-future#15",
+      "name": {"en": "we will speak", "mg": "hiteny izahay"}
+    },
+    {
+      "id": "verbs-future#16",
+      "name": {"en": "we will write", "mg": "hanoratra izahay"}
+    },
+    {
+      "id": "verbs-future#17",
+      "name": {"en": "we will drive", "mg": "hitondra izy"}
+    },
+    {
+      "id": "verbs-future#18",
+      "name": {"en": "we will love", "mg": "ho tianay/hotiavinay"}
+    },
+    {
+      "id": "verbs-future#19",
+      "name": {"en": "we will give", "mg": "hanome izahay/homenay"}
+    },
+    {
+      "id": "verbs-future#20",
+      "name": {"en": "we will smile", "mg": "hitsiky izahay"}
+    },
+    {
+      "id": "verbs-future#21",
+      "name": {"en": "we will take", "mg": "horaisinay/halainay"}
+    },
+    {"id": "verbs-present#1", "name": {"en": "I speak", "mg": "miteny aho"}},
+    {"id": "verbs-present#2", "name": {"en": "I write", "mg": "manoratra aho"}},
+    {"id": "verbs-present#3", "name": {"en": "I drive", "mg": "mitondra aho"}},
+    {"id": "verbs-present#4", "name": {"en": "I love", "mg": "tiako"}},
+    {"id": "verbs-present#5", "name": {"en": "I give", "mg": "manome aho"}},
+    {"id": "verbs-present#6", "name": {"en": "I smile", "mg": "mitsiky aho"}},
+    {
+      "id": "verbs-present#7",
+      "name": {"en": "I take", "mg": "maka aho/alaiko"}
+    },
+    {"id": "verbs-present#8", "name": {"en": "he speaks", "mg": "miteny izy"}},
+    {
+      "id": "verbs-present#9",
+      "name": {"en": "he writes", "mg": "manoratra izy"}
+    },
+    {
+      "id": "verbs-present#10",
+      "name": {"en": "he drives", "mg": "mitondra izy"}
+    },
+    {"id": "verbs-present#11", "name": {"en": "he loves", "mg": "tiany"}},
+    {"id": "verbs-present#12", "name": {"en": "he gives", "mg": "omeny"}},
+    {
+      "id": "verbs-present#13",
+      "name": {"en": "he smiles", "mg": "mitsiky izy"}
+    },
+    {
+      "id": "verbs-present#14",
+      "name": {"en": "he takes", "mg": "alainy/raisiny"}
+    },
+    {
+      "id": "verbs-present#15",
+      "name": {"en": "we speak", "mg": "miteny izahay"}
+    },
+    {
+      "id": "verbs-present#16",
+      "name": {"en": "we write", "mg": "manoratra izahay"}
+    },
+    {
+      "id": "verbs-present#17",
+      "name": {"en": "we drive", "mg": "mitondra izahay"}
+    },
+    {"id": "verbs-present#18", "name": {"en": "we love", "mg": "tianay"}},
+    {"id": "verbs-present#19", "name": {"en": "we give", "mg": "omenay"}},
+    {
+      "id": "verbs-present#20",
+      "name": {"en": "we smile", "mg": "mitsiky izahay"}
+    },
+    {"id": "verbs-present#21", "name": {"en": "we take", "mg": "alainay"}},
+    {
+      "id": "verbs-various#1",
+      "name": {"en": "I can accept that", "mg": "afaka manaiky izany aho"}
+    },
+    {
+      "id": "verbs-various#2",
+      "name": {"en": "she added it", "mg": "nampiany io"}
+    },
+    {
+      "id": "verbs-various#3",
+      "name": {"en": "we admit it", "mg": "tsorinay izany"}
+    },
+    {
+      "id": "verbs-various#4",
+      "name": {"en": "they advised him", "mg": "nanoloro hevitra azy izy ireo"}
+    },
+    {
+      "id": "verbs-various#5",
+      "name": {
+        "en": "I can agree with that",
+        "mg": "afaka miombon-kevitra amin'izany aho"
+      }
+    },
+    {
+      "id": "verbs-various#6",
+      "name": {"en": "she allows it", "mg": "avelany io"}
+    },
+    {
+      "id": "verbs-various#7",
+      "name": {"en": "we announce it", "mg": "teneninay"}
+    },
+    {
+      "id": "verbs-various#8",
+      "name": {"en": "I can apologize", "mg": "afaka miala tsiny aho"}
+    },
+    {
+      "id": "verbs-various#9",
+      "name": {"en": "she appears today", "mg": "miseho androany izy"}
+    },
+    {
+      "id": "verbs-various#10",
+      "name": {"en": "they arranged that", "mg": "namboariny izany"}
+    },
+    {
+      "id": "verbs-various#11",
+      "name": {
+        "en": "I can arrive tomorrow",
+        "mg": "afaka ny ho tonga rahampitso aho"
+      }
+    },
+    {
+      "id": "verbs-various#12",
+      "name": {"en": "she can ask him", "mg": "afaka manontany azy izy"}
+    },
+    {
+      "id": "verbs-various#13",
+      "name": {"en": "she attaches that", "mg": "nalefany miaraka amin'io ito"}
+    },
+    {
+      "id": "verbs-various#14",
+      "name": {"en": "we attack them", "mg": "namely azy ireo izahay"}
+    },
+    {
+      "id": "verbs-various#15",
+      "name": {"en": "they avoid her", "mg": "niataka taminy izy ireo"}
+    },
+    {"id": "verbs-various#16", "name": {"en": "I can bake it", "mg": ""}},
+    {
+      "id": "verbs-various#17",
+      "name": {"en": "she is like him", "mg": "tahaka azy izy"}
+    },
+    {
+      "id": "verbs-various#18",
+      "name": {"en": "we beat it", "mg": "resinay izany"}
+    },
+    {
+      "id": "verbs-various#19",
+      "name": {"en": "they became happy", "mg": "lasa faly izy ireo"}
+    },
+    {
+      "id": "verbs-various#20",
+      "name": {"en": "I can begin that", "mg": "afaka atomboko izany"}
+    },
+    {
+      "id": "verbs-various#21",
+      "name": {"en": "we borrowed money", "mg": "nindram-bola izahay"}
+    },
+    {
+      "id": "verbs-various#22",
+      "name": {"en": "they breathe air", "mg": "mifoka rivotra izy ireo"}
+    },
+    {
+      "id": "verbs-various#23",
+      "name": {"en": "I can bring it", "mg": "afaka entiko io"}
+    },
+    {
+      "id": "verbs-various#24",
+      "name": {"en": "I can build that", "mg": "afaka amboariko io"}
+    },
+    {
+      "id": "verbs-various#25",
+      "name": {"en": "she buys food", "mg": "mividy sakafo izy"}
+    },
+    {
+      "id": "verbs-various#26",
+      "name": {"en": "we calculate it", "mg": "kaontinay io"}
+    },
+    {
+      "id": "verbs-various#27",
+      "name": {"en": "they carry it", "mg": "entiny io"}
+    },
+    {
+      "id": "verbs-various#28",
+      "name": {
+        "en": "they don't cheat",
+        "mg": "tsy misoloky/ tsy mamitaka izy ireo"
+      }
+    },
+    {
+      "id": "verbs-various#29",
+      "name": {"en": "she chooses him", "mg": "misafidy azy izy"}
+    },
+    {
+      "id": "verbs-various#30",
+      "name": {"en": "we close it", "mg": "idianay io"}
+    },
+    {
+      "id": "verbs-various#31",
+      "name": {"en": "he comes here", "mg": "tonga ato izy"}
+    },
+    {
+      "id": "verbs-various#32",
+      "name": {"en": "I can compare that", "mg": "afaja mapitahy izany aho"}
+    },
+    {
+      "id": "verbs-various#33",
+      "name": {"en": "she competes with me", "mg": "mifanina amiko izy"}
+    },
+    {
+      "id": "verbs-various#34",
+      "name": {
+        "en": "we complain about it",
+        "mg": "mitaraina mikasika izany izahay"
+      }
+    },
+    {
+      "id": "verbs-various#35",
+      "name": {
+        "en": "they continued reading",
+        "mg": "nanohy ny famakiana izy ireo"
+      }
+    },
+    {
+      "id": "verbs-various#36",
+      "name": {"en": "he cried about that", "mg": "nitomany noho izany izy"}
+    },
+    {
+      "id": "verbs-various#37",
+      "name": {"en": "I can decide now", "mg": "afaka manapa-kevitra izao aho"}
+    },
+    {
+      "id": "verbs-various#38",
+      "name": {
+        "en": "she described it to me",
+        "mg": "notantarainy tamin'ny antsipiriany tamiko ilay izy"
+      }
+    },
+    {
+      "id": "verbs-various#39",
+      "name": {
+        "en": "we disagree about it",
+        "mg": "tsy miombon-kevitra aminareo mikasika izany izahay"
+      }
+    },
+    {
+      "id": "verbs-various#40",
+      "name": {
+        "en": "they disappeared quickly",
+        "mg": "nanjavona haingana izy ireo"
+      }
+    },
+    {
+      "id": "verbs-various#41",
+      "name": {"en": "I discovered that", "mg": "hitako izany"}
+    },
+    {
+      "id": "verbs-various#42",
+      "name": {"en": "she dislikes that", "mg": "tsy tiany izany"}
+    },
+    {"id": "verbs-various#43", "name": {"en": "we do it", "mg": "ataonay io"}},
+    {
+      "id": "verbs-various#44",
+      "name": {"en": "they dream about it", "mg": "manofy an'izany izy ireo"}
+    },
+    {"id": "verbs-various#45", "name": {"en": "I earned", "mg": "nahazo"}},
+    {
+      "id": "verbs-various#46",
+      "name": {"en": "he eats a lot", "mg": "mihinana be dia be izy"}
+    },
+    {
+      "id": "verbs-various#47",
+      "name": {
+        "en": "we enjoyed that",
+        "mg": "nahafinaritra anay ilay izy/tianay ilay izy"
+      }
+    },
+    {
+      "id": "verbs-various#48",
+      "name": {"en": "they entered here", "mg": "niditra teto izy ireo"}
+    },
+    {
+      "id": "verbs-various#49",
+      "name": {"en": "he escaped that", "mg": "nitsoaka an' io izy"}
+    },
+    {
+      "id": "verbs-various#50",
+      "name": {"en": "I can explain that", "mg": "afaka manazava izany aho"}
+    },
+    {
+      "id": "verbs-various#51",
+      "name": {
+        "en": "she feels that too",
+        "mg": "nahatsapa izany ihany koa izy"
+      }
+    },
+    {
+      "id": "verbs-various#52",
+      "name": {"en": "we fled from there", "mg": "nisidina avy teo izahay"}
+    },
+    {
+      "id": "verbs-various#53",
+      "name": {
+        "en": "they will fly tomorrow",
+        "mg": "hisidina rahampitso izy ireo/handeha fiaramanidina rahampitso izy ireo"
+      }
+    },
+    {
+      "id": "verbs-various#54",
+      "name": {"en": "I can follow you", "mg": "afaka manaraka anao aho"}
+    },
+    {
+      "id": "verbs-various#55",
+      "name": {"en": "she forgot me", "mg": "nohadinoiny aho"}
+    },
+    {
+      "id": "verbs-various#56",
+      "name": {"en": "we forgive him", "mg": "adinonay izy"}
+    },
+    {
+      "id": "verbs-various#57",
+      "name": {"en": "I can give her that", "mg": "afaka omeko azy ito"}
+    },
+    {
+      "id": "verbs-various#58",
+      "name": {"en": "she goes there", "mg": "mandeha any izy"}
+    },
+    {
+      "id": "verbs-various#59",
+      "name": {"en": "we greeted them", "mg": "niarahaba azy ireo izahay"}
+    },
+    {
+      "id": "verbs-various#60",
+      "name": {"en": "I hate that", "mg": "halako izany"}
+    },
+    {
+      "id": "verbs-various#61",
+      "name": {"en": "I can hear it", "mg": "henoko izany"}
+    },
+    {
+      "id": "verbs-various#62",
+      "name": {"en": "she imagine that", "mg": "alainy sary an-tsaina izany"}
+    },
+    {
+      "id": "verbs-various#63",
+      "name": {"en": "we invited them", "mg": "nanasa azy ireo izahay"}
+    },
+    {
+      "id": "verbs-various#64",
+      "name": {"en": "I know him", "mg": "fantatro izy"}
+    },
+    {
+      "id": "verbs-various#65",
+      "name": {"en": "she learned it", "mg": "nianarany io"}
+    },
+    {
+      "id": "verbs-various#66",
+      "name": {"en": "we leave now", "mg": "mandeha izao izahay"}
+    },
+    {
+      "id": "verbs-various#67",
+      "name": {
+        "en": "they lied about him",
+        "mg": "nandainga mikasika an'azy izy ireo"
+      }
+    },
+    {
+      "id": "verbs-various#68",
+      "name": {"en": "I can listen to that", "mg": "henoko izany"}
+    },
+    {
+      "id": "verbs-various#69",
+      "name": {"en": "she lost that", "mg": "nohariany io"}
+    },
+    {
+      "id": "verbs-various#70",
+      "name": {"en": "we made it yesterday", "mg": "natoanay omaly io"}
+    },
+    {
+      "id": "verbs-various#71",
+      "name": {"en": "they met him", "mg": "nifanena taminy izy ireo"}
+    },
+    {
+      "id": "verbs-various#72",
+      "name": {
+        "en": "I misspell that",
+        "mg": "tsy voatonoko izany/tsy voaraiko tsara izany"
+      }
+    },
+    {
+      "id": "verbs-various#73",
+      "name": {"en": "I always pray", "mg": "mivavaka foana aho"}
+    },
+    {
+      "id": "verbs-various#74",
+      "name": {"en": "she prefers that", "mg": "aleony kokoa io"}
+    },
+    {
+      "id": "verbs-various#75",
+      "name": {"en": "we protected them", "mg": "noharovanay izy ireo"}
+    },
+    {
+      "id": "verbs-various#76",
+      "name": {"en": "they will punish her", "mg": "hosaziany izy"}
+    },
+    {
+      "id": "verbs-various#77",
+      "name": {"en": "I can put it there", "mg": "afaka apetrako eto ito"}
+    },
+    {
+      "id": "verbs-various#78",
+      "name": {"en": "she will read it", "mg": "hamaky an'io izy"}
+    },
+    {
+      "id": "verbs-various#79",
+      "name": {"en": "we received that", "mg": "voarainy izany"}
+    },
+    {
+      "id": "verbs-various#80",
+      "name": {"en": "they refuse to talk", "mg": "tsy mety hiresaka izy reo"}
+    },
+    {
+      "id": "verbs-various#81",
+      "name": {"en": "I remember that", "mg": "tadidiko izany"}
+    },
+    {
+      "id": "verbs-various#82",
+      "name": {"en": "she repeats that", "mg": "averiny izany"}
+    },
+    {"id": "verbs-various#83", "name": {"en": "we see it", "mg": "hitanay io"}},
+    {
+      "id": "verbs-various#84",
+      "name": {"en": "they sell it", "mg": "amidiny io"}
+    },
+    {
+      "id": "verbs-various#85",
+      "name": {"en": "I sent that yesterday", "mg": "nalefako omaly izany"}
+    },
+    {
+      "id": "verbs-various#86",
+      "name": {"en": "he shaved his beard", "mg": "niaratra izy"}
+    },
+    {"id": "verbs-various#87", "name": {"en": "it shrunk quickly", "mg": ""}},
+    {
+      "id": "verbs-various#88",
+      "name": {"en": "we will sing it", "mg": "hohirainay io"}
+    },
+    {
+      "id": "verbs-various#89",
+      "name": {"en": "they sat there", "mg": "nipetraka teo izy ireo"}
+    },
+    {
+      "id": "verbs-various#90",
+      "name": {"en": "I can speak it", "mg": "afaka miteny izany aho"}
+    },
+    {
+      "id": "verbs-various#91",
+      "name": {"en": "she spends money", "mg": "mandany vola izy"}
+    },
+    {
+      "id": "verbs-various#92",
+      "name": {"en": "we suffered from that", "mg": "nijaly noho izany izahay"}
+    },
+    {
+      "id": "verbs-various#93",
+      "name": {"en": "they suggest that", "mg": "izany no tolo-kevitra nomeny"}
+    },
+    {
+      "id": "verbs-various#94",
+      "name": {"en": "I surprised him", "mg": "nahatalanjona azy aho"}
+    },
+    {
+      "id": "verbs-various#95",
+      "name": {"en": "she took that", "mg": "nalainy io"}
+    },
+    {
+      "id": "verbs-various#96",
+      "name": {"en": "we teach it", "mg": "ampianarinay io"}
+    },
+    {
+      "id": "verbs-various#97",
+      "name": {"en": "they told us", "mg": "nolazainy izahay"}
+    },
+    {
+      "id": "verbs-various#98",
+      "name": {"en": "she thanked him", "mg": "nisaotra azy izy"}
+    },
+    {
+      "id": "verbs-various#99",
+      "name": {
+        "en": "I can think about it",
+        "mg": "afaka mieritreritra mikasika izany aho"
+      }
+    },
+    {
+      "id": "verbs-various#100",
+      "name": {"en": "she threw it", "mg": "nariany ilay izy"}
+    },
+    {
+      "id": "verbs-various#101",
+      "name": {"en": "we understand that", "mg": "azonay izany"}
+    },
+    {
+      "id": "verbs-various#102",
+      "name": {"en": "they want that", "mg": "ilainy izany"}
+    },
+    {
+      "id": "verbs-various#103",
+      "name": {"en": "I can wear it", "mg": "afaka manao an'io aho"}
+    },
+    {
+      "id": "verbs-various#104",
+      "name": {"en": "she writes that", "mg": "manoratra izao izy"}
+    },
+    {
+      "id": "verbs-various#105",
+      "name": {"en": "we talk about it", "mg": "miresaka mikasika izany izahay"}
+    },
+    {
+      "id": "verbs-various#106",
+      "name": {"en": "they have it", "mg": "azony ilay izy"}
+    },
+    {
+      "id": "verbs-various#107",
+      "name": {"en": "I watched it", "mg": "nojereko ilay izy"}
+    },
+    {
+      "id": "verbs-various#108",
+      "name": {
+        "en": "I will talk about it",
+        "mg": "hiresaka mikasika izany aho"
+      }
+    },
+    {
+      "id": "verbs-various#109",
+      "name": {"en": "he bought that yesterday", "mg": "novidiany omaly io"}
+    },
+    {
+      "id": "verbs-various#110",
+      "name": {"en": "we finished it", "mg": "vitanay io"}
+    },
+    {"id": "feminine#1", "name": {"en": "he is happy", "mg": "faly izy"}},
+    {"id": "feminine#2", "name": {"en": "she is happy", "mg": "faly izy"}},
+    {
+      "id": "feminine#3",
+      "name": {"en": "he is American", "mg": "Amerikanina izy"}
+    },
+    {
+      "id": "feminine#4",
+      "name": {"en": "she is American", "mg": "Amerikanina izy"}
+    },
+    {"id": "feminine#5", "name": {"en": "man", "mg": "lehilahy"}},
+    {"id": "feminine#6", "name": {"en": "woman", "mg": "vehivavy"}},
+    {"id": "feminine#7", "name": {"en": "father", "mg": "ray/dada"}},
+    {"id": "feminine#8", "name": {"en": "mother", "mg": "mama/ neny"}},
+    {"id": "feminine#9", "name": {"en": "brother", "mg": "rahalahy"}},
+    {"id": "feminine#10", "name": {"en": "sister", "mg": "rahavavy"}},
+    {"id": "feminine#11", "name": {"en": "uncle", "mg": "dadatoa"}},
+    {"id": "feminine#12", "name": {"en": "aunt", "mg": "nenitoa"}},
+    {"id": "feminine#13", "name": {"en": "bull", "mg": "omby dia"}},
+    {"id": "feminine#14", "name": {"en": "cow", "mg": "kisoa"}},
+    {"id": "feminine#15", "name": {"en": "boy", "mg": "lehilahy/ ankizilahy"}},
+    {"id": "feminine#16", "name": {"en": "girl", "mg": "vehivavy/ankizivavy"}},
+    {"id": "feminine#17", "name": {"en": "objects", "mg": "zavatra"}},
+    {
+      "id": "feminine#18",
+      "name": {"en": "bathroom", "mg": "efitrano fisasàna"}
+    },
+    {"id": "feminine#19", "name": {"en": "bed", "mg": "fandriana"}},
+    {"id": "feminine#20", "name": {"en": "bedroom", "mg": "efitrano"}},
+    {"id": "feminine#21", "name": {"en": "ceiling", "mg": "tafo trano"}},
+    {"id": "feminine#22", "name": {"en": "chair", "mg": "seza"}},
+    {"id": "feminine#23", "name": {"en": "clothes", "mg": "akanjo"}},
+    {"id": "feminine#24", "name": {"en": "coat", "mg": "akanjo ambony lava"}},
+    {"id": "feminine#25", "name": {"en": "cup", "mg": "kaopy"}},
+    {"id": "feminine#26", "name": {"en": "desk", "mg": "latabatra"}},
+    {"id": "feminine#27", "name": {"en": "dress", "mg": "raoby"}},
+    {"id": "feminine#28", "name": {"en": "floor", "mg": "tany"}},
+    {"id": "feminine#29", "name": {"en": "fork", "mg": "sotro rovitra"}},
+    {
+      "id": "feminine#30",
+      "name": {"en": "furniture", "mg": "fitaovana ao an-trano"}
+    },
+    {"id": "feminine#31", "name": {"en": "glass", "mg": "vera"}},
+    {"id": "feminine#32", "name": {"en": "hat", "mg": "satroka"}},
+    {"id": "feminine#33", "name": {"en": "house", "mg": "trano"}},
+    {"id": "feminine#34", "name": {"en": "ink", "mg": "ranomainty"}},
+    {"id": "feminine#35", "name": {"en": "jacket", "mg": "palitao"}},
+    {"id": "feminine#36", "name": {"en": "kitchen", "mg": "lakozia"}},
+    {"id": "feminine#37", "name": {"en": "knife", "mg": "antsy"}},
+    {"id": "feminine#38", "name": {"en": "lamp", "mg": "jiro"}},
+    {"id": "feminine#39", "name": {"en": "letter", "mg": "taratasy"}},
+    {"id": "feminine#40", "name": {"en": "map", "mg": "saritany"}},
+    {"id": "feminine#41", "name": {"en": "newspaper", "mg": "gazety"}},
+    {
+      "id": "feminine#42",
+      "name": {"en": "notebook", "mg": "boky fandraisana naoty"}
+    },
+    {"id": "feminine#43", "name": {"en": "pants", "mg": "pataloha"}},
+    {"id": "feminine#44", "name": {"en": "paper", "mg": "taratasy"}},
+    {"id": "feminine#45", "name": {"en": "pen", "mg": "penina"}},
+    {"id": "feminine#46", "name": {"en": "pencil", "mg": "pensily hazo"}},
+    {
+      "id": "feminine#47",
+      "name": {"en": "pharmacy", "mg": "trano fivarotam-panafody"}
+    },
+    {"id": "feminine#48", "name": {"en": "picture", "mg": "sary"}},
+    {"id": "feminine#49", "name": {"en": "plate", "mg": "lovia"}},
+    {
+      "id": "feminine#50",
+      "name": {"en": "refrigerator", "mg": "vata fampangatsiahana"}
+    },
+    {
+      "id": "feminine#51",
+      "name": {"en": "restaurant", "mg": "trano fisakafoanana"}
+    },
+    {"id": "feminine#52", "name": {"en": "roof", "mg": "tafo trano"}},
+    {"id": "feminine#53", "name": {"en": "room", "mg": "efitrano"}},
+    {
+      "id": "feminine#54",
+      "name": {"en": "rug", "mg": "lamba firakotra/bodofotsy"}
+    },
+    {"id": "feminine#55", "name": {"en": "scissors", "mg": "hety"}},
+    {
+      "id": "feminine#56",
+      "name": {"en": "shampoo", "mg": "savony fanasàna loha"}
+    },
+    {"id": "feminine#57", "name": {"en": "shirt", "mg": "zipo"}},
+    {"id": "feminine#58", "name": {"en": "shoes", "mg": "kiraro"}},
+    {"id": "feminine#59", "name": {"en": "soap", "mg": "savony"}},
+    {"id": "feminine#60", "name": {"en": "socks", "mg": "bà kiraro"}},
+    {"id": "feminine#61", "name": {"en": "spoon", "mg": "sotro kely"}},
+    {"id": "feminine#62", "name": {"en": "table", "mg": "latabatra"}},
+    {
+      "id": "feminine#63",
+      "name": {"en": "toilet", "mg": "trano fivoahana/trano fidiovana"}
+    },
+    {"id": "feminine#64", "name": {"en": "toothbrush", "mg": "borosy nify"}},
+    {"id": "feminine#65", "name": {"en": "toothpaste", "mg": "dantifrisy"}},
+    {"id": "feminine#66", "name": {"en": "towel", "mg": "seriveta"}},
+    {"id": "feminine#67", "name": {"en": "umbrella", "mg": "helo"}},
+    {"id": "feminine#68", "name": {"en": "underwear", "mg": "atin'akanjo"}},
+    {"id": "feminine#69", "name": {"en": "wall", "mg": "rindrina"}},
+    {"id": "feminine#70", "name": {"en": "wallet", "mg": "fasiana vola"}},
+    {"id": "feminine#71", "name": {"en": "window", "mg": "varavaran-kely"}},
+    {
+      "id": "feminine#72",
+      "name": {"en": "telephone", "mg": "finday/telefaonina"}
+    },
+    {"id": "plurals#1", "name": {"en": "my book", "mg": "ny bokiko"}},
+    {"id": "plurals#2", "name": {"en": "my books", "mg": "ny bokiko"}},
+    {"id": "plurals#3", "name": {"en": "our daughter", "mg": "ny zanantsika"}},
+    {"id": "plurals#4", "name": {"en": "our daughters", "mg": "ny zanantsika"}},
+    {"id": "plurals#5", "name": {"en": "I'm cold", "mg": "mangatsiaka aho"}},
+    {
+      "id": "plurals#6",
+      "name": {"en": "we're cold", "mg": "mangatsiaka isika"}
+    },
+    {"id": "plurals#7", "name": {"en": "his chickens", "mg": "ny akohony"}},
+    {"id": "plurals#8", "name": {"en": "their chicken", "mg": "ny akohony"}},
+    {"id": "plurals#9", "name": {"en": "alligator", "mg": "voay"}},
+    {"id": "plurals#10", "name": {"en": "alligators", "mg": "voay"}},
+    {"id": "plurals#11", "name": {"en": "bear", "mg": "bear"}},
+    {"id": "plurals#12", "name": {"en": "bears", "mg": "bear"}},
+    {"id": "plurals#13", "name": {"en": "bird", "mg": "vorona"}},
+    {"id": "plurals#14", "name": {"en": "birds", "mg": "vorona"}},
+    {"id": "plurals#15", "name": {"en": "bull", "mg": "omby"}},
+    {"id": "plurals#16", "name": {"en": "bulls", "mg": "omby"}},
+    {"id": "plurals#17", "name": {"en": "cat", "mg": "saka"}},
+    {"id": "plurals#18", "name": {"en": "cats", "mg": "saka"}},
+    {"id": "plurals#19", "name": {"en": "cow", "mg": "omby"}},
+    {"id": "plurals#20", "name": {"en": "cows", "mg": "omby"}},
+    {"id": "plurals#21", "name": {"en": "deer", "mg": "deer"}},
+    {"id": "plurals#22", "name": {"en": "many deer", "mg": "deer"}},
+    {"id": "plurals#23", "name": {"en": "dog", "mg": "aliaka"}},
+    {"id": "plurals#24", "name": {"en": "dogs", "mg": "aliaka"}},
+    {"id": "plurals#25", "name": {"en": "donkey", "mg": "apondra"}},
+    {"id": "plurals#26", "name": {"en": "donkeys", "mg": "apondra"}},
+    {"id": "plurals#27", "name": {"en": "eagle", "mg": "voro-mahery"}},
+    {"id": "plurals#28", "name": {"en": "eagles", "mg": "voro-mahery"}},
+    {"id": "plurals#29", "name": {"en": "elephant", "mg": "elefanta"}},
+    {"id": "plurals#30", "name": {"en": "elephants", "mg": "elefanta"}},
+    {"id": "plurals#31", "name": {"en": "giraffe", "mg": "giraffe"}},
+    {"id": "plurals#32", "name": {"en": "giraffes", "mg": "giraffe"}},
+    {"id": "plurals#33", "name": {"en": "goat", "mg": "osy"}},
+    {"id": "plurals#34", "name": {"en": "goats", "mg": "osy"}},
+    {"id": "plurals#35", "name": {"en": "horse", "mg": "soavaly"}},
+    {"id": "plurals#36", "name": {"en": "horses", "mg": "soavaly"}},
+    {"id": "plurals#37", "name": {"en": "lion", "mg": "liona"}},
+    {"id": "plurals#38", "name": {"en": "lions", "mg": "liona"}},
+    {"id": "plurals#39", "name": {"en": "monkey", "mg": "rajako"}},
+    {"id": "plurals#40", "name": {"en": "monkeys", "mg": "rajako"}},
+    {"id": "plurals#41", "name": {"en": "mouse", "mg": "totozy"}},
+    {"id": "plurals#42", "name": {"en": "mice", "mg": "totozy"}},
+    {"id": "plurals#43", "name": {"en": "rabbit", "mg": "bitro"}},
+    {"id": "plurals#44", "name": {"en": "rabbits", "mg": "bitro"}},
+    {"id": "plurals#45", "name": {"en": "snake", "mg": "bibilava"}},
+    {"id": "plurals#46", "name": {"en": "snakes", "mg": "bibilava"}},
+    {"id": "plurals#47", "name": {"en": "tiger", "mg": "tigra"}},
+    {"id": "plurals#48", "name": {"en": "tigers", "mg": "tigra"}},
+    {"id": "plurals#49", "name": {"en": "wolf", "mg": "aliaka dia"}},
+    {"id": "plurals#50", "name": {"en": "wolves", "mg": "aliaka dia"}},
+    {"id": "articles#1", "name": {"en": "the", "mg": "ny/ilay"}},
+    {"id": "articles#2", "name": {"en": "a", "mg": ""}},
+    {"id": "articles#3", "name": {"en": "one", "mg": "iray/anankiray"}},
+    {"id": "articles#4", "name": {"en": "some", "mg": "misy"}},
+    {"id": "articles#5", "name": {"en": "few", "mg": "vitsy"}},
+    {"id": "articles#6", "name": {"en": "the book", "mg": "ilay boky"}},
+    {"id": "articles#7", "name": {"en": "the books", "mg": "ireo boky"}},
+    {"id": "articles#8", "name": {"en": "a book", "mg": "boky"}},
+    {"id": "articles#9", "name": {"en": "one book", "mg": "boky iray"}},
+    {"id": "articles#10", "name": {"en": "some books", "mg": "misy boky"}},
+    {"id": "articles#11", "name": {"en": "few books", "mg": "boky vitsivitsy"}},
+    {"id": "food#1", "name": {"en": "almonds", "mg": "almonds"}},
+    {"id": "food#2", "name": {"en": "bread", "mg": "mofo dipaina"}},
+    {"id": "food#3", "name": {"en": "breakfast", "mg": "sakafo maraina"}},
+    {"id": "food#4", "name": {"en": "butter", "mg": "dibera"}},
+    {"id": "food#5", "name": {"en": "candy", "mg": "bonbon"}},
+    {"id": "food#6", "name": {"en": "cheese", "mg": "fraomazy"}},
+    {"id": "food#7", "name": {"en": "chicken", "mg": "akoho"}},
+    {"id": "food#8", "name": {"en": "cumin", "mg": "cumin"}},
+    {"id": "food#9", "name": {"en": "dessert", "mg": "desera"}},
+    {"id": "food#10", "name": {"en": "dinner", "mg": "sakafo hariva"}},
+    {"id": "food#11", "name": {"en": "fish", "mg": "trondro"}},
+    {"id": "food#12", "name": {"en": "fruit", "mg": "voankazo"}},
+    {"id": "food#13", "name": {"en": "ice cream", "mg": "glasy"}},
+    {"id": "food#14", "name": {"en": "lamb", "mg": "ondry"}},
+    {"id": "food#15", "name": {"en": "lemon", "mg": "voasary makirana"}},
+    {"id": "food#16", "name": {"en": "lunch", "mg": "sakafo hariva"}},
+    {"id": "food#17", "name": {"en": "meal", "mg": "sakafo"}},
+    {"id": "food#18", "name": {"en": "meat", "mg": "hena"}},
+    {"id": "food#19", "name": {"en": "oven", "mg": "lafaoro"}},
+    {"id": "food#20", "name": {"en": "pepper", "mg": "dipoavatra"}},
+    {"id": "food#21", "name": {"en": "plants", "mg": "zava-maniry"}},
+    {"id": "food#22", "name": {"en": "pork", "mg": "hena-kisoa"}},
+    {"id": "food#23", "name": {"en": "salad", "mg": "salady"}},
+    {"id": "food#24", "name": {"en": "salt", "mg": "sira"}},
+    {"id": "food#25", "name": {"en": "sandwich", "mg": "sandwich"}},
+    {"id": "food#26", "name": {"en": "sausage", "mg": "saosisy"}},
+    {"id": "food#27", "name": {"en": "soup", "mg": "lasopy"}},
+    {"id": "food#28", "name": {"en": "sugar", "mg": "siramamy"}},
+    {"id": "food#29", "name": {"en": "supper", "mg": "sakafo hariva"}},
+    {"id": "food#30", "name": {"en": "turkey", "mg": "voron-tsy loza"}},
+    {"id": "food#31", "name": {"en": "apple", "mg": "paoma"}},
+    {"id": "food#32", "name": {"en": "banana", "mg": "akondro"}},
+    {"id": "food#33", "name": {"en": "oranges", "mg": "voasary"}},
+    {"id": "food#34", "name": {"en": "peaches", "mg": "paiso"}},
+    {"id": "food#35", "name": {"en": "peanut", "mg": "voanjo"}},
+    {"id": "food#36", "name": {"en": "pears", "mg": "poara"}},
+    {"id": "food#37", "name": {"en": "pineapple", "mg": "mananasy"}},
+    {"id": "food#38", "name": {"en": "grapes", "mg": "garana"}},
+    {"id": "food#39", "name": {"en": "strawberries", "mg": "frezy"}},
+    {"id": "food#40", "name": {"en": "vegetables", "mg": "legioma"}},
+    {"id": "food#41", "name": {"en": "carrot", "mg": "karaoty"}},
+    {"id": "food#42", "name": {"en": "corn", "mg": "katsaka"}},
+    {"id": "food#43", "name": {"en": "cucumber", "mg": "kaokambra"}},
+    {"id": "food#44", "name": {"en": "garlic", "mg": "garlic"}},
+    {"id": "food#45", "name": {"en": "lettuce", "mg": "salady"}},
+    {"id": "food#46", "name": {"en": "olives", "mg": "oliva"}},
+    {"id": "food#47", "name": {"en": "onions", "mg": "tongolo gros oignon"}},
+    {"id": "food#48", "name": {"en": "peppers", "mg": "dipoavatra"}},
+    {"id": "food#49", "name": {"en": "potatoes", "mg": "ovy"}},
+    {"id": "food#50", "name": {"en": "pumpkin", "mg": "voatavo"}},
+    {"id": "food#51", "name": {"en": "beans", "mg": "tsaramaso"}},
+    {"id": "food#52", "name": {"en": "tomatoes", "mg": "voatabia"}},
+    {"id": "nouns-only#1", "name": {"en": "my car", "mg": "ny fiarako"}},
+    {"id": "nouns-only#2", "name": {"en": "green car", "mg": "fiara maintso"}},
+    {"id": "nouns-only#3", "name": {"en": "three cars", "mg": "fiara telo"}},
+    {
+      "id": "nouns-only#4",
+      "name": {"en": "car garage", "mg": "fiantsonan'ny fiara"}
+    },
+    {
+      "id": "nouns-only#5",
+      "name": {"en": "outside the car", "mg": "ivelan'ny fiara"}
+    },
+    {"id": "body-parts#1", "name": {"en": "arm", "mg": "tànana"}},
+    {"id": "body-parts#2", "name": {"en": "back", "mg": "lamosina"}},
+    {"id": "body-parts#3", "name": {"en": "cheeks", "mg": "takolaka"}},
+    {"id": "body-parts#4", "name": {"en": "chest", "mg": "tratra"}},
+    {"id": "body-parts#5", "name": {"en": "chin", "mg": "soaka"}},
+    {"id": "body-parts#6", "name": {"en": "ear", "mg": "sofina"}},
+    {"id": "body-parts#7", "name": {"en": "elbow", "mg": "kiho"}},
+    {"id": "body-parts#8", "name": {"en": "eye", "mg": "maso"}},
+    {"id": "body-parts#9", "name": {"en": "face", "mg": "tarehy/endrika"}},
+    {"id": "body-parts#10", "name": {"en": "finger", "mg": "hoho tànana"}},
+    {
+      "id": "body-parts#11",
+      "name": {"en": "fingers", "mg": "ireo hoho tànana"}
+    },
+    {"id": "body-parts#12", "name": {"en": "foot", "mg": "tongotra"}},
+    {"id": "body-parts#13", "name": {"en": "hair", "mg": "volo"}},
+    {"id": "body-parts#14", "name": {"en": "hand", "mg": "tanana"}},
+    {"id": "body-parts#15", "name": {"en": "head", "mg": "loha"}},
+    {"id": "body-parts#16", "name": {"en": "heart", "mg": "fo"}},
+    {"id": "body-parts#17", "name": {"en": "knee", "mg": "lohalika"}},
+    {"id": "body-parts#18", "name": {"en": "leg", "mg": "tongotra"}},
+    {"id": "body-parts#19", "name": {"en": "lip", "mg": "molotra"}},
+    {"id": "body-parts#20", "name": {"en": "mouth", "mg": "vava"}},
+    {"id": "body-parts#21", "name": {"en": "neck", "mg": "atoka"}},
+    {"id": "body-parts#22", "name": {"en": "nose", "mg": "orona"}},
+    {"id": "body-parts#23", "name": {"en": "shoulder", "mg": "soroka"}},
+    {"id": "body-parts#24", "name": {"en": "stomach", "mg": "vavony"}},
+    {"id": "body-parts#25", "name": {"en": "teeth", "mg": "nify"}},
+    {"id": "body-parts#26", "name": {"en": "thigh", "mg": "fe"}},
+    {"id": "body-parts#27", "name": {"en": "throat", "mg": "tenda"}},
+    {"id": "body-parts#28", "name": {"en": "thumb", "mg": "akihy be tànana"}},
+    {"id": "body-parts#29", "name": {"en": "toe", "mg": "hoho tongotra"}},
+    {"id": "body-parts#30", "name": {"en": "tongue", "mg": "lela"}},
+    {"id": "body-parts#31", "name": {"en": "tooth", "mg": "nify"}},
+    {
+      "id": "adverbs#1",
+      "name": {
+        "en": "I read a book sometimes",
+        "mg": "mamaky boky aho indraindary"
+      }
+    },
+    {
+      "id": "adverbs#2",
+      "name": {
+        "en": "I will never smoke",
+        "mg": "tsy hifoka izany mihitsy aho/tsy hifoka mandrakizay aho"
+      }
+    },
+    {
+      "id": "adverbs#3",
+      "name": {"en": "are you alone?", "mg": "irery va ianao?"}
+    },
+    {
+      "id": "adverbs-of-time#1",
+      "name": {"en": "adverbs of time", "mg": "Mpisolo fotoana"}
+    },
+    {"id": "adverbs-of-time#2", "name": {"en": "yesterday", "mg": "omaly"}},
+    {"id": "adverbs-of-time#3", "name": {"en": "today", "mg": "anio"}},
+    {"id": "adverbs-of-time#4", "name": {"en": "tomorrow", "mg": "rahampitso"}},
+    {
+      "id": "adverbs-of-time#5",
+      "name": {"en": "now", "mg": "izao/amin'izao fotoana izao"}
+    },
+    {"id": "adverbs-of-time#6", "name": {"en": "then", "mg": "avy eo"}},
+    {"id": "adverbs-of-time#7", "name": {"en": "later", "mg": "rehefa avy eo"}},
+    {"id": "adverbs-of-time#8", "name": {"en": "tonight", "mg": "ra-alina"}},
+    {
+      "id": "adverbs-of-time#9",
+      "name": {"en": "right now", "mg": "izao dia izao"}
+    },
+    {
+      "id": "adverbs-of-time#10",
+      "name": {"en": "last night", "mg": "omaly alina"}
+    },
+    {
+      "id": "adverbs-of-time#11",
+      "name": {"en": "this morning", "mg": "anio maraina/izao maraina izao"}
+    },
+    {
+      "id": "adverbs-of-time#12",
+      "name": {"en": "next week", "mg": "amin'ny herinandro"}
+    },
+    {"id": "adverbs-of-time#13", "name": {"en": "already", "mg": "efa"}},
+    {
+      "id": "adverbs-of-time#14",
+      "name": {"en": "recently", "mg": "vao haingana/vao tsy ela"}
+    },
+    {
+      "id": "adverbs-of-time#15",
+      "name": {"en": "lately", "mg": "taty aoriana"}
+    },
+    {"id": "adverbs-of-time#16", "name": {"en": "soon", "mg": "tsy ho ela"}},
+    {"id": "adverbs-of-time#17", "name": {"en": "immediately", "mg": "maika"}},
+    {"id": "adverbs-of-time#18", "name": {"en": "still", "mg": "mbola"}},
+    {"id": "adverbs-of-time#19", "name": {"en": "yet", "mg": "anefa/efa"}},
+    {"id": "adverbs-of-time#20", "name": {"en": "ago", "mg": "lasa/taloha"}},
+    {
+      "id": "adverbs-of-place#1",
+      "name": {"en": "adverbs of place", "mg": "Mpisolo toerana"}
+    },
+    {"id": "adverbs-of-place#2", "name": {"en": "here", "mg": "eto"}},
+    {"id": "adverbs-of-place#3", "name": {"en": "there", "mg": "ery"}},
+    {"id": "adverbs-of-place#4", "name": {"en": "over there", "mg": "ery"}},
+    {
+      "id": "adverbs-of-place#5",
+      "name": {"en": "everywhere", "mg": "eny rehetra eny"}
+    },
+    {
+      "id": "adverbs-of-place#6",
+      "name": {"en": "anywhere", "mg": "na aiza na aiza"}
+    },
+    {
+      "id": "adverbs-of-place#7",
+      "name": {"en": "nowhere", "mg": "tsy aiza tsy aiza"}
+    },
+    {"id": "adverbs-of-place#8", "name": {"en": "home", "mg": "trano"}},
+    {"id": "adverbs-of-place#9", "name": {"en": "away", "mg": "lasa/lavitra"}},
+    {"id": "adverbs-of-place#10", "name": {"en": "out", "mg": "ivelany"}},
+    {
+      "id": "adverbs-of-manner#1",
+      "name": {"en": "adverbs of manner", "mg": "Mpisolo toetra"}
+    },
+    {"id": "adverbs-of-manner#2", "name": {"en": "very", "mg": "tena"}},
+    {"id": "adverbs-of-manner#3", "name": {"en": "quite", "mg": "eo ho eo"}},
+    {
+      "id": "adverbs-of-manner#4",
+      "name": {"en": "pretty", "mg": "azo lazaina"}
+    },
+    {"id": "adverbs-of-manner#5", "name": {"en": "really", "mg": "tena"}},
+    {"id": "adverbs-of-manner#6", "name": {"en": "fast", "mg": "haingana"}},
+    {"id": "adverbs-of-manner#7", "name": {"en": "well", "mg": "tsara"}},
+    {"id": "adverbs-of-manner#8", "name": {"en": "hard", "mg": "enjana/mafy"}},
+    {"id": "adverbs-of-manner#9", "name": {"en": "quickly", "mg": "haingana"}},
+    {"id": "adverbs-of-manner#10", "name": {"en": "slowly", "mg": "miadana"}},
+    {
+      "id": "adverbs-of-manner#11",
+      "name": {"en": "carefully", "mg": "amim-pitandremana"}
+    },
+    {"id": "adverbs-of-manner#12", "name": {"en": "hardly", "mg": "zara raha"}},
+    {"id": "adverbs-of-manner#13", "name": {"en": "barely", "mg": "zara raha"}},
+    {
+      "id": "adverbs-of-manner#14",
+      "name": {"en": "mostly", "mg": "ny ankamaroany"}
+    },
+    {"id": "adverbs-of-manner#15", "name": {"en": "almost", "mg": "saika"}},
+    {"id": "adverbs-of-manner#16", "name": {"en": "absolutely", "mg": "tena"}},
+    {"id": "adverbs-of-manner#17", "name": {"en": "together", "mg": "miaraka"}},
+    {"id": "adverbs-of-manner#18", "name": {"en": "alone", "mg": "irery"}},
+    {
+      "id": "adverbs-of-frequency#1",
+      "name": {"en": "adverbs of frequency", "mg": "Fiverimberenana"}
+    },
+    {"id": "adverbs-of-frequency#2", "name": {"en": "always", "mg": "foana"}},
+    {
+      "id": "adverbs-of-frequency#3",
+      "name": {"en": "frequently", "mg": "matetika"}
+    },
+    {
+      "id": "adverbs-of-frequency#4",
+      "name": {"en": "usually", "mg": "matetika"}
+    },
+    {
+      "id": "adverbs-of-frequency#5",
+      "name": {"en": "sometimes", "mg": "indraindray"}
+    },
+    {
+      "id": "adverbs-of-frequency#6",
+      "name": {"en": "occasionally", "mg": "indraindray"}
+    },
+    {
+      "id": "adverbs-of-frequency#7",
+      "name": {"en": "seldom", "mg": "indraindray"}
+    },
+    {
+      "id": "adverbs-of-frequency#8",
+      "name": {"en": "rarely", "mg": "zara raha/tsy matetika"}
+    },
+    {
+      "id": "adverbs-of-frequency#9",
+      "name": {"en": "never", "mg": "tsy mihitsy"}
+    },
+    {"id": "adj-only#1", "name": {"en": "a green tree", "mg": "hazo maitso"}},
+    {"id": "adj-only#2", "name": {"en": "a tall building", "mg": "trano avo"}},
+    {
+      "id": "adj-only#3",
+      "name": {"en": "a very old man", "mg": "rangahy antitra be"}
+    },
+    {
+      "id": "adj-only#4",
+      "name": {"en": "the old red house", "mg": "ilay trano mena tranainy"}
+    },
+    {
+      "id": "adj-only#5",
+      "name": {"en": "a very nice friend", "mg": "namana iray mahafinaritra"}
+    },
+    {"id": "adj-colors#1", "name": {"en": "black", "mg": "mainty"}},
+    {"id": "adj-colors#2", "name": {"en": "blue", "mg": "manga"}},
+    {"id": "adj-colors#3", "name": {"en": "brown", "mg": "volon-tany"}},
+    {"id": "adj-colors#4", "name": {"en": "gray", "mg": "volon-davenona"}},
+    {"id": "adj-colors#5", "name": {"en": "green", "mg": "maintso"}},
+    {"id": "adj-colors#6", "name": {"en": "orange", "mg": "volom-boasary"}},
+    {"id": "adj-colors#7", "name": {"en": "purple", "mg": "volo-parasy"}},
+    {"id": "adj-colors#8", "name": {"en": "red", "mg": "mena"}},
+    {"id": "adj-colors#9", "name": {"en": "white", "mg": "fotsy"}},
+    {"id": "adj-colors#10", "name": {"en": "yellow", "mg": "mavo"}},
+    {"id": "adj-sizes#1", "name": {"en": "big", "mg": "lehibe"}},
+    {"id": "adj-sizes#2", "name": {"en": "deep", "mg": "lalina"}},
+    {"id": "adj-sizes#3", "name": {"en": "long", "mg": "lava"}},
+    {"id": "adj-sizes#4", "name": {"en": "narrow", "mg": "tery"}},
+    {"id": "adj-sizes#5", "name": {"en": "short", "mg": "fohy"}},
+    {"id": "adj-sizes#6", "name": {"en": "small", "mg": "kely"}},
+    {"id": "adj-sizes#7", "name": {"en": "tall", "mg": "lava"}},
+    {"id": "adj-sizes#8", "name": {"en": "thick", "mg": "matevina"}},
+    {"id": "adj-sizes#9", "name": {"en": "thin", "mg": "mahia"}},
+    {"id": "adj-sizes#10", "name": {"en": "wide", "mg": "ngeza/vaventy"}},
+    {"id": "adj-shapes#1", "name": {"en": "shapes", "mg": "Endrika"}},
+    {"id": "adj-shapes#2", "name": {"en": "circular", "mg": "boribory"}},
+    {"id": "adj-shapes#3", "name": {"en": "straight", "mg": "mahitsy"}},
+    {"id": "adj-shapes#4", "name": {"en": "square", "mg": "efa-joro"}},
+    {"id": "adj-shapes#5", "name": {"en": "triangular", "mg": "telo zoro"}},
+
+    {"id": "adj-tastes#1", "name": {"en": "bitter", "mg": "mangidy"}},
+    {"id": "adj-tastes#2", "name": {"en": "fresh", "mg": "vaovao/tsara"}},
+    {"id": "adj-tastes#3", "name": {"en": "salty", "mg": "masira"}},
+    {"id": "adj-tastes#4", "name": {"en": "sour", "mg": "marikivy"}},
+    {"id": "adj-tastes#5", "name": {"en": "spicy", "mg": "feno hanitra"}},
+    {"id": "adj-tastes#6", "name": {"en": "sweet", "mg": "mamy"}},
+    {"id": "adj-qualities#1", "name": {"en": "bad", "mg": "ratsy"}},
+    {"id": "adj-qualities#2", "name": {"en": "clean", "mg": "madio"}},
+    {"id": "adj-qualities#3", "name": {"en": "dark", "mg": "maizina"}},
+    {"id": "adj-qualities#4", "name": {"en": "difficult", "mg": "sarotra"}},
+    {"id": "adj-qualities#5", "name": {"en": "dirty", "mg": "maloto"}},
+    {"id": "adj-qualities#6", "name": {"en": "dry", "mg": "maina"}},
+    {"id": "adj-qualities#7", "name": {"en": "easy", "mg": "mora"}},
+    {"id": "adj-qualities#8", "name": {"en": "empty", "mg": "foana"}},
+    {"id": "adj-qualities#9", "name": {"en": "expensive", "mg": "lafo"}},
+    {"id": "adj-qualities#10", "name": {"en": "fast", "mg": "haingana"}},
+    {"id": "adj-qualities#11", "name": {"en": "foreign", "mg": "vahiny"}},
+    {"id": "adj-qualities#12", "name": {"en": "full", "mg": "feno"}},
+    {"id": "adj-qualities#13", "name": {"en": "good", "mg": "tsara"}},
+    {"id": "adj-qualities#14", "name": {"en": "hard", "mg": "mafy"}},
+    {"id": "adj-qualities#15", "name": {"en": "heavy", "mg": "mavesatra"}},
+    {"id": "adj-qualities#16", "name": {"en": "inexpensive", "mg": "mora"}},
+    {"id": "adj-qualities#17", "name": {"en": "light", "mg": "maivana"}},
+    {"id": "adj-qualities#18", "name": {"en": "local", "mg": "eto an-toerana"}},
+    {"id": "adj-qualities#19", "name": {"en": "new", "mg": "vaovao"}},
+    {"id": "adj-qualities#20", "name": {"en": "noisy", "mg": "be tabataba"}},
+    {"id": "adj-qualities#21", "name": {"en": "old", "mg": "antitra/fahiny"}},
+    {
+      "id": "adj-qualities#22",
+      "name": {"en": "powerful", "mg": "mahery/matanjaka"}
+    },
+    {"id": "adj-qualities#23", "name": {"en": "quiet", "mg": "mangina"}},
+    {
+      "id": "adj-qualities#24",
+      "name": {"en": "correct", "mg": "mety/tsy misy diso/tsara"}
+    },
+    {"id": "adj-qualities#25", "name": {"en": "slow", "mg": "miadana"}},
+    {"id": "adj-qualities#26", "name": {"en": "soft", "mg": "malefaka"}},
+    {"id": "adj-qualities#27", "name": {"en": "very", "mg": "tena"}},
+    {"id": "adj-qualities#28", "name": {"en": "weak", "mg": "marefo"}},
+    {"id": "adj-qualities#29", "name": {"en": "wet", "mg": "mando"}},
+    {"id": "adj-qualities#30", "name": {"en": "wrong", "mg": "ratsy/tsy mety"}},
+    {"id": "adj-qualities#31", "name": {"en": "young", "mg": "tanora"}},
+    {"id": "adj-quantities#1", "name": {"en": "few", "mg": "vitsy"}},
+    {"id": "adj-quantities#2", "name": {"en": "little", "mg": "kely"}},
+    {"id": "adj-quantities#3", "name": {"en": "many", "mg": "betsaka"}},
+    {"id": "adj-quantities#4", "name": {"en": "much", "mg": "betsaka"}},
+    {"id": "adj-quantities#5", "name": {"en": "part", "mg": "sombiny"}},
+    {"id": "adj-quantities#6", "name": {"en": "some", "mg": "Vitsivitsy"}},
+    {"id": "adj-quantities#7", "name": {"en": "a few", "mg": "vitsy"}},
+    {
+      "id": "adj-quantities#8",
+      "name": {"en": "whole", "mg": "rehetra/manontolo"}
+    }
+  ]
+}
