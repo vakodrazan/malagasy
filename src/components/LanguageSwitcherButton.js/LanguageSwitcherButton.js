@@ -36,10 +36,11 @@ export default function LanguageSwitcherButton({
   secondaryText,
   name,
   type,
+  onPress,
 }) {
   return (
     <SafeAreaView style={styles.container}>
-      <TouchableOpacity style={styles.buttonContainer}>
+      <TouchableOpacity onPress={onPress} style={styles.buttonContainer}>
         <Text style={styles.buttontext}>{primaryText}</Text>
         <Icon
           name={name}

@@ -13,5 +13,15 @@ storiesOf('LanguageSwitcherButton', module)
       secondaryText={'MG'}
       name="swap-horizontal"
       type="material-community"
+      onPress={action('Switch-language')}
+    />
+  ))
+  .add('Language switcher and long', () => (
+    <LanguageSwitcherButton
+      primaryText={'English'}
+      secondaryText={'Malagasy'}
+      name="swap-horizontal"
+      type="material-community"
+      onPress={action('Switch-language')}
     />
   ));
