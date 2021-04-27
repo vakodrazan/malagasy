@@ -11,23 +11,37 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'row',
-    backgroundColor: '#06B6D4',
     borderRadius: 30,
     paddingTop: 11,
     paddingBottom: 11,
     paddingLeft: 10,
     paddingRight: 10,
   },
-  buttontext: {
-    color: '#fff',
+  buttonText: {
     fontWeight: '400',
     fontSize: 13,
     lineHeight: 16,
     textTransform: 'uppercase',
   },
+  activeButtonText: {
+    color: '#fff',
+  },
+  disabledButtonText: {
+    color: '#06B6D4',
+  },
   buttonIcon: {
     paddingLeft: 6,
     paddingRight: 6,
+  },
+  activeButtonContainer: {
+    backgroundColor: '#06B6D4',
+  },
+  disabledButtonContainer: {
+    backgroundColor: '#fff',
+    borderColor: '#06B6D4',
+    borderWidth: 1,
+    borderStyle: 'solid',
+    borderColor: '#06B6D4',
   },
 });
 
@@ -37,19 +51,40 @@ export default function LanguageSwitcherButton({
   name,
   type,
   onPress,
+  disabled,
 }) {
   return (
     <SafeAreaView style={styles.container}>
-      <TouchableOpacity onPress={onPress} style={styles.buttonContainer}>
-        <Text style={styles.buttontext}>{primaryText}</Text>
+      <TouchableOpacity
+        onPress={onPress}
+        disabled={disabled}
+        style={[
+          styles.buttonContainer,
+          disabled
+            ? styles.disabledButtonContainer
+            : styles.activeButtonContainer,
+        ]}>
+        <Text
+          style={[
+            styles.buttonText,
+            disabled ? styles.disabledButtonText : styles.activeButtonText,
+          ]}>
+          {primaryText}
+        </Text>
         <Icon
           name={name}
           type={type}
           style={styles.buttonIcon}
-          color="#fff"
+          color={disabled ? '#06B6D4' : '#fff'}
           size={17}
         />
-        <Text style={styles.buttontext}>{secondaryText}</Text>
+        <Text
+          style={[
+            styles.buttonText,
+            disabled ? styles.disabledButtonText : styles.activeButtonText,
+          ]}>
+          {secondaryText}
+        </Text>
       </TouchableOpacity>
     </SafeAreaView>
   );
