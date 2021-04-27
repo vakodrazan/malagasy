@@ -8,5 +8,10 @@ import LanguageSwitcherButton from './LanguageSwitcherButton';
 storiesOf('LanguageSwitcherButton', module)
   .addDecorator(story => <View style={{padding: 20}}>{story()}</View>)
   .add('Language switcher', () => (
-    <LanguageSwitcherButton primaryText={'EN'} secondaryText={'MG'} />
+    <LanguageSwitcherButton
+      primaryText={'EN'}
+      secondaryText={'MG'}
+      name="swap-horizontal"
+      type="material-community"
+    />
   ));
