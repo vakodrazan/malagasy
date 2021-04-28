@@ -1,10 +1,35 @@
 import * as React from 'react';
-import {StyleSheet, Text, TouchableOpacity, SafeAreaView} from 'react-native';
+import {FlatList} from 'react-native';
+import ListItem from '../ListItem/ListItem';
+import SectionHeading from '../SectionHeading/SectionHeading';
 
-export default function List({label}) {
+export default function List({
+  data,
+  label,
+  text,
+  buttonName,
+  type,
+  color,
+  onPress,
+  size,
+  language,
+}) {
   return (
-    <SafeAreaView>
-      <Text>{label}</Text>
-    </SafeAreaView>
+    <FlatList
+      data={data}
+      ListHeaderComponent={() => <SectionHeading title={label} />}
+      renderItem={({item}) => (
+        <ListItem
+          title={item.name[language]}
+          text={text}
+          buttonName={buttonName}
+          type={type}
+          color={color}
+          onPress={onPress}
+          size={size}
+        />
+      )}
+      keyExtractor={item => item.id}
+    />
   );
 }
