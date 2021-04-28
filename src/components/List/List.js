@@ -20,7 +20,7 @@ export default function List({
       ListHeaderComponent={() => <SectionHeading title={label} />}
       renderItem={({item}) => (
         <ListItem
-          title={item.name[language]}
+          title={item.name[language.toLowerCase()]}
           text={text}
           buttonName={buttonName}
           type={type}
