@@ -58,7 +58,7 @@ const data = [
     id: '###hotel###',
     name: {
       en: 'At the restaurant',
-      mg: "Ao amin't hotely",
+      mg: "Ao amin'ny hotely",
     },
   },
   {
