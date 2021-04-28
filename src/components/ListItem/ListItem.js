@@ -1,6 +1,5 @@
 import * as React from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import {ListItem} from 'react-native-elements';
 import ActionButton from '../ActionButton/ActionButton';
 
 const styles = StyleSheet.create({
@@ -28,7 +27,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default function ListItemFunction({
+export default function ListItem({
   title,
   text,
   buttonName,

@@ -2,12 +2,12 @@ import * as React from 'react';
 import {View} from 'react-native';
 import {storiesOf} from '@storybook/react-native';
 import {action} from '@storybook/addon-actions';
-import ListItemFunction from './ListItem';
+import ListItem from './ListItem';
 
 storiesOf('ListIten', module)
   .addDecorator(story => <View style={{padding: 20}}>{story()}</View>)
   .add('List item learn', () => (
-    <ListItemFunction
+    <ListItem
       title={'All '}
       text={'Learn'}
       buttonName={'arrow-right'}
@@ -18,7 +18,7 @@ storiesOf('ListIten', module)
     />
   ))
   .add('List item pick', () => (
-    <ListItemFunction
+    <ListItem
       title={'All '}
       text={'Pick'}
       buttonName={'arrow-right'}
@@ -29,7 +29,7 @@ storiesOf('ListIten', module)
     />
   ))
   .add('List item and long', () => (
-    <ListItemFunction
+    <ListItem
       title={'An unncessessarly loooong category text is here '}
       text={'Learn'}
       buttonName={'arrow-right'}
@@ -40,7 +40,7 @@ storiesOf('ListIten', module)
     />
   ))
   .add('List item and correct', () => (
-    <ListItemFunction
+    <ListItem
       title={'two-thousand '}
       text={'Correct'}
       buttonName={'check'}
@@ -51,7 +51,7 @@ storiesOf('ListIten', module)
     />
   ))
   .add('List item and wrong', () => (
-    <ListItemFunction
+    <ListItem
       title={'1494 '}
       text={'Wrong'}
       buttonName={'close'}
@@ -62,7 +62,7 @@ storiesOf('ListIten', module)
     />
   ))
   .add('List item and disabled', () => (
-    <ListItemFunction
+    <ListItem
       title={'two-thousand '}
       text={'Correct'}
       buttonName={'check'}
