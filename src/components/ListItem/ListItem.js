@@ -1,21 +1,22 @@
 import * as React from 'react';
-import {StyleSheet, TouchableOpacity} from 'react-native';
+import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {ListItem} from 'react-native-elements';
 import ActionButton from '../ActionButton/ActionButton';
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#d3d3d3',
+    backgroundColor: '#fff',
     borderStyle: 'solid',
     borderWidth: 1,
     borderColor: '#E5E5E5',
-  },
-  listContent: {
+    borderRadius: 3,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingRight: 10,
-    paddingLeft: 10,
+    paddingRight: 20,
+    paddingLeft: 16,
+    paddingTop: 17,
+    paddingBottom: 17,
   },
   itemTitle: {
     color: '#111827',
@@ -39,27 +40,20 @@ export default function ListItemFunction({
 }) {
   return (
     <TouchableOpacity
-      style={styles.container}
+      style={[styles.container, styles.listContent]}
       onPress={onPress}
       disabled={disabled}>
-      <ListItem>
-        <ListItem.Content style={styles.listContent}>
-          <ListItem.Title
-            style={styles.itemTitle}
-            numberOfLines={1}
-            ellipsizeMode="tail">
-            {title}
-          </ListItem.Title>
-          <ActionButton
-            text={text}
-            name={buttonName}
-            type={type}
-            color={color}
-            onPress={onPress}
-            size={size}
-          />
-        </ListItem.Content>
-      </ListItem>
+      <Text style={styles.itemTitle} numberOfLines={1} ellipsizeMode="tail">
+        {title}
+      </Text>
+      <ActionButton
+        text={text}
+        name={buttonName}
+        type={type}
+        color={color}
+        onPress={onPress}
+        size={size}
+      />
     </TouchableOpacity>
   );
 }
