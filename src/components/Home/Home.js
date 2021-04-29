@@ -23,10 +23,14 @@ const Home = ({navigation}) => {
   const {categories} = useSelector(state => state);
   const dispatch = useDispatch();
   React.useEffect(() => {
-    dispatch({type: 'CATEGORY_LIST', value: categoryList.categories});
+    dispatch({type: 'CATEGORY_LIST', payload: categoryList.categories});
   }, []);
 
-  console.log(categories[0]);
+  function onPress(item) {
+    navigation.navigate('DisplayPhrases', {
+      findItem: item,
+    });
+  }
 
   return (
     <SafeAreaView style={styles.container}>
@@ -72,6 +76,7 @@ const Home = ({navigation}) => {
         color={'#06B6D4'}
         size={16}
         language={'en'}
+        onPress={onPress}
       />
     </SafeAreaView>
   );

@@ -7,7 +7,7 @@ export default function rootReducer(state = initialState, action) {
     case 'CATEGORY_LIST': {
       return {
         ...state,
-        categories: action.value,
+        categories: action.payload,
       };
     }
     default:
