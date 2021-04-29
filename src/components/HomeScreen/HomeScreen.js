@@ -19,7 +19,7 @@ export const styles = StyleSheet.create({
   },
 });
 
-const Home = ({navigation}) => {
+const HomeScreen = ({navigation}) => {
   const {categories} = useSelector(state => state);
   const dispatch = useDispatch();
   React.useEffect(() => {
@@ -82,4 +82,4 @@ const Home = ({navigation}) => {
   );
 };
 
-export default Home;
+export default HomeScreen;
