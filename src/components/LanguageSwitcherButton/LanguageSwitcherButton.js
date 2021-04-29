@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
     justifyContent: 'center',
+    paddingRight: 10,
   },
   buttonContainer: {
     alignItems: 'center',
