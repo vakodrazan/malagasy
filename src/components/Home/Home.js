@@ -19,18 +19,20 @@ const styles = StyleSheet.create({
   },
 });
 
-export default function CategoryList() {
+const Home = ({navigation}) => {
   const {categories} = useSelector(state => state);
   const dispatch = useDispatch();
   React.useEffect(() => {
     dispatch({type: 'CATEGORY_LIST', value: categoryList.categories});
   }, []);
 
+  console.log(categories[0]);
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.toolBar}>
         <ToolButton
-          onPress={alert('Add-button')}
+          onPress={console.log('Add-button')}
           name={'plus'}
           type={'material-community'}
           size={14}
@@ -40,22 +42,22 @@ export default function CategoryList() {
           secondaryText={'MG'}
           name="swap-horizontal"
           type="material-community"
-          onPress={alert('Switch-language')}
+          onPress={console.log('Switch-language')}
         />
         <ToolButton
-          onPress={alert('Seen-button')}
+          onPress={console.log('Seen-button')}
           name={'check'}
           type={'material-community'}
           size={17.6}
         />
         <ToolButton
-          onPress={alert('Learnt-button')}
+          onPress={console.log('Learnt-button')}
           name={'check-all'}
           type={'material-community'}
           size={23.25}
         />
         <ToolButton
-          onPress={alert('switch-mode-button')}
+          onPress={console.log('switch-mode-button')}
           name={'brightness-6'}
           type={'material-community'}
           size={22.62}
@@ -68,10 +70,11 @@ export default function CategoryList() {
         buttonName={'arrow-right'}
         type={'material-community'}
         color={'#06B6D4'}
-        onPress={alert('learn-button')}
         size={16}
         language={'en'}
       />
     </SafeAreaView>
   );
-}
+};
+
+export default Home;
