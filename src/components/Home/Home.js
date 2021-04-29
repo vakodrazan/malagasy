@@ -7,7 +7,7 @@ import List from '../List/List';
 import ToolButton from '../ToolButton/ToolButton';
 import LanguageSwitcherButton from '../LanguageSwitcherButton/LanguageSwitcherButton';
 
-const styles = StyleSheet.create({
+export const styles = StyleSheet.create({
   container: {
     marginRight: 23,
     marginLeft: 23,
@@ -36,7 +36,7 @@ const Home = ({navigation}) => {
     <SafeAreaView style={styles.container}>
       <View style={styles.toolBar}>
         <ToolButton
-          onPress={console.log('Add-button')}
+          onPress={() => console.log('Add-button')}
           name={'plus'}
           type={'material-community'}
           size={14}
@@ -46,22 +46,22 @@ const Home = ({navigation}) => {
           secondaryText={'MG'}
           name="swap-horizontal"
           type="material-community"
-          onPress={console.log('Switch-language')}
+          onPress={() => console.log('Switch-language')}
         />
         <ToolButton
-          onPress={console.log('Seen-button')}
+          onPress={() => console.log('Seen-button')}
           name={'check'}
           type={'material-community'}
           size={17.6}
         />
         <ToolButton
-          onPress={console.log('Learnt-button')}
+          onPress={() => console.log('Learnt-button')}
           name={'check-all'}
           type={'material-community'}
           size={23.25}
         />
         <ToolButton
-          onPress={console.log('switch-mode-button')}
+          onPress={() => console.log('switch-mode-button')}
           name={'brightness-6'}
           type={'material-community'}
           size={22.62}
