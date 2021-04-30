@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {SafeAreaView, Text, View, StyleSheet} from 'react-native';
-import {useSelector} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 
 import LanguageSwitcherButton from '../LanguageSwitcherButton/LanguageSwitcherButton';
 import ToolButton from '../ToolButton/ToolButton';
@@ -16,9 +16,34 @@ const categoryStyles = StyleSheet.create({
 });
 
 export default function LearningScreen({route, navigation}) {
-  const {language} = useSelector(state => state);
-  const item = route.params.findItem;
-  console.log(item);
+  const {language, phraseList, categoryPhrase, learnPhrase} = useSelector(
+    state => state,
+  );
+  const dispatch = useDispatch();
+  const itemCategory = route.params.findItem;
+
+  const filterCategory = itemCategory.phrasesIds.map(id =>
+    phraseList.filter(phrase => phrase.id === id),
+  );
+
+  React.useEffect(() => {
+    dispatch({type: 'DISPLAY_CATEGORY_PHRASE', payload: filterCategory});
+  }, []);
+
+  renderLearningPhrase(categoryPhrase);
+
+  function renderLearningPhrase(item) {
+    // console.log(item);
+    const randomOption = item[Math.floor(Math.random() * item.length)];
+    const randomOption1 = item[Math.floor(Math.random() * item.length)];
+    const randomOption2 = item[Math.floor(Math.random() * item.length)];
+    const randomOption3 = item[Math.floor(Math.random() * item.length)];
+
+    // dispatch({type: 'DISPLAY_LEARN_PHRASE', payload: randomOption});
+  }
+
+  console.log(learnPhrase);
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.toolBar}>
@@ -43,7 +68,7 @@ export default function LearningScreen({route, navigation}) {
       </View>
       <View style={categoryStyles.headingCategory}>
         <SectionHeading title="Category: " />
-        <Text>{item.name[language]}</Text>
+        <Text>{itemCategory.name[language]}</Text>
       </View>
       <PhraseTextArea editable={false} />
     </SafeAreaView>
