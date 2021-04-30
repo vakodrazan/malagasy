@@ -1,5 +1,6 @@
 const initialState = {
   categories: {},
+  language: 'en',
 };
 
 export default function rootReducer(state = initialState, action) {
