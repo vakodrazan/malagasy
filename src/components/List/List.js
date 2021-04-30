@@ -12,6 +12,7 @@ export default function List({
   color,
   onPress,
   size,
+  disabled,
   language,
 }) {
   return (
@@ -27,6 +28,7 @@ export default function List({
           color={color}
           onPress={() => onPress(item)}
           size={size}
+          disabled={disabled}
         />
       )}
       keyExtractor={(item, index) => item.id + index}

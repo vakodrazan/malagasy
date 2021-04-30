@@ -34,6 +34,7 @@ export default function LearningScreen({route, navigation}) {
     answerOptions,
     isClicked,
   } = useSelector(state => state);
+  const solutionRef = React.useRef(null);
   const dispatch = useDispatch();
   const itemCategory = route.params.findItem;
 
@@ -65,6 +66,11 @@ export default function LearningScreen({route, navigation}) {
     const correctOption = learnPhrase.name[language];
     console.log(correctOption);
     dispatch({type: 'SHOW_NEXT_BUTTON', payload: true});
+  };
+
+  const handleClickNext = () => {
+    renderLearningPhrase(categoryPhrase);
+    dispatch({type: 'SHOW_NEXT_BUTTON', payload: false});
   };
 
   return (
@@ -104,7 +110,7 @@ export default function LearningScreen({route, navigation}) {
       {answerOptions ? (
         <List
           data={answerOptions}
-          label={'Select a category: '}
+          label={'Pick a solution: '}
           text={'Pick'}
           buttonName={'arrow-right'}
           type={'material-community'}
@@ -112,13 +118,14 @@ export default function LearningScreen({route, navigation}) {
           size={16}
           language={'en'}
           onPress={onPress}
+          disabled={isClicked}
         />
       ) : null}
       {isClicked && (
         <NextButton
           text={'Next'}
           accessibilityLabel={'Tap next'}
-          onPress={onPress}
+          onPress={handleClickNext}
         />
       )}
     </SafeAreaView>
