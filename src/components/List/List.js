@@ -25,7 +25,7 @@ export default function List({
           buttonName={buttonName}
           type={type}
           color={color}
-          onPress={onPress}
+          onPress={() => onPress(item)}
           size={size}
         />
       )}
