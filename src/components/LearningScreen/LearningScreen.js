@@ -13,7 +13,15 @@ const categoryStyles = StyleSheet.create({
   headingCategory: {
     flexDirection: 'row',
   },
-  headingCategoryText: {},
+  categorySection: {
+    paddingBottom: 37,
+  },
+  headingCategoryText: {
+    fontWeight: '400',
+    fontSize: 18,
+    lineHeight: 22,
+    color: '#111827',
+  },
 });
 
 export default function LearningScreen({route, navigation}) {
@@ -49,7 +57,7 @@ export default function LearningScreen({route, navigation}) {
     dispatch({type: 'DISPLAY_ALL_ANSWER_OPTION', payload: allOptions});
   }
 
-  const convertLanguage = language == 'en' ? 'mg' : 'en';
+  const convertLanguage = language === 'en' ? 'mg' : 'en';
 
   const onPress = () => {
     const correctOption = learnPhrase.name[language];
@@ -58,35 +66,38 @@ export default function LearningScreen({route, navigation}) {
 
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.toolBar}>
-        <ToolButton
-          onPress={() => navigation.navigate('HomeScreen')}
-          name={'chevron-left'}
-          type={'material-community'}
-        />
-        <ToolButton
-          onPress={() => console.log('switch-mode-button')}
-          name={'brightness-6'}
-          type={'material-community'}
-          size={22.62}
-        />
-        <LanguageSwitcherButton
-          primaryText={'EN'}
-          secondaryText={'MG'}
-          name="swap-horizontal"
-          type="material-community"
-          onPress={() => console.log('Switch-language')}
+      <View style={categoryStyles.categorySection}>
+        <View style={styles.toolBar}>
+          <ToolButton
+            onPress={() => navigation.navigate('HomeScreen')}
+            name={'chevron-left'}
+            type={'material-community'}
+          />
+          <ToolButton
+            onPress={() => console.log('switch-mode-button')}
+            name={'brightness-6'}
+            type={'material-community'}
+            size={22.62}
+          />
+          <LanguageSwitcherButton
+            primaryText={'EN'}
+            secondaryText={'MG'}
+            name="swap-horizontal"
+            type="material-community"
+            onPress={() => console.log('Switch-language')}
+          />
+        </View>
+        <View style={categoryStyles.headingCategory}>
+          <SectionHeading title="Category: " />
+          <Text style={categoryStyles.headingCategoryText}>
+            {itemCategory.name[language]}
+          </Text>
+        </View>
+        <PhraseTextArea
+          editable={false}
+          phrase={learnPhrase.name ? learnPhrase.name[convertLanguage] : null}
         />
       </View>
-      <View style={categoryStyles.headingCategory}>
-        <SectionHeading title="Category: " />
-        <Text>{itemCategory.name[language]}</Text>
-      </View>
-      <PhraseTextArea
-        editable={false}
-        phrase={learnPhrase.name ? learnPhrase.name[convertLanguage] : null}
-      />
-
       {answerOptions ? (
         <List
           data={answerOptions}
