@@ -7,6 +7,7 @@ import ToolButton from '../ToolButton/ToolButton';
 import {styles} from '../HomeScreen/HomeScreen';
 import SectionHeading from '../SectionHeading/SectionHeading';
 import PhraseTextArea from '../PhraseTextArea/PhraseTextArea';
+import List from '../List/List';
 
 const categoryStyles = StyleSheet.create({
   headingCategory: {
@@ -16,33 +17,44 @@ const categoryStyles = StyleSheet.create({
 });
 
 export default function LearningScreen({route, navigation}) {
-  const {language, phraseList, categoryPhrase, learnPhrase} = useSelector(
-    state => state,
-  );
+  const {
+    language,
+    phraseList,
+    categoryPhrase,
+    learnPhrase,
+    answerOptions,
+  } = useSelector(state => state);
   const dispatch = useDispatch();
   const itemCategory = route.params.findItem;
 
-  const filterCategory = itemCategory.phrasesIds.map(id =>
-    phraseList.filter(phrase => phrase.id === id),
+  const filterCategory = phraseList.filter(phrase =>
+    itemCategory.phrasesIds.some(item => item === phrase.id),
   );
 
   React.useEffect(() => {
     dispatch({type: 'DISPLAY_CATEGORY_PHRASE', payload: filterCategory});
+    renderLearningPhrase(filterCategory);
   }, []);
 
-  renderLearningPhrase(categoryPhrase);
-
   function renderLearningPhrase(item) {
-    // console.log(item);
-    const randomOption = item[Math.floor(Math.random() * item.length)];
-    const randomOption1 = item[Math.floor(Math.random() * item.length)];
-    const randomOption2 = item[Math.floor(Math.random() * item.length)];
-    const randomOption3 = item[Math.floor(Math.random() * item.length)];
-
-    // dispatch({type: 'DISPLAY_LEARN_PHRASE', payload: randomOption});
+    const option = item[Math.floor(Math.random() * item.length)];
+    const option1 = item[Math.floor(Math.random() * item.length)];
+    const option2 = item[Math.floor(Math.random() * item.length)];
+    const option3 = item[Math.floor(Math.random() * item.length)];
+    dispatch({type: 'DISPLAY_LEARN_PHRASE', payload: option});
+    const allOptions = [option, option1, option2, option3].sort(() => {
+      return 0.3 - Math.random();
+    });
+    dispatch({type: 'DISPLAY_LEARN_PHRASE', payload: option});
+    dispatch({type: 'DISPLAY_ALL_ANSWER_OPTION', payload: allOptions});
   }
 
-  console.log(learnPhrase);
+  const convertLanguage = language == 'en' ? 'mg' : 'en';
+
+  const onPress = () => {
+    const correctOption = learnPhrase.name[language];
+    console.log(correctOption);
+  };
 
   return (
     <SafeAreaView style={styles.container}>
@@ -70,7 +82,24 @@ export default function LearningScreen({route, navigation}) {
         <SectionHeading title="Category: " />
         <Text>{itemCategory.name[language]}</Text>
       </View>
-      <PhraseTextArea editable={false} />
+      <PhraseTextArea
+        editable={false}
+        phrase={learnPhrase.name ? learnPhrase.name[convertLanguage] : null}
+      />
+
+      {answerOptions ? (
+        <List
+          data={answerOptions}
+          label={'Select a category: '}
+          text={'Pick'}
+          buttonName={'arrow-right'}
+          type={'material-community'}
+          color={'#06B6D4'}
+          size={16}
+          language={'en'}
+          onPress={onPress}
+        />
+      ) : null}
     </SafeAreaView>
   );
 }

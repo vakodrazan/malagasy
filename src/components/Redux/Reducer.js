@@ -29,12 +29,12 @@ export default function rootReducer(state = initialState, action) {
         categoryPhrase: action.payload,
       };
     }
-    // case 'DISPLAY_CORRECT_ANSWER': {
-    //   return {
-    //     ...state,
-    //     learnPhrase: action.payload,
-    //   };
-    // }
+    case 'DISPLAY_ALL_ANSWER_OPTION': {
+      return {
+        ...state,
+        answerOptions: action.payload,
+      };
+    }
     default:
       return state;
   }
