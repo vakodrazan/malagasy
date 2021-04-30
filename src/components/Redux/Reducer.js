@@ -7,6 +7,7 @@ const initialState = {
   answerOptions: [],
   phraseList: phrasesList.phrases,
   categoryPhrase: [],
+  isClicked: false,
 };
 
 export default function rootReducer(state = initialState, action) {
@@ -33,6 +34,12 @@ export default function rootReducer(state = initialState, action) {
       return {
         ...state,
         answerOptions: action.payload,
+      };
+    }
+    case 'SHOW_NEXT_BUTTON': {
+      return {
+        ...state,
+        isClicked: action.payload,
       };
     }
     default:

@@ -8,6 +8,7 @@ import {styles} from '../HomeScreen/HomeScreen';
 import SectionHeading from '../SectionHeading/SectionHeading';
 import PhraseTextArea from '../PhraseTextArea/PhraseTextArea';
 import List from '../List/List';
+import NextButton from '../NextButton/NextButton';
 
 const categoryStyles = StyleSheet.create({
   headingCategory: {
@@ -31,6 +32,7 @@ export default function LearningScreen({route, navigation}) {
     categoryPhrase,
     learnPhrase,
     answerOptions,
+    isClicked,
   } = useSelector(state => state);
   const dispatch = useDispatch();
   const itemCategory = route.params.findItem;
@@ -62,6 +64,7 @@ export default function LearningScreen({route, navigation}) {
   const onPress = () => {
     const correctOption = learnPhrase.name[language];
     console.log(correctOption);
+    dispatch({type: 'SHOW_NEXT_BUTTON', payload: true});
   };
 
   return (
@@ -111,6 +114,13 @@ export default function LearningScreen({route, navigation}) {
           onPress={onPress}
         />
       ) : null}
+      {isClicked && (
+        <NextButton
+          text={'Next'}
+          accessibilityLabel={'Tap next'}
+          onPress={onPress}
+        />
+      )}
     </SafeAreaView>
   );
 }
