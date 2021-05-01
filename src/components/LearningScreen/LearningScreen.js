@@ -35,9 +35,8 @@ export default function LearningScreen({route, navigation}) {
     isClicked,
     buttonName,
     iconColor,
-    iconName,
+    buttonText,
   } = useSelector(state => state);
-  const solutionRef = React.useRef(null);
   const dispatch = useDispatch();
   const itemCategory = route.params.findItem;
 
@@ -57,33 +56,41 @@ export default function LearningScreen({route, navigation}) {
     const option3 = item[Math.floor(Math.random() * item.length)];
     dispatch({type: 'DISPLAY_LEARN_PHRASE', payload: option});
     const allOptions = [option, option1, option2, option3].sort(() => {
-      return 0.3 - Math.random();
+      return 0.5 - Math.random();
+    });
+    const newData = allOptions.map(item => {
+      return {
+        ...item,
+        iconButton: {
+          buttonName,
+          buttonText,
+          iconColor,
+        },
+      };
     });
     dispatch({type: 'DISPLAY_LEARN_PHRASE', payload: option});
-    dispatch({type: 'DISPLAY_ALL_ANSWER_OPTION', payload: allOptions});
+    dispatch({type: 'DISPLAY_ALL_ANSWER_OPTION', payload: newData});
   }
 
   const convertLanguage = language === 'en' ? 'mg' : 'en';
 
   const buttonRef = React.useRef();
   const onPress = (currentTarget, index) => {
-    // console.log(index);
-    const correctOption = learnPhrase.name[language];
-    const userGuess = currentTarget.name[language];
+    const correctOption = learnPhrase.id;
+    const userGuess = currentTarget.id;
     dispatch({type: 'SHOW_NEXT_BUTTON', payload: true});
+    dispatch({type: 'SELECTED_ITEM', payload: currentTarget});
+    const filterItem = answerOptions.find(
+      option => option.id === currentTarget.id,
+    );
     if (correctOption === userGuess) {
-      dispatch({type: 'UPDATE_BUTTON_NAME', payload: 'Correct'});
-      dispatch({type: 'UPDATE_ICON_COLOR', payload: '#06D440'});
-      dispatch({type: 'UPDATE_ICON_NAME', payload: 'check'});
+      filterItem.iconButton.buttonText = 'Correct';
+      filterItem.iconButton.buttonName = 'check';
+      filterItem.iconButton.iconColor = '#06D440';
     } else {
-      buttonRef.current.setNativeProps({
-        style: {
-          backgroundColor: '#06D440',
-        },
-      });
-      // dispatch({type: 'UPDATE_BUTTON_NAME', payload: 'Wrong'});
-      // dispatch({type: 'UPDATE_ICON_COLOR', payload: '#D4068E'});
-      // dispatch({type: 'UPDATE_ICON_NAME', payload: 'close'});
+      filterItem.iconButton.buttonText = 'Wrong';
+      filterItem.iconButton.buttonName = 'close';
+      filterItem.iconButton.iconColor = '#D4068E';
     }
   };
 
@@ -94,6 +101,7 @@ export default function LearningScreen({route, navigation}) {
     dispatch({type: 'UPDATE_ICON_COLOR', payload: '#06B6D4'});
     dispatch({type: 'UPDATE_ICON_NAME', payload: 'arrow-right'});
   };
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={categoryStyles.categorySection}>
@@ -132,10 +140,7 @@ export default function LearningScreen({route, navigation}) {
         <List
           data={answerOptions}
           label={'Pick a solution: '}
-          text={buttonName}
-          buttonName={iconName}
           type={'material-community'}
-          color={iconColor}
           size={16}
           language={'en'}
           onPress={onPress}
