@@ -80,17 +80,29 @@ export default function LearningScreen({route, navigation}) {
     const userGuess = currentTarget.id;
     dispatch({type: 'SHOW_NEXT_BUTTON', payload: true});
     dispatch({type: 'SELECTED_ITEM', payload: currentTarget});
-    const filterItem = answerOptions.find(
-      option => option.id === currentTarget.id,
+    const findClickedOption = answerOptions.find(
+      option => option.id === userGuess,
+    );
+    const findCorrectOption = answerOptions.find(
+      option => option.id === correctOption,
     );
     if (correctOption === userGuess) {
-      filterItem.iconButton.buttonText = 'Correct';
-      filterItem.iconButton.buttonName = 'check';
-      filterItem.iconButton.iconColor = '#06D440';
+      findClickedOption.iconButton = {
+        buttonText: 'Correct',
+        buttonName: 'check',
+        iconColor: '#06D440',
+      };
     } else {
-      filterItem.iconButton.buttonText = 'Wrong';
-      filterItem.iconButton.buttonName = 'close';
-      filterItem.iconButton.iconColor = '#D4068E';
+      findClickedOption.iconButton = {
+        buttonText: 'Wrong',
+        buttonName: 'close',
+        iconColor: '#D4068E',
+      };
+      findCorrectOption.iconButton = {
+        buttonText: 'Correct',
+        buttonName: 'check',
+        iconColor: '#06D440',
+      };
     }
   };
 
