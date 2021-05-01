@@ -33,6 +33,9 @@ export default function LearningScreen({route, navigation}) {
     learnPhrase,
     answerOptions,
     isClicked,
+    buttonName,
+    iconColor,
+    iconName,
   } = useSelector(state => state);
   const solutionRef = React.useRef(null);
   const dispatch = useDispatch();
@@ -62,15 +65,37 @@ export default function LearningScreen({route, navigation}) {
 
   const convertLanguage = language === 'en' ? 'mg' : 'en';
 
-  const onPress = () => {
+  // function buttonRef(item) {
+  //   console.log(item);
+  //   return item.name[language] === learnPhrase.name[language]
+  //     ? solutionRef
+  //     : null;
+  // }
+
+  const onPress = (currentTarget, index) => {
+    // console.log(index);
     const correctOption = learnPhrase.name[language];
-    console.log(correctOption);
+    const userGuess = currentTarget.name[language];
     dispatch({type: 'SHOW_NEXT_BUTTON', payload: true});
+
+    if (correctOption === userGuess) {
+      dispatch({type: 'UPDATE_BUTTON_NAME', payload: 'Correct'});
+      dispatch({type: 'UPDATE_ICON_COLOR', payload: '#06D440'});
+      dispatch({type: 'UPDATE_ICON_NAME', payload: 'check'});
+    } else {
+      dispatch({type: 'UPDATE_BUTTON_NAME', payload: 'Wrong'});
+      dispatch({type: 'UPDATE_ICON_COLOR', payload: '#D4068E'});
+      dispatch({type: 'UPDATE_ICON_NAME', payload: 'close'});
+    }
+    // console.log(correctOption);
   };
 
   const handleClickNext = () => {
     renderLearningPhrase(categoryPhrase);
     dispatch({type: 'SHOW_NEXT_BUTTON', payload: false});
+    dispatch({type: 'UPDATE_BUTTON_NAME', payload: 'Pick'});
+    dispatch({type: 'UPDATE_ICON_COLOR', payload: '#06B6D4'});
+    dispatch({type: 'UPDATE_ICON_NAME', payload: 'arrow-right'});
   };
 
   return (
@@ -111,10 +136,10 @@ export default function LearningScreen({route, navigation}) {
         <List
           data={answerOptions}
           label={'Pick a solution: '}
-          text={'Pick'}
-          buttonName={'arrow-right'}
+          text={buttonName}
+          buttonName={iconName}
           type={'material-community'}
-          color={'#06B6D4'}
+          color={iconColor}
           size={16}
           language={'en'}
           onPress={onPress}

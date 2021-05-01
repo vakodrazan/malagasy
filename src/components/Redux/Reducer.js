@@ -8,6 +8,10 @@ const initialState = {
   phraseList: phrasesList.phrases,
   categoryPhrase: [],
   isClicked: false,
+  isCorrect: false,
+  buttonName: 'Pick',
+  iconColor: '#06B6D4',
+  iconName: 'arrow-right',
 };
 
 export default function rootReducer(state = initialState, action) {
@@ -40,6 +44,24 @@ export default function rootReducer(state = initialState, action) {
       return {
         ...state,
         isClicked: action.payload,
+      };
+    }
+    case 'UPDATE_BUTTON_NAME': {
+      return {
+        ...state,
+        buttonName: action.payload,
+      };
+    }
+    case 'UPDATE_ICON_COLOR': {
+      return {
+        ...state,
+        iconColor: action.payload,
+      };
+    }
+    case 'UPDATE_ICON_NAME': {
+      return {
+        ...state,
+        iconName: action.payload,
       };
     }
     default:

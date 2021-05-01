@@ -19,14 +19,14 @@ export default function List({
     <FlatList
       data={data}
       ListHeaderComponent={() => <SectionHeading title={label} />}
-      renderItem={({item}) => (
+      renderItem={({item, index}) => (
         <ListItem
           title={item.name[language.toLowerCase()]}
           text={text}
           buttonName={buttonName}
           type={type}
           color={color}
-          onPress={() => onPress(item)}
+          onPress={() => onPress(item, index)}
           size={size}
           disabled={disabled}
         />
