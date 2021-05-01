@@ -24,10 +24,10 @@ export default function List({
       renderItem={({item, index}) => (
         <ListItem
           title={item.name[language.toLowerCase()]}
-          text={text}
-          buttonName={buttonName}
+          text={item.iconButton ? item.iconButton.buttonText : text}
+          buttonName={item.iconButton ? item.iconButton.buttonName : buttonName}
           type={type}
-          color={color}
+          color={item.iconButton ? item.iconButton.iconColor : color}
           onPress={() => onPress(item, index)}
           size={size}
           disabled={disabled}
