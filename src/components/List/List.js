@@ -14,6 +14,8 @@ export default function List({
   size,
   disabled,
   language,
+  buttonRef,
+  learnPhrase,
 }) {
   return (
     <FlatList
@@ -29,6 +31,7 @@ export default function List({
           onPress={() => onPress(item, index)}
           size={size}
           disabled={disabled}
+          buttonRef={learnPhrase === item.id ? buttonRef : null}
         />
       )}
       keyExtractor={(item, index) => item.id + index}

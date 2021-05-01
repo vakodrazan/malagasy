@@ -65,29 +65,26 @@ export default function LearningScreen({route, navigation}) {
 
   const convertLanguage = language === 'en' ? 'mg' : 'en';
 
-  // function buttonRef(item) {
-  //   console.log(item);
-  //   return item.name[language] === learnPhrase.name[language]
-  //     ? solutionRef
-  //     : null;
-  // }
-
+  const buttonRef = React.useRef();
   const onPress = (currentTarget, index) => {
     // console.log(index);
     const correctOption = learnPhrase.name[language];
     const userGuess = currentTarget.name[language];
     dispatch({type: 'SHOW_NEXT_BUTTON', payload: true});
-
     if (correctOption === userGuess) {
       dispatch({type: 'UPDATE_BUTTON_NAME', payload: 'Correct'});
       dispatch({type: 'UPDATE_ICON_COLOR', payload: '#06D440'});
       dispatch({type: 'UPDATE_ICON_NAME', payload: 'check'});
     } else {
-      dispatch({type: 'UPDATE_BUTTON_NAME', payload: 'Wrong'});
-      dispatch({type: 'UPDATE_ICON_COLOR', payload: '#D4068E'});
-      dispatch({type: 'UPDATE_ICON_NAME', payload: 'close'});
+      buttonRef.current.setNativeProps({
+        style: {
+          backgroundColor: '#06D440',
+        },
+      });
+      // dispatch({type: 'UPDATE_BUTTON_NAME', payload: 'Wrong'});
+      // dispatch({type: 'UPDATE_ICON_COLOR', payload: '#D4068E'});
+      // dispatch({type: 'UPDATE_ICON_NAME', payload: 'close'});
     }
-    // console.log(correctOption);
   };
 
   const handleClickNext = () => {
@@ -97,7 +94,6 @@ export default function LearningScreen({route, navigation}) {
     dispatch({type: 'UPDATE_ICON_COLOR', payload: '#06B6D4'});
     dispatch({type: 'UPDATE_ICON_NAME', payload: 'arrow-right'});
   };
-
   return (
     <SafeAreaView style={styles.container}>
       <View style={categoryStyles.categorySection}>
@@ -143,7 +139,9 @@ export default function LearningScreen({route, navigation}) {
           size={16}
           language={'en'}
           onPress={onPress}
+          learnPhrase={learnPhrase.id}
           disabled={isClicked}
+          buttonRef={buttonRef}
         />
       ) : null}
       {isClicked && (
