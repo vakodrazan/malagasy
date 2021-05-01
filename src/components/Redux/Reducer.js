@@ -9,9 +9,9 @@ const initialState = {
   categoryPhrase: [],
   isClicked: false,
   isCorrect: false,
-  buttonName: 'Pick',
+  buttonText: 'Pick',
   iconColor: '#06B6D4',
-  iconName: 'arrow-right',
+  buttonName: 'arrow-right',
 };
 
 export default function rootReducer(state = initialState, action) {
@@ -49,7 +49,7 @@ export default function rootReducer(state = initialState, action) {
     case 'UPDATE_BUTTON_NAME': {
       return {
         ...state,
-        buttonName: action.payload,
+        buttonText: action.payload,
       };
     }
     case 'UPDATE_ICON_COLOR': {
@@ -61,7 +61,7 @@ export default function rootReducer(state = initialState, action) {
     case 'UPDATE_ICON_NAME': {
       return {
         ...state,
-        iconName: action.payload,
+        buttonName: action.payload,
       };
     }
     default:
