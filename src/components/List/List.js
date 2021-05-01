@@ -29,7 +29,7 @@ export default function List({
           size={size}
         />
       )}
-      keyExtractor={item => item.id}
+      keyExtractor={(item, index) => item.id + index}
     />
   );
 }

@@ -1,5 +1,12 @@
+import phrasesList from '../../data/phrases.json';
+
 const initialState = {
   categories: {},
+  language: 'en',
+  learnPhrase: {},
+  answerOptions: [],
+  phraseList: phrasesList.phrases,
+  categoryPhrase: [],
 };
 
 export default function rootReducer(state = initialState, action) {
@@ -8,6 +15,24 @@ export default function rootReducer(state = initialState, action) {
       return {
         ...state,
         categories: action.payload,
+      };
+    }
+    case 'DISPLAY_LEARN_PHRASE': {
+      return {
+        ...state,
+        learnPhrase: action.payload,
+      };
+    }
+    case 'DISPLAY_CATEGORY_PHRASE': {
+      return {
+        ...state,
+        categoryPhrase: action.payload,
+      };
+    }
+    case 'DISPLAY_ALL_ANSWER_OPTION': {
+      return {
+        ...state,
+        answerOptions: action.payload,
       };
     }
     default:
