@@ -9,6 +9,7 @@ import SectionHeading from '../SectionHeading/SectionHeading';
 import PhraseTextArea from '../PhraseTextArea/PhraseTextArea';
 import List from '../List/List';
 import NextButton from '../NextButton/NextButton';
+import AsyncStorage from '@react-native-community/async-storage';
 
 const categoryStyles = StyleSheet.create({
   headingCategory: {
@@ -25,6 +26,10 @@ const categoryStyles = StyleSheet.create({
   },
 });
 
+const updateCurrentList = list => {
+  AsyncStorage.setItem('@@GrocerPhrase/learntPhrases', JSON.stringify(list));
+};
+
 export default function LearningScreen({route, navigation}) {
   const {
     language,
@@ -36,6 +41,7 @@ export default function LearningScreen({route, navigation}) {
     buttonName,
     iconColor,
     buttonText,
+    learntPhrases,
   } = useSelector(state => state);
   const dispatch = useDispatch();
   const itemCategory = route.params.findItem;
@@ -49,18 +55,26 @@ export default function LearningScreen({route, navigation}) {
     renderLearningPhrase(filterCategory);
   }, []);
 
-  function renderLearningPhrase(item) {
-    const option = item[Math.floor(Math.random() * item.length)];
-    const option1 = item[Math.floor(Math.random() * item.length)];
-    const option2 = item[Math.floor(Math.random() * item.length)];
-    const option3 = item[Math.floor(Math.random() * item.length)];
+  function renderLearningPhrase(phrases) {
+    const filterLearntPhrase = phrases.filter(item =>
+      learntPhrases.some(phrase => phrase.id !== item.id),
+    );
+    const option = (learntPhrases.length = 0
+      ? phrases[Math.floor(Math.random() * phrases.length)]
+      : filterLearntPhrase[
+          Math.floor(Math.random() * filterLearntPhrase.length)
+        ]);
+
+    const option1 = phrases[Math.floor(Math.random() * phrases.length)];
+    const option2 = phrases[Math.floor(Math.random() * phrases.length)];
+    const option3 = phrases[Math.floor(Math.random() * phrases.length)];
     dispatch({type: 'DISPLAY_LEARN_PHRASE', payload: option});
     const allOptions = [option, option1, option2, option3].sort(() => {
       return 0.5 - Math.random();
     });
-    const newData = allOptions.map(item => {
+    const newData = allOptions.map(phrases => {
       return {
-        ...item,
+        ...phrases,
         iconButton: {
           buttonName,
           buttonText,
@@ -92,6 +106,11 @@ export default function LearningScreen({route, navigation}) {
         buttonName: 'check',
         iconColor: '#06D440',
       };
+      const newListOfLearntPhrases = [...learntPhrases, findClickedOption];
+      dispatch({
+        type: 'UPDATE_LEARNT_PHRASES',
+        payload: newListOfLearntPhrases,
+      });
     } else {
       findClickedOption.iconButton = {
         buttonText: 'Wrong',

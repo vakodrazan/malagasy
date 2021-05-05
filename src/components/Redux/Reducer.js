@@ -7,6 +7,7 @@ const initialState = {
   answerOptions: [],
   phraseList: phrasesList.phrases,
   categoryPhrase: [],
+  learntPhrases: [],
   isClicked: false,
   isCorrect: false,
   buttonText: 'Pick',
@@ -46,22 +47,10 @@ export default function rootReducer(state = initialState, action) {
         isClicked: action.payload,
       };
     }
-    case 'UPDATE_BUTTON_NAME': {
+    case 'UPDATE_LEARNT_PHRASES': {
       return {
         ...state,
-        buttonText: action.payload,
-      };
-    }
-    case 'UPDATE_ICON_COLOR': {
-      return {
-        ...state,
-        iconColor: action.payload,
-      };
-    }
-    case 'UPDATE_ICON_NAME': {
-      return {
-        ...state,
-        buttonName: action.payload,
+        learntPhrases: action.payload,
       };
     }
     default:
