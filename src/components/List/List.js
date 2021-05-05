@@ -16,6 +16,7 @@ export default function List({
   language,
   buttonRef,
   learnPhrase,
+  isClicked,
 }) {
   return (
     <FlatList
@@ -24,14 +25,14 @@ export default function List({
       renderItem={({item, index}) => (
         <ListItem
           title={item.name[language.toLowerCase()]}
-          text={item.iconButton ? item.iconButton.buttonText : text}
-          buttonName={item.iconButton ? item.iconButton.buttonName : buttonName}
+          text={isClicked && learnPhrase === item ? 'Correct' : text}
+          buttonName={isClicked && learnPhrase === item ? 'check' : buttonName}
           type={type}
-          color={item.iconButton ? item.iconButton.iconColor : color}
+          color={isClicked && learnPhrase === item ? '#06D440' : color}
           onPress={() => onPress(item, index)}
           size={size}
           disabled={disabled}
-          buttonRef={learnPhrase === item.id ? buttonRef : null}
+          buttonRef={learnPhrase === item ? buttonRef : null}
         />
       )}
       keyExtractor={(item, index) => item.id + index}
