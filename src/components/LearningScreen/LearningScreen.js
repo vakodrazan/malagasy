@@ -9,8 +9,6 @@ import SectionHeading from '../SectionHeading/SectionHeading';
 import PhraseTextArea from '../PhraseTextArea/PhraseTextArea';
 import List from '../List/List';
 import NextButton from '../NextButton/NextButton';
-import AsyncStorage from '@react-native-community/async-storage';
-
 const categoryStyles = StyleSheet.create({
   headingCategory: {
     flexDirection: 'row',
@@ -25,10 +23,6 @@ const categoryStyles = StyleSheet.create({
     color: '#111827',
   },
 });
-
-const updateCurrentList = list => {
-  AsyncStorage.setItem('@@GrocerPhrase/learntPhrases', JSON.stringify(list));
-};
 
 export default function LearningScreen({route, navigation}) {
   const {
@@ -59,11 +53,12 @@ export default function LearningScreen({route, navigation}) {
     const filterLearntPhrase = phrases.filter(item =>
       learntPhrases.some(phrase => phrase.id !== item.id),
     );
-    const option = (learntPhrases.length = 0
-      ? phrases[Math.floor(Math.random() * phrases.length)]
-      : filterLearntPhrase[
-          Math.floor(Math.random() * filterLearntPhrase.length)
-        ]);
+    const option =
+      learntPhrases.length === 0
+        ? phrases[Math.floor(Math.random() * phrases.length)]
+        : filterLearntPhrase[
+            Math.floor(Math.random() * filterLearntPhrase.length)
+          ];
 
     const option1 = phrases[Math.floor(Math.random() * phrases.length)];
     const option2 = phrases[Math.floor(Math.random() * phrases.length)];
@@ -72,63 +67,21 @@ export default function LearningScreen({route, navigation}) {
     const allOptions = [option, option1, option2, option3].sort(() => {
       return 0.5 - Math.random();
     });
-    const newData = allOptions.map(phrases => {
-      return {
-        ...phrases,
-        iconButton: {
-          buttonName,
-          buttonText,
-          iconColor,
-        },
-      };
-    });
     dispatch({type: 'DISPLAY_LEARN_PHRASE', payload: option});
-    dispatch({type: 'DISPLAY_ALL_ANSWER_OPTION', payload: newData});
+    dispatch({type: 'DISPLAY_ALL_ANSWER_OPTION', payload: allOptions});
   }
 
   const convertLanguage = language === 'en' ? 'mg' : 'en';
 
   const buttonRef = React.useRef();
-  const onPress = (currentTarget, index) => {
-    const correctOption = learnPhrase.id;
-    const userGuess = currentTarget.id;
+  const onPress = () => {
     dispatch({type: 'SHOW_NEXT_BUTTON', payload: true});
-    dispatch({type: 'SELECTED_ITEM', payload: currentTarget});
-    const findClickedOption = answerOptions.find(
-      option => option.id === userGuess,
-    );
-    const findCorrectOption = answerOptions.find(
-      option => option.id === correctOption,
-    );
-    if (correctOption === userGuess) {
-      findClickedOption.iconButton = {
-        buttonText: 'Correct',
-        buttonName: 'check',
-        iconColor: '#06D440',
-      };
-      const newListOfLearntPhrases = [...learntPhrases, findClickedOption];
-      dispatch({
-        type: 'UPDATE_LEARNT_PHRASES',
-        payload: newListOfLearntPhrases,
-      });
-    } else {
-      findClickedOption.iconButton = {
-        buttonText: 'Wrong',
-        buttonName: 'close',
-        iconColor: '#D4068E',
-      };
-      findCorrectOption.iconButton = {
-        buttonText: 'Correct',
-        buttonName: 'check',
-        iconColor: '#06D440',
-      };
-    }
   };
 
   const handleClickNext = () => {
     renderLearningPhrase(categoryPhrase);
     dispatch({type: 'SHOW_NEXT_BUTTON', payload: false});
-    dispatch({type: 'UPDATE_BUTTON_NAME', payload: 'Pick'});
+    dispatch({type: 'UPDATE_BUTTON_TEXT', payload: 'Pick'});
     dispatch({type: 'UPDATE_ICON_COLOR', payload: '#06B6D4'});
     dispatch({type: 'UPDATE_ICON_NAME', payload: 'arrow-right'});
   };
@@ -178,6 +131,11 @@ export default function LearningScreen({route, navigation}) {
           learnPhrase={learnPhrase.id}
           disabled={isClicked}
           buttonRef={buttonRef}
+          text={buttonText}
+          buttonName={buttonName}
+          color={iconColor}
+          learnPhrase={learnPhrase}
+          isClicked={isClicked}
         />
       ) : null}
       {isClicked && (
