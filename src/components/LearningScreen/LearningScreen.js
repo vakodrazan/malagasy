@@ -28,7 +28,6 @@ export default function LearningScreen({route, navigation}) {
   const {
     language,
     phraseList,
-    categoryPhrase,
     learnPhrase,
     answerOptions,
     isClicked,
@@ -41,35 +40,46 @@ export default function LearningScreen({route, navigation}) {
   const dispatch = useDispatch();
   const itemCategory = route.params.findItem;
 
-  const filterCategory = phraseList.filter(phrase =>
-    itemCategory.phrasesIds.some(item => item === phrase.id),
-  );
-
   React.useEffect(() => {
-    dispatch({type: 'DISPLAY_CATEGORY_PHRASE', payload: filterCategory});
-    renderLearningPhrase(filterCategory);
+    renderLearningPhrase(phraseList);
   }, []);
 
   function renderLearningPhrase(phrases) {
-    const filterLearntPhrase = phrases.filter(item =>
-      learntPhrases.some(phrase => phrase.id !== item.id),
-    );
-    const option =
-      learntPhrases.length === 0
-        ? phrases[Math.floor(Math.random() * phrases.length)]
-        : filterLearntPhrase[
-            Math.floor(Math.random() * filterLearntPhrase.length)
-          ];
+    const phrasesIds = itemCategory.phrasesIds;
+    let indexes = new Set([Math.floor(Math.random() * phrasesIds.length)]);
+    while (indexes.size < 4) {
+      indexes.add(Math.floor(Math.random() * phrasesIds.length));
+    }
+    indexes = [...indexes];
 
-    const option1 = phrases[Math.floor(Math.random() * phrases.length)];
-    const option2 = phrases[Math.floor(Math.random() * phrases.length)];
-    const option3 = phrases[Math.floor(Math.random() * phrases.length)];
-    const allOptions = [option, option1, option2, option3].sort(() => {
+    const filterItems = phrases.filter(phrase =>
+      learntPhrases.some(item => item.id !== phrase.id),
+    );
+
+    const answerOption1 =
+      learntPhrases > 0
+        ? filterItems.find(item => item.id === phrasesIds[indexes[0]])
+        : phrases.find(phrase => phrase.id === phrasesIds[indexes[0]]);
+    const answerOption2 = phrases.find(
+      phrase => phrase.id === phrasesIds[indexes[1]],
+    );
+    const answerOption3 = phrases.find(
+      phrase => phrase.id === phrasesIds[indexes[2]],
+    );
+    const answerOption4 = phrases.find(
+      phrase => phrase.id === phrasesIds[indexes[3]],
+    );
+    const answerOptions = [
+      answerOption1,
+      answerOption2,
+      answerOption3,
+      answerOption4,
+    ].sort(() => {
       return 0.5 - Math.random();
     });
-    const newListOfLearntPhrase = [...learntPhrases, option];
-    dispatch({type: 'DISPLAY_LEARN_PHRASE', payload: option});
-    dispatch({type: 'DISPLAY_ALL_ANSWER_OPTION', payload: allOptions});
+    const newListOfLearntPhrase = [...learntPhrases, answerOption1];
+    dispatch({type: 'DISPLAY_LEARN_PHRASE', payload: answerOption1});
+    dispatch({type: 'DISPLAY_ALL_ANSWER_OPTION', payload: answerOptions});
     dispatch({type: 'UPDATE_LEARNT_PHRASES', payload: newListOfLearntPhrase});
   }
 
@@ -82,7 +92,7 @@ export default function LearningScreen({route, navigation}) {
   };
 
   const handleClickNext = () => {
-    renderLearningPhrase(categoryPhrase);
+    renderLearningPhrase(phraseList);
     dispatch({type: 'SHOW_NEXT_BUTTON', payload: false});
     dispatch({type: 'UPDATE_BUTTON_TEXT', payload: 'Pick'});
     dispatch({type: 'UPDATE_ICON_COLOR', payload: '#06B6D4'});
@@ -131,7 +141,7 @@ export default function LearningScreen({route, navigation}) {
           size={16}
           language={'en'}
           onPress={onPress}
-          learnPhrase={learnPhrase.id}
+          // learnPhrase={learnPhrase.id}
           disabled={isClicked}
           buttonRef={buttonRef}
           text={buttonText}
