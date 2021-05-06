@@ -63,12 +63,13 @@ export default function LearningScreen({route, navigation}) {
     const option1 = phrases[Math.floor(Math.random() * phrases.length)];
     const option2 = phrases[Math.floor(Math.random() * phrases.length)];
     const option3 = phrases[Math.floor(Math.random() * phrases.length)];
-    dispatch({type: 'DISPLAY_LEARN_PHRASE', payload: option});
     const allOptions = [option, option1, option2, option3].sort(() => {
       return 0.5 - Math.random();
     });
+    const newListOfLearntPhrase = [...learntPhrases, option];
     dispatch({type: 'DISPLAY_LEARN_PHRASE', payload: option});
     dispatch({type: 'DISPLAY_ALL_ANSWER_OPTION', payload: allOptions});
+    dispatch({type: 'UPDATE_LEARNT_PHRASES', payload: newListOfLearntPhrase});
   }
 
   const convertLanguage = language === 'en' ? 'mg' : 'en';
