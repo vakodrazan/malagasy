@@ -36,6 +36,7 @@ export default function LearningScreen({route, navigation}) {
     iconColor,
     buttonText,
     learntPhrases,
+    currentTarget,
   } = useSelector(state => state);
   const dispatch = useDispatch();
   const itemCategory = route.params.findItem;
@@ -75,8 +76,9 @@ export default function LearningScreen({route, navigation}) {
   const convertLanguage = language === 'en' ? 'mg' : 'en';
 
   const buttonRef = React.useRef();
-  const onPress = () => {
+  const onPress = target => {
     dispatch({type: 'SHOW_NEXT_BUTTON', payload: true});
+    dispatch({type: 'UPDATE_CURRENT_TARGET_ITEM', payload: target});
   };
 
   const handleClickNext = () => {
@@ -137,6 +139,7 @@ export default function LearningScreen({route, navigation}) {
           color={iconColor}
           learnPhrase={learnPhrase}
           isClicked={isClicked}
+          currentTarget={currentTarget}
         />
       ) : null}
       {isClicked && (

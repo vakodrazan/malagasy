@@ -17,24 +17,32 @@ export default function List({
   buttonRef,
   learnPhrase,
   isClicked,
+  currentTarget,
 }) {
   return (
     <FlatList
       data={data}
       ListHeaderComponent={() => <SectionHeading title={label} />}
-      renderItem={({item, index}) => (
-        <ListItem
-          title={item.name[language.toLowerCase()]}
-          text={isClicked && learnPhrase === item ? 'Correct' : text}
-          buttonName={isClicked && learnPhrase === item ? 'check' : buttonName}
-          type={type}
-          color={isClicked && learnPhrase === item ? '#06D440' : color}
-          onPress={() => onPress(item, index)}
-          size={size}
-          disabled={disabled}
-          buttonRef={learnPhrase === item ? buttonRef : null}
-        />
-      )}
+      renderItem={({item, index}) => {
+        const findCorrect = isClicked && learnPhrase === item;
+        const findSelectItem =
+          isClicked && currentTarget !== learnPhrase && currentTarget === item;
+        return (
+          <ListItem
+            title={item.name[language.toLowerCase()]}
+            text={findCorrect ? 'Correct' : findSelectItem ? 'Wrong' : text}
+            buttonName={
+              findCorrect ? 'check' : findSelectItem ? 'close' : buttonName
+            }
+            type={type}
+            color={findCorrect ? '#06D440' : findSelectItem ? '#D4068E' : color}
+            onPress={() => onPress(item, index)}
+            size={size}
+            disabled={disabled}
+            buttonRef={learnPhrase === item ? buttonRef : null}
+          />
+        );
+      }}
       keyExtractor={(item, index) => item.id + index}
     />
   );
