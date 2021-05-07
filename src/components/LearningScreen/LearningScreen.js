@@ -3,7 +3,7 @@ import {SafeAreaView, Text, View, StyleSheet} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
 
 import LanguageSwitcherButton from '../LanguageSwitcherButton/LanguageSwitcherButton';
-import ToolButton from '../ToolButton/ToolButton';
+import ToolButton, {switchLanguage} from '../ToolButton/ToolButton';
 import {styles} from '../HomeScreen/HomeScreen';
 import SectionHeading from '../SectionHeading/SectionHeading';
 import PhraseTextArea from '../PhraseTextArea/PhraseTextArea';
@@ -37,6 +37,8 @@ export default function LearningScreen({route, navigation}) {
     buttonText,
     learntPhrases,
     currentTarget,
+    primaryLanguage,
+    secondaryLanguage,
   } = useSelector(state => state);
   const dispatch = useDispatch();
   const itemCategory = route.params.findItem;
@@ -114,11 +116,11 @@ export default function LearningScreen({route, navigation}) {
             size={22.62}
           />
           <LanguageSwitcherButton
-            primaryText={'EN'}
-            secondaryText={'MG'}
+            primaryText={primaryLanguage}
+            secondaryText={secondaryLanguage}
             name="swap-horizontal"
             type="material-community"
-            onPress={() => alert('Switch-language')}
+            onPress={() => switchLanguage(dispatch, language)}
           />
         </View>
         <View style={categoryStyles.headingCategory}>
@@ -138,7 +140,7 @@ export default function LearningScreen({route, navigation}) {
           label={'Pick a solution:'}
           type={'material-community'}
           size={16}
-          language={'en'}
+          language={language}
           onPress={onPress}
           disabled={isClicked}
           text={buttonText}
