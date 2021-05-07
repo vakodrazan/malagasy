@@ -21,6 +21,7 @@ const categoryStyles = StyleSheet.create({
     fontSize: 18,
     lineHeight: 22,
     color: '#111827',
+    paddingLeft: 6,
   },
 });
 
@@ -39,6 +40,9 @@ export default function LearningScreen({route, navigation}) {
   } = useSelector(state => state);
   const dispatch = useDispatch();
   const itemCategory = route.params.findItem;
+  const convertLanguage = language === 'en' ? 'mg' : 'en';
+
+  const buttonRef = React.useRef();
 
   React.useEffect(() => {
     renderLearningPhrase(phraseList);
@@ -77,16 +81,16 @@ export default function LearningScreen({route, navigation}) {
     ].sort(() => {
       return 0.5 - Math.random();
     });
-    const newListOfLearntPhrase = [...learntPhrases, answerOption1];
     dispatch({type: 'DISPLAY_LEARN_PHRASE', payload: answerOption1});
     dispatch({type: 'DISPLAY_ALL_ANSWER_OPTION', payload: answerOptions});
-    dispatch({type: 'UPDATE_LEARNT_PHRASES', payload: newListOfLearntPhrase});
   }
 
-  const convertLanguage = language === 'en' ? 'mg' : 'en';
-
-  const buttonRef = React.useRef();
   const onPress = target => {
+    const newListOfLearntPhrase = [...learntPhrases, learnPhrase];
+    if (target.id === learnPhrase.id) {
+      dispatch({type: 'UPDATE_LEARNT_PHRASES', payload: newListOfLearntPhrase});
+    }
+
     dispatch({type: 'SHOW_NEXT_BUTTON', payload: true});
     dispatch({type: 'UPDATE_CURRENT_TARGET_ITEM', payload: target});
   };
@@ -109,7 +113,7 @@ export default function LearningScreen({route, navigation}) {
             type={'material-community'}
           />
           <ToolButton
-            onPress={() => console.log('switch-mode-button')}
+            onPress={() => alert('switch-mode-button')}
             name={'brightness-6'}
             type={'material-community'}
             size={22.62}
@@ -119,7 +123,7 @@ export default function LearningScreen({route, navigation}) {
             secondaryText={'MG'}
             name="swap-horizontal"
             type="material-community"
-            onPress={() => console.log('Switch-language')}
+            onPress={() => alert('Switch-language')}
           />
         </View>
         <View style={categoryStyles.headingCategory}>
@@ -136,12 +140,11 @@ export default function LearningScreen({route, navigation}) {
       {answerOptions ? (
         <List
           data={answerOptions}
-          label={'Pick a solution: '}
+          label={'Pick a solution:'}
           type={'material-community'}
           size={16}
           language={'en'}
           onPress={onPress}
-          // learnPhrase={learnPhrase.id}
           disabled={isClicked}
           buttonRef={buttonRef}
           text={buttonText}
