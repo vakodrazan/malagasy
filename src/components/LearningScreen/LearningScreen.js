@@ -48,10 +48,9 @@ export default function LearningScreen({route, navigation}) {
 
   function renderLearningPhrase(phrases) {
     const phrasesIds = itemCategory.phrasesIds;
-    const getRandomItem = Math.floor(Math.random() * phrasesIds.length);
-    let indexes = new Set([getRandomItem]);
+    let indexes = new Set([Math.floor(Math.random() * phrasesIds.length)]);
     while (indexes.size < 4) {
-      indexes.add(getRandomItem);
+      indexes.add(Math.floor(Math.random() * phrasesIds.length));
     }
     indexes = [...indexes];
 
