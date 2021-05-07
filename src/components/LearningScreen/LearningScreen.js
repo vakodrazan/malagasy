@@ -56,7 +56,7 @@ export default function LearningScreen({route, navigation}) {
     }
     indexes = [...indexes];
 
-    const filterItems = phrases.filter(phrase =>
+    const filterPhrases = phrases.filter(phrase =>
       learntPhrases.some(item => item.id !== phrase.id),
     );
 
@@ -66,17 +66,14 @@ export default function LearningScreen({route, navigation}) {
 
     const answerOption1 =
       learntPhrases > 0
-        ? filterItems.find(item => item.id === phrasesIds[indexes[0]])
+        ? filterPhrases.find(item => item.id === phrasesIds[indexes[0]])
         : answerOption(0);
-    const answerOption2 = answerOption(1);
-    const answerOption3 = answerOption(2);
-    const answerOption4 = answerOption(3);
 
     const answerOptions = [
       answerOption1,
-      answerOption2,
-      answerOption3,
-      answerOption4,
+      answerOption(1),
+      answerOption(2),
+      answerOption(3),
     ].sort(() => {
       return 0.5 - Math.random();
     });
