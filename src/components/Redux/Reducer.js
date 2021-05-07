@@ -1,7 +1,8 @@
+import categoryList from '../../data/categories.json';
 import phrasesList from '../../data/phrases.json';
 
 const initialState = {
-  categories: {},
+  categories: categoryList.categories,
   language: 'en',
   learnPhrase: {},
   answerOptions: [],
@@ -16,12 +17,6 @@ const initialState = {
 
 export default function rootReducer(state = initialState, action) {
   switch (action.type) {
-    case 'CATEGORY_LIST': {
-      return {
-        ...state,
-        categories: action.payload,
-      };
-    }
     case 'DISPLAY_LEARN_PHRASE': {
       return {
         ...state,
