@@ -60,19 +60,18 @@ export default function LearningScreen({route, navigation}) {
       learntPhrases.some(item => item.id !== phrase.id),
     );
 
+    const answerOption = index => {
+      return phrases.find(phrase => phrase.id === phrasesIds[indexes[index]]);
+    };
+
     const answerOption1 =
       learntPhrases > 0
         ? filterItems.find(item => item.id === phrasesIds[indexes[0]])
-        : phrases.find(phrase => phrase.id === phrasesIds[indexes[0]]);
-    const answerOption2 = phrases.find(
-      phrase => phrase.id === phrasesIds[indexes[1]],
-    );
-    const answerOption3 = phrases.find(
-      phrase => phrase.id === phrasesIds[indexes[2]],
-    );
-    const answerOption4 = phrases.find(
-      phrase => phrase.id === phrasesIds[indexes[3]],
-    );
+        : answerOption(0);
+    const answerOption2 = answerOption(1);
+    const answerOption3 = answerOption(2);
+    const answerOption4 = answerOption(3);
+
     const answerOptions = [
       answerOption1,
       answerOption2,
@@ -81,6 +80,7 @@ export default function LearningScreen({route, navigation}) {
     ].sort(() => {
       return 0.5 - Math.random();
     });
+
     dispatch({type: 'DISPLAY_LEARN_PHRASE', payload: answerOption1});
     dispatch({type: 'DISPLAY_ALL_ANSWER_OPTION', payload: answerOptions});
   }
