@@ -14,7 +14,6 @@ export default function List({
   size,
   disabled,
   language,
-  buttonRef,
   learnPhrase,
   isClicked,
   currentTarget,
@@ -39,7 +38,6 @@ export default function List({
             onPress={() => onPress(item, index)}
             size={size}
             disabled={disabled}
-            buttonRef={learnPhrase === item ? buttonRef : null}
           />
         );
       }}

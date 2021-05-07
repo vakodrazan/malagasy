@@ -37,14 +37,12 @@ export default function ListItem({
   size,
   disabled,
   value,
-  buttonRef,
 }) {
   return (
     <TouchableOpacity
       style={styles.container}
       onPress={onPress}
       value={value}
-      ref={buttonRef}
       disabled={disabled}>
       <Text style={styles.itemTitle} numberOfLines={1} ellipsizeMode="tail">
         {title}

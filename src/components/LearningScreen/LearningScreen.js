@@ -42,8 +42,6 @@ export default function LearningScreen({route, navigation}) {
   const itemCategory = route.params.findItem;
   const convertLanguage = language === 'en' ? 'mg' : 'en';
 
-  const buttonRef = React.useRef();
-
   React.useEffect(() => {
     renderLearningPhrase(phraseList);
   }, []);
@@ -143,7 +141,6 @@ export default function LearningScreen({route, navigation}) {
           language={'en'}
           onPress={onPress}
           disabled={isClicked}
-          buttonRef={buttonRef}
           text={buttonText}
           buttonName={buttonName}
           color={iconColor}
