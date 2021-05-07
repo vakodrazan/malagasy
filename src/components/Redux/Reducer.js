@@ -4,6 +4,8 @@ import phrasesList from '../../data/phrases.json';
 const initialState = {
   categories: categoryList.categories,
   language: 'en',
+  primaryLanguage: 'EN',
+  secondaryLanguage: 'MG',
   learnPhrase: {},
   answerOptions: [],
   phraseList: phrasesList.phrases,
@@ -69,6 +71,18 @@ export default function rootReducer(state = initialState, action) {
       return {
         ...state,
         language: action.payload,
+      };
+    }
+    case 'UDDATE_PRIMARY_LANGUAGE': {
+      return {
+        ...state,
+        primaryLanguage: action.payload,
+      };
+    }
+    case 'UDDATE_SECONDARY_LANGUAGE': {
+      return {
+        ...state,
+        secondaryLanguage: action.payload,
       };
     }
     default:
