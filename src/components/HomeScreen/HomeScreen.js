@@ -3,7 +3,7 @@ import {SafeAreaView, StyleSheet, View} from 'react-native';
 import {useSelector} from 'react-redux';
 
 import List from '../List/List';
-import ToolButton from '../ToolButton/ToolButton';
+import ToolButton, {switchLanguage} from '../ToolButton/ToolButton';
 import LanguageSwitcherButton from '../LanguageSwitcherButton/LanguageSwitcherButton';
 
 export const styles = StyleSheet.create({
@@ -19,7 +19,7 @@ export const styles = StyleSheet.create({
 });
 
 const HomeScreen = ({navigation}) => {
-  const {categories} = useSelector(state => state);
+  const {categories, language} = useSelector(state => state);
 
   function onPress(item) {
     navigation.navigate('DisplayPhrases', {
@@ -41,7 +41,7 @@ const HomeScreen = ({navigation}) => {
           secondaryText={'MG'}
           name="swap-horizontal"
           type="material-community"
-          onPress={() => alert('Switch-language')}
+          onPress={() => switchLanguage(language)}
         />
         <ToolButton
           onPress={() => alert('Seen-button')}

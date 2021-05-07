@@ -65,6 +65,12 @@ export default function rootReducer(state = initialState, action) {
         currentTarget: action.payload,
       };
     }
+    case 'SWITCH_LANGUAGE': {
+      return {
+        ...state,
+        language: action.payload,
+      };
+    }
     default:
       return state;
   }

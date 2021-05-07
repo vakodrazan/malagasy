@@ -19,6 +19,11 @@ const styles = StyleSheet.create({
   },
 });
 
+export const switchLanguage = language => {
+  const dispatch = useDispatch();
+  dispatch({type: 'SHOW_NEXT_BUTTON', payload: 'mg'});
+};
+
 export default function ToolButton({name, type, size, onPress}) {
   return (
     <SafeAreaView style={styles.container}>
