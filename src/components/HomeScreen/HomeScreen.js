@@ -73,7 +73,7 @@ const HomeScreen = ({navigation}) => {
       </View>
       <List
         data={categories}
-        label={language === 'en' ? 'Select a category:' : 'Mifidy sokajy:'}
+        label={language === 'en' ? 'Select a category:' : 'Mifidiana sokajy:'}
         text={learn}
         buttonName={'arrow-right'}
         type={'material-community'}
