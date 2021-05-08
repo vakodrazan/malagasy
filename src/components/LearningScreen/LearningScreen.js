@@ -134,7 +134,9 @@ export default function LearningScreen({route, navigation}) {
         </View>
         <PhraseTextArea
           editable={false}
-          phrase={learnPhrase.name ? learnPhrase.name[convertLanguage] : null}
+          phrase={
+            learnPhrase.name ? learnPhrase.name[convertLanguage] : 'Loading...'
+          }
         />
       </View>
       {answerOptions ? (
