@@ -3,8 +3,9 @@ import {SafeAreaView, StyleSheet, View} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
 
 import List from '../List/List';
-import ToolButton, {switchLanguage} from '../ToolButton/ToolButton';
+import ToolButton from '../ToolButton/ToolButton';
 import LanguageSwitcherButton from '../LanguageSwitcherButton/LanguageSwitcherButton';
+import switchLanguage from '../SwitchLanguages/SwitchLanguages';
 
 export const styles = StyleSheet.create({
   container: {
@@ -24,6 +25,7 @@ const HomeScreen = ({navigation}) => {
     language,
     primaryLanguage,
     secondaryLanguage,
+    learn,
   } = useSelector(state => state);
 
   const dispatch = useDispatch();
@@ -71,8 +73,8 @@ const HomeScreen = ({navigation}) => {
       </View>
       <List
         data={categories}
-        label={'Select a category: '}
-        text={'Learn'}
+        label={language === 'en' ? 'Select a category:' : 'Mifidy sokajy:'}
+        text={learn}
         buttonName={'arrow-right'}
         type={'material-community'}
         color={'#06B6D4'}

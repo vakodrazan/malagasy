@@ -3,12 +3,14 @@ import {SafeAreaView, Text, View, StyleSheet} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
 
 import LanguageSwitcherButton from '../LanguageSwitcherButton/LanguageSwitcherButton';
-import ToolButton, {switchLanguage} from '../ToolButton/ToolButton';
+import ToolButton from '../ToolButton/ToolButton';
 import {styles} from '../HomeScreen/HomeScreen';
 import SectionHeading from '../SectionHeading/SectionHeading';
 import PhraseTextArea from '../PhraseTextArea/PhraseTextArea';
 import List from '../List/List';
 import NextButton from '../NextButton/NextButton';
+import switchLanguage from '../SwitchLanguages/SwitchLanguages';
+
 const categoryStyles = StyleSheet.create({
   headingCategory: {
     flexDirection: 'row',
