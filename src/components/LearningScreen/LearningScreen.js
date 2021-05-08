@@ -158,7 +158,7 @@ export default function LearningScreen({route, navigation}) {
       ) : null}
       {isClicked && (
         <NextButton
-          text={'Next'}
+          text={language === 'en' ? 'Next' : 'Manaraka'}
           accessibilityLabel={'Tap next'}
           onPress={handleClickNext}
         />
