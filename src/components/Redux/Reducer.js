@@ -11,10 +11,13 @@ const initialState = {
   phraseList: phrasesList.phrases,
   learntPhrases: [],
   isClicked: false,
-  buttonText: 'Pick',
   iconColor: '#06B6D4',
   buttonName: 'arrow-right',
   currentTarget: {},
+  correct: 'Correct',
+  wrong: 'Wrong',
+  pick: 'Pick',
+  learn: 'Learn',
 };
 
 export default function rootReducer(state = initialState, action) {
@@ -41,12 +44,6 @@ export default function rootReducer(state = initialState, action) {
       return {
         ...state,
         learntPhrases: action.payload,
-      };
-    }
-    case 'UPDATE_BUTTON_TEXT': {
-      return {
-        ...state,
-        buttonText: action.payload,
       };
     }
     case 'UPDATE_ICON_NAME': {
@@ -83,6 +80,30 @@ export default function rootReducer(state = initialState, action) {
       return {
         ...state,
         secondaryLanguage: action.payload,
+      };
+    }
+    case 'UPDATE_CORRECT_LANGUAGE': {
+      return {
+        ...state,
+        correct: action.payload,
+      };
+    }
+    case 'UDDATE_WRONG_LANGUAGE': {
+      return {
+        ...state,
+        wrong: action.payload,
+      };
+    }
+    case 'UDDATE_PICK_LANGUAGE': {
+      return {
+        ...state,
+        pick: action.payload,
+      };
+    }
+    case 'UDDATE_LEARN_LANGUAGE': {
+      return {
+        ...state,
+        learn: action.payload,
       };
     }
     default:
