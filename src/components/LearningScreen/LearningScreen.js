@@ -48,9 +48,10 @@ export default function LearningScreen({route, navigation}) {
 
   function renderLearningPhrase(phrases) {
     const phrasesIds = itemCategory.phrasesIds;
-    let indexes = new Set([Math.floor(Math.random() * phrasesIds.length)]);
+    const getRandomItem = Math.floor(Math.random() * phrasesIds.length);
+    let indexes = new Set([getRandomItem]);
     while (indexes.size < 4) {
-      indexes.add(Math.floor(Math.random() * phrasesIds.length));
+      indexes.add(getRandomItem);
     }
     indexes = [...indexes];
 
@@ -80,14 +81,14 @@ export default function LearningScreen({route, navigation}) {
     dispatch({type: 'DISPLAY_ALL_ANSWER_OPTION', payload: answerOptions});
   }
 
-  const onPress = target => {
+  const onPress = currentTarget => {
     const newListOfLearntPhrase = [...learntPhrases, learnPhrase];
-    if (target.id === learnPhrase.id) {
+    if (currentTarget.id === learnPhrase.id) {
       dispatch({type: 'UPDATE_LEARNT_PHRASES', payload: newListOfLearntPhrase});
     }
 
     dispatch({type: 'SHOW_NEXT_BUTTON', payload: true});
-    dispatch({type: 'UPDATE_CURRENT_TARGET_ITEM', payload: target});
+    dispatch({type: 'UPDATE_CURRENT_TARGET_ITEM', payload: currentTarget});
   };
 
   const handleClickNext = () => {

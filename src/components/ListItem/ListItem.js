@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {StyleSheet, Text, TouchableOpacity} from 'react-native';
 import ActionButton from '../ActionButton/ActionButton';
 
 const styles = StyleSheet.create({
