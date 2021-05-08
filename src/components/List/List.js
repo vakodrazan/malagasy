@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {FlatList} from 'react-native';
+import {useSelector} from 'react-redux';
 import ListItem from '../ListItem/ListItem';
 import SectionHeading from '../SectionHeading/SectionHeading';
 
@@ -18,6 +19,8 @@ export default function List({
   isClicked,
   currentTarget,
 }) {
+  const {correct, wrong} = useSelector(state => state);
+
   return (
     <FlatList
       data={data}
@@ -29,7 +32,7 @@ export default function List({
         return (
           <ListItem
             title={item.name[language.toLowerCase()]}
-            text={findCorrect ? 'Correct' : findSelectItem ? 'Wrong' : text}
+            text={findCorrect ? correct : findSelectItem ? wrong : text}
             buttonName={
               findCorrect ? 'check' : findSelectItem ? 'close' : buttonName
             }

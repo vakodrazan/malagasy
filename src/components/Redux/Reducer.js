@@ -4,15 +4,20 @@ import phrasesList from '../../data/phrases.json';
 const initialState = {
   categories: categoryList.categories,
   language: 'en',
+  primaryLanguage: 'EN',
+  secondaryLanguage: 'MG',
   learnPhrase: {},
   answerOptions: [],
   phraseList: phrasesList.phrases,
   learntPhrases: [],
   isClicked: false,
-  buttonText: 'Pick',
   iconColor: '#06B6D4',
   buttonName: 'arrow-right',
   currentTarget: {},
+  correct: 'Correct',
+  wrong: 'Wrong',
+  pick: 'Pick',
+  learn: 'Learn',
 };
 
 export default function rootReducer(state = initialState, action) {
@@ -41,12 +46,6 @@ export default function rootReducer(state = initialState, action) {
         learntPhrases: action.payload,
       };
     }
-    case 'UPDATE_BUTTON_TEXT': {
-      return {
-        ...state,
-        buttonText: action.payload,
-      };
-    }
     case 'UPDATE_ICON_NAME': {
       return {
         ...state,
@@ -63,6 +62,48 @@ export default function rootReducer(state = initialState, action) {
       return {
         ...state,
         currentTarget: action.payload,
+      };
+    }
+    case 'SWITCH_LANGUAGE': {
+      return {
+        ...state,
+        language: action.payload,
+      };
+    }
+    case 'UDDATE_PRIMARY_LANGUAGE': {
+      return {
+        ...state,
+        primaryLanguage: action.payload,
+      };
+    }
+    case 'UDDATE_SECONDARY_LANGUAGE': {
+      return {
+        ...state,
+        secondaryLanguage: action.payload,
+      };
+    }
+    case 'UPDATE_CORRECT_LANGUAGE': {
+      return {
+        ...state,
+        correct: action.payload,
+      };
+    }
+    case 'UDDATE_WRONG_LANGUAGE': {
+      return {
+        ...state,
+        wrong: action.payload,
+      };
+    }
+    case 'UDDATE_PICK_LANGUAGE': {
+      return {
+        ...state,
+        pick: action.payload,
+      };
+    }
+    case 'UDDATE_LEARN_LANGUAGE': {
+      return {
+        ...state,
+        learn: action.payload,
       };
     }
     default:

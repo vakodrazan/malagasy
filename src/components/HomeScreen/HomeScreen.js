@@ -1,10 +1,11 @@
 import * as React from 'react';
 import {SafeAreaView, StyleSheet, View} from 'react-native';
-import {useSelector} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 
 import List from '../List/List';
 import ToolButton from '../ToolButton/ToolButton';
 import LanguageSwitcherButton from '../LanguageSwitcherButton/LanguageSwitcherButton';
+import switchLanguage from '../SwitchLanguages/SwitchLanguages';
 
 export const styles = StyleSheet.create({
   container: {
@@ -19,7 +20,15 @@ export const styles = StyleSheet.create({
 });
 
 const HomeScreen = ({navigation}) => {
-  const {categories} = useSelector(state => state);
+  const {
+    categories,
+    language,
+    primaryLanguage,
+    secondaryLanguage,
+    learn,
+  } = useSelector(state => state);
+
+  const dispatch = useDispatch();
 
   function onPress(item) {
     navigation.navigate('DisplayPhrases', {
@@ -37,11 +46,11 @@ const HomeScreen = ({navigation}) => {
           size={14}
         />
         <LanguageSwitcherButton
-          primaryText={'EN'}
-          secondaryText={'MG'}
+          primaryText={primaryLanguage}
+          secondaryText={secondaryLanguage}
           name="swap-horizontal"
           type="material-community"
-          onPress={() => alert('Switch-language')}
+          onPress={() => switchLanguage(dispatch, language)}
         />
         <ToolButton
           onPress={() => alert('Seen-button')}
@@ -64,13 +73,13 @@ const HomeScreen = ({navigation}) => {
       </View>
       <List
         data={categories}
-        label={'Select a category: '}
-        text={'Learn'}
+        label={language === 'en' ? 'Select a category:' : 'Mifidiana sokajy:'}
+        text={learn}
         buttonName={'arrow-right'}
         type={'material-community'}
         color={'#06B6D4'}
         size={16}
-        language={'en'}
+        language={language}
         onPress={onPress}
       />
     </SafeAreaView>
