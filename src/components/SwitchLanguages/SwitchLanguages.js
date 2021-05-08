@@ -5,7 +5,7 @@ export default function switchLanguage(dispatch, language) {
     dispatch({type: 'UDDATE_SECONDARY_LANGUAGE', payload: 'EN'});
     dispatch({type: 'UPDATE_CORRECT_LANGUAGE', payload: 'Marina'});
     dispatch({type: 'UDDATE_WRONG_LANGUAGE', payload: 'Diso'});
-    dispatch({type: 'UDDATE_PICK_LANGUAGE', payload: 'Haka'});
+    dispatch({type: 'UDDATE_PICK_LANGUAGE', payload: 'Safidio'});
     dispatch({type: 'UDDATE_LEARN_LANGUAGE', payload: 'Hianatra'});
   } else {
     dispatch({type: 'SWITCH_LANGUAGE', payload: 'en'});
