@@ -14,7 +14,7 @@ const categoryStyles = StyleSheet.create({
     flexDirection: 'row',
   },
   categorySection: {
-    paddingBottom: 37,
+    marginBottom: 37,
   },
   headingCategoryText: {
     fontWeight: '400',
@@ -22,6 +22,8 @@ const categoryStyles = StyleSheet.create({
     lineHeight: 22,
     color: '#111827',
     paddingLeft: 6,
+    flex: 1,
+    marginBottom: 30,
   },
 });
 
@@ -34,11 +36,11 @@ export default function LearningScreen({route, navigation}) {
     isClicked,
     buttonName,
     iconColor,
-    buttonText,
     learntPhrases,
     currentTarget,
     primaryLanguage,
     secondaryLanguage,
+    pick,
   } = useSelector(state => state);
   const dispatch = useDispatch();
   const itemCategory = route.params.findItem;
@@ -95,7 +97,6 @@ export default function LearningScreen({route, navigation}) {
   const handleClickNext = () => {
     renderLearningPhrase(phraseList);
     dispatch({type: 'SHOW_NEXT_BUTTON', payload: false});
-    dispatch({type: 'UPDATE_BUTTON_TEXT', payload: 'Pick'});
     dispatch({type: 'UPDATE_ICON_COLOR', payload: '#06B6D4'});
     dispatch({type: 'UPDATE_ICON_NAME', payload: 'arrow-right'});
   };
@@ -124,7 +125,7 @@ export default function LearningScreen({route, navigation}) {
           />
         </View>
         <View style={categoryStyles.headingCategory}>
-          <SectionHeading title="Category: " />
+          <SectionHeading title={language === 'en' ? 'Category:' : 'Sokajy:'} />
           <Text style={categoryStyles.headingCategoryText}>
             {itemCategory.name[language]}
           </Text>
@@ -137,13 +138,15 @@ export default function LearningScreen({route, navigation}) {
       {answerOptions ? (
         <List
           data={answerOptions}
-          label={'Pick a solution:'}
+          label={
+            language === 'en' ? 'Pick a solution:' : 'Misafidiana vahaolana: '
+          }
           type={'material-community'}
           size={16}
           language={language}
           onPress={onPress}
           disabled={isClicked}
-          text={buttonText}
+          text={pick}
           buttonName={buttonName}
           color={iconColor}
           learnPhrase={learnPhrase}
