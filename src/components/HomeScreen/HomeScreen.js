@@ -5,8 +5,8 @@ import {useDispatch, useSelector} from 'react-redux';
 import List from '../List/List';
 import ToolButton from '../ToolButton/ToolButton';
 import LanguageSwitcherButton from '../LanguageSwitcherButton/LanguageSwitcherButton';
-import switchLanguage from '../SwitchLanguages/SwitchLanguages';
-
+import switchLanguage from '../SwitchLanguages/SwitchLanguages'; // use consistent casing (props lowerCase in this case)
+// This file should be in a separate screens folder, not in components
 export const styles = StyleSheet.create({
   container: {
     marginRight: 23,

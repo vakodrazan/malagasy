@@ -27,7 +27,7 @@ export default function List({
       ListHeaderComponent={() => <SectionHeading title={label} />}
       renderItem={({item, index}) => {
         const findCorrect = isClicked && learnPhrase === item;
-        const findSelectItem =
+        const findSelectItem = // What excactly does this do? FindSelectItem is not very descriptive
           isClicked && currentTarget !== learnPhrase && currentTarget === item;
         return (
           <ListItem

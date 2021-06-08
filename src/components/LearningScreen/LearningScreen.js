@@ -46,7 +46,7 @@ export default function LearningScreen({route, navigation}) {
   } = useSelector(state => state);
   const dispatch = useDispatch();
   const itemCategory = route.params.findItem;
-  const convertLanguage = language === 'en' ? 'mg' : 'en';
+  const convertLanguage = language === 'en' ? 'mg' : 'en'; // isnt language enough on its own?
 
   React.useEffect(() => {
     renderLearningPhrase(phraseList);
@@ -55,10 +55,10 @@ export default function LearningScreen({route, navigation}) {
   function renderLearningPhrase(phrases) {
     const phrasesIds = itemCategory.phrasesIds;
     let indexes = new Set([Math.floor(Math.random() * phrasesIds.length)]);
-    while (indexes.size < 4) {
+    while (indexes.size < 4) {  // Finally someone that checks for duplicates :)
       indexes.add(Math.floor(Math.random() * phrasesIds.length));
     }
-    indexes = [...indexes];
+    indexes = [...indexes]; // ?
 
     const filterPhrases = phrases.filter(phrase =>
       learntPhrases.some(item => item.id !== phrase.id),
@@ -145,7 +145,7 @@ export default function LearningScreen({route, navigation}) {
           label={
             language === 'en' ? 'Pick a solution:' : 'Misafidiana vahaolana: '
           }
-          type={'material-community'}
+          type={'material-community'} // You would pass less props if you bundle the icon props in an
           size={16}
           language={language}
           onPress={onPress}
