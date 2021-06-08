@@ -31,6 +31,6 @@ General Issues:
 
 Total 123/123 => 100%
 
-I noticed that you have a strong foundation when it comes to building components in a clean, understandable way. I am sure that if you have had more time (and you'll get faster with practice, no worries), this would have been a strong project. Keep up the good work!
+Great job! 
 
 
