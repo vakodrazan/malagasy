@@ -13,7 +13,7 @@ storiesOf('ListIten', module)
       buttonName={'arrow-right'}
       type={'material-community'}
       color={'#06B6D4'}
-      onPress={action('learn-button')}
+      onPress={action('learn-button')} // Nice job using the storybook actions, would you be willing to present how they work to the class on the next project?
       size={16}
     />
   ))

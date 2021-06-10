@@ -3,6 +3,7 @@ import {Text, SafeAreaView, TouchableOpacity, StyleSheet} from 'react-native';
 import {Icon} from 'react-native-elements';
 
 const styles = StyleSheet.create({
+  // do you really need all these containers?
   container: {
     alignItems: 'center',
     justifyContent: 'center',
@@ -49,10 +50,10 @@ const styles = StyleSheet.create({
 export default function LanguageSwitcherButton({
   primaryText,
   secondaryText,
-  name,
+  name, // naming these in a way that makes clear that they are for the icons would be helpful
   type,
   onPress,
-  disabled,
+  disabled, // Not really necessary
 }) {
   return (
     <SafeAreaView style={styles.container}>

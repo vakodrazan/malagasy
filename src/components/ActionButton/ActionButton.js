@@ -23,7 +23,6 @@ const styles = StyleSheet.create({
     }
 })
 
-
 export default function ActionButton({ text, name, type, color, onPress, size }) {
     return (
         <SafeAreaView>

@@ -35,7 +35,7 @@ export default function ListItem({
   color,
   onPress,
   size,
-  disabled,
+  disabled, // also not required
   value,
 }) {
   return (
